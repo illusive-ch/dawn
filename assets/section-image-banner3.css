@@ -1,0 +1,30 @@
+.banner__media.banner__media-third {
+    width: 34%;
+}
+
+.banner__media-third + .banner__media-third:nth-of-type(2) {
+    right: 33%;
+    left: auto;
+}
+
+.banner__media-third + .banner__media-third:nth-of-type(3) {
+    right: 0;
+    left: auto;
+}
+
+@media screen and (max-width: 749px) {
+    .banner--stacked .banner__media.banner__media-third {
+        width: 100%;
+        right:0;
+        left:auto;
+    }
+    .banner--stacked .banner__media-third + .banner__media-third {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .banner--stacked .banner__media-image-third {
+        width: 100%;
+    }
+}
