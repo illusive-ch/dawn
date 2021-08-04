@@ -5,7 +5,11 @@
 .multicolumn.no-heading .title {
   display: none;
 }
-
+.multicolumn-svg.icon{
+  width:7rem;
+  height:7rem;
+  margin-top:2rem;
+}
 @media screen and (max-width: 749px) {
   .multicolumn.no-heading.background-secondary {
     padding-top: 5rem;

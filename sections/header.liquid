@@ -289,6 +289,8 @@
               height="{{ section.settings.logo.height }}"
               alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
             >
+          {%- elsif section.settings.svg != blank-%}
+            {{ section.settings.svg }}
           {%- else -%}
             <span class="h2">{{ shop.name }}</span>
           {%- endif -%}
@@ -549,6 +551,11 @@
       "type": "image_picker",
       "id": "logo",
       "label": "t:sections.header.settings.logo.label"
+    },
+    {
+    "type": "text",
+    "id": "svg",
+    "label": "Svg of Logo"
     },
     {
       "type": "range",

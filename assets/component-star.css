@@ -1,0 +1,14 @@
+.star {
+    display: flex;
+}
+.star span{
+    margin-right:1rem;
+    font-weight: bold;
+}
+.icon-star {
+    align-self: center;
+    height: 2rem;
+    width: 2rem;
+    fill: #ffd200;
+    stroke: #ffd200;
+}

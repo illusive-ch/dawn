@@ -1260,18 +1260,19 @@ deferred-media {
 .field__input:focus-visible,
 .select__select:focus-visible,
 .field input:focus-visible {
-  /*box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.55),*/
-  /*  0 0 0 0.3rem rgb(var(--color-background)),*/
-  /*  0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);*/
+  box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.55),
+    0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
 }
 
 .field__input:focus,
 .select__select:focus,
 .field input:focus {
-  /*box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.55),*/
-  /*  0 0 0 0.3rem rgb(var(--color-background)),*/
-  /*  0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);*/
+  box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.55),
+    0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
 }
+
 
 .text-area,
 .select {
@@ -2085,4 +2086,7 @@ details-disclosure > details {
   .overflow-hidden-tablet {
     overflow: auto;
   }
+}
+.m-0{
+  margin:0;
 }

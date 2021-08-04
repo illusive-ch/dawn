@@ -1,0 +1,94 @@
+{{ 'section-product-details.css' | asset_url | stylesheet_tag }}
+<div class="grid--2-col-desktop">
+    <ul class="product-details-list grid grid--1-col grid--2-col-desktop" role="list">
+        <li class="product-details-list__item grid__item">
+            <div class="product-details-card">
+                <div class="product-details-card__info">
+                    <div class="ml-20">
+                        <h1>Why This Soap Is So Effective</h1>
+                        <div class="rte mb-5">
+                            <p>
+                                The ingredients in our CBD Body Bar are a critical foundation and first step to an
+                                optimal
+                                skincare regimen, designed to give you all the hydrating and calming benefits of CBD and
+                                Manuka honey.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media" style="padding-bottom: 100.0%;">
+                        <img
+                                srcset="https://picsum.photos/600/810" sizes="" alt="Column" loading="lazy"
+                                style=""/>
+                    </div>
+                </div>
+
+            </div>
+        </li>
+        <li class="product-details-list__item grid__item">
+            <div class="product-details-card">
+                <div class="product-details-card__info">
+                    <div class="product-detail-points mb-5">
+                        <div class="product-details-box free-shipping center">
+                            {% render 'icon-truck' %}
+                            <h2>FREE Shipping within the USA</h2>
+                            <p>At Cannuka, we're committed to giving you the most bang for your buck. That's why every
+                                order receives FREE* shipping, courtesy of Cannuka!</p>
+                        </div>
+                        <div class="product-details-box money-back-guarantee center">
+                            {% render 'icon-refresh' %}
+                            <h2>Money Back Guarantee</h2>
+                            <p>Our return policy lasts 60 days.</p>
+                            <p>To be eligible for a return, your item must be unused and in the same condition that you
+                                received it. It must also be in the original packaging</p>
+                        </div>
+                    </div>
+                    <h1>How This Soap Works</h1>
+                    <div class="rte mb-5"><p>The ingredients in our CBD Body Bar are a critical foundation and first
+                            step to
+                            an optimal skincare regimen, designed to give you all the hydrating and calming benefits of
+                            CBD and Manuka honey.</p></div>
+                    <div class="media" style="padding-bottom: 100.0%;">
+                        <img
+                                srcset="https://picsum.photos/600/810" sizes="" alt="Column" loading="lazy"
+                                style=""/>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</div>
+
+
+{% schema %}
+{
+"name": "Product Details",
+"tag": "section",
+"class": "spaced-section page-width",
+"settings": [
+{
+"type": "text",
+"id": "headingl",
+"label":"Heading Left"
+},
+{
+"type": "paragraph",
+"content": "Left Description"
+},
+{
+"type": "text",
+"id": "headingr",
+"label":"Heading Right"
+},
+{
+"type": "paragraph",
+"content": "Right Description"
+}
+],
+"presets": [
+{
+"name": "Product Details"
+}
+]
+}
+{% endschema %}
