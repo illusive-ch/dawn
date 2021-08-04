@@ -1,0 +1,44 @@
+{{ 'section-product-testimonials.css' | asset_url | stylesheet_tag }}
+{% assign testimonials =  product.metafields.my_fields.testimonials.value %}
+{% if testimonials != blank %}
+<div class="product-testimonials">
+    <h2 class="center">What are people saying about the {{ product.title }}</h2>
+    <ul class="grid grid--1-col grid--2-col-desktop" role="list">
+        {% for testimonial in testimonials %}
+        <li class="grid__item">
+            <div class="">
+                <div class="">
+                    <div class="">
+                        {% for i in (1..5) %}
+                            {% render 'icon', icon: 'star' %}
+                        {% endfor %}
+                        <div class="rte mb-5">
+                            <p>"
+                                {{ testimonial.text }}
+                            "</p>
+                            <span class="bold">{{ testimonial.name }}</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+
+
+{% schema %}
+{
+"name": "Product Testimonials",
+"tag": "section",
+"class": "spaced-section page-width",
+"settings": [],
+"presets": [
+{
+"name": "Product Testimonials"
+}
+]
+}
+{% endschema %}

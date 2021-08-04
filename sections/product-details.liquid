@@ -5,20 +5,28 @@
             <div class="product-details-card">
                 <div class="product-details-card__info">
                     <div class="ml-20">
-                        <h1>Why This Soap Is So Effective</h1>
+                        <h1>{{  section.settings.headingl }}</h1>
                         <div class="rte mb-5">
                             <p>
-                                The ingredients in our CBD Body Bar are a critical foundation and first step to an
-                                optimal
-                                skincare regimen, designed to give you all the hydrating and calming benefits of CBD and
-                                Manuka honey.
+                                {{ section.settings.descriptionl }}
                             </p>
                         </div>
                     </div>
                     <div class="media" style="padding-bottom: 100.0%;">
                         <img
-                                srcset="https://picsum.photos/600/810" sizes="" alt="Column" loading="lazy"
-                                style=""/>
+                                srcset="{%- if section.settings.imagel.width >= 275 -%}{{ section.settings.imagel | img_url: '275x' }} 275w,{%- endif -%}
+                        {%- if section.settings.imagel.width >= 550 -%}{{ section.settings.imagel | img_url: '550x' }} 550w,{%- endif -%}
+                        {%- if section.settings.imagel.width >= 710 -%}{{ section.settings.imagel | img_url: '710x' }} 710w,{%- endif -%}
+                        {%- if section.settings.imagel.width >= 1420 -%}{{ section.settings.imagel | img_url: '1420x' }} 1420w,{%- endif -%}"
+                                src="{{ section.settings.imagel | img_url: '550x' }}"
+                                sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
+                        (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %},
+                        calc(100vw - 30px)"
+                                alt="{{ block.settings.title }}"
+                                height="{{ section.settings.imagel.height }}"
+                                width="{{ section.settings.imagel.width }}"
+                                loading="lazy"
+                        >
                     </div>
                 </div>
 
@@ -30,27 +38,32 @@
                     <div class="product-detail-points mb-5">
                         <div class="product-details-box free-shipping center">
                             {% render 'icon-truck' %}
-                            <h2>FREE Shipping within the USA</h2>
-                            <p>At Cannuka, we're committed to giving you the most bang for your buck. That's why every
-                                order receives FREE* shipping, courtesy of Cannuka!</p>
+                            <h2>FREE Shipping</h2>
+                            <p>{{ section.settings.shipping }}</p>
                         </div>
                         <div class="product-details-box money-back-guarantee center">
                             {% render 'icon-refresh' %}
                             <h2>Money Back Guarantee</h2>
-                            <p>Our return policy lasts 60 days.</p>
-                            <p>To be eligible for a return, your item must be unused and in the same condition that you
-                                received it. It must also be in the original packaging</p>
+                            {{ section.settings.guarantee }}
                         </div>
                     </div>
-                    <h1>How This Soap Works</h1>
-                    <div class="rte mb-5"><p>The ingredients in our CBD Body Bar are a critical foundation and first
-                            step to
-                            an optimal skincare regimen, designed to give you all the hydrating and calming benefits of
-                            CBD and Manuka honey.</p></div>
+                    <h1>{{ section.settings.headingr }}</h1>
+                    <div class="rte mb-5"><p>{{ section.settings.descriptionr }}</p></div>
                     <div class="media" style="padding-bottom: 100.0%;">
                         <img
-                                srcset="https://picsum.photos/600/810" sizes="" alt="Column" loading="lazy"
-                                style=""/>
+                                srcset="{%- if section.settings.imager.width >= 275 -%}{{ section.settings.imager | img_url: '275x' }} 275w,{%- endif -%}
+                        {%- if section.settings.imager.width >= 550 -%}{{ section.settings.imager | img_url: '550x' }} 550w,{%- endif -%}
+                        {%- if section.settings.imager.width >= 710 -%}{{ section.settings.imager | img_url: '710x' }} 710w,{%- endif -%}
+                        {%- if section.settings.imager.width >= 1420 -%}{{ section.settings.imager | img_url: '1420x' }} 1420w,{%- endif -%}"
+                                src="{{ section.settings.imager | img_url: '550x' }}"
+                                sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
+                        (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %},
+                        calc(100vw - 30px)"
+                                alt="{{ block.settings.title }}"
+                                height="{{ section.settings.imager.height }}"
+                                width="{{ section.settings.imager.width }}"
+                                loading="lazy"
+                        >
                     </div>
                 </div>
             </div>
@@ -62,33 +75,55 @@
 
 {% schema %}
 {
-"name": "Product Details",
-"tag": "section",
-"class": "spaced-section page-width",
-"settings": [
-{
-"type": "text",
-"id": "headingl",
-"label":"Heading Left"
-},
-{
-"type": "paragraph",
-"content": "Left Description"
-},
-{
-"type": "text",
-"id": "headingr",
-"label":"Heading Right"
-},
-{
-"type": "paragraph",
-"content": "Right Description"
-}
-],
-"presets": [
-{
-"name": "Product Details"
-}
-]
+  "name": "Product Details",
+  "tag": "section",
+  "class": "spaced-section page-width",
+  "settings": [
+    {
+      "type": "text",
+      "id": "headingl",
+      "label":"Heading Left"
+    },
+    {
+      "id": "descriptionl",
+      "type": "richtext",
+      "label": "Left Description"
+    },
+    {
+    "id": "imagel",
+    "type": "image_picker",
+    "label": "Left Image"
+    },
+    {
+      "type": "text",
+      "id": "headingr",
+      "label":"Heading Right"
+    },
+    {
+      "id": "descriptionr",
+      "type": "richtext",
+      "label": "Right Description"
+    },
+    {
+    "id": "imager",
+    "type": "image_picker",
+    "label": "Right Image"
+    },
+    {
+      "id": "shipping",
+      "type": "richtext",
+      "label": "Shipping Description"
+    },
+    {
+      "id": "guarantee",
+      "type": "richtext",
+      "label": "Guarantee Description"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Details"
+    }
+  ]
 }
 {% endschema %}

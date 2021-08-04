@@ -86,7 +86,7 @@
               {% endfor %}
             </div>
           {%- when 'title' -%}
-            <h1 class="product__title" {{ block.shopify_attributes }}>
+            <h1 id="buybox" class="product__title" {{ block.shopify_attributes }}>
               {% if block.settings.show_testimonial and block.settings.testimonial_user != empty and block.settings.testimonial_content != empty %}
                 "{{ block.settings.testimonial_content | strip_html}}"
                 <p class="m-0 product__text subtitle">—{{ block.settings.testimonial_user | strip_html }}, A {{ product.title | escape }} Customer</p>
@@ -272,7 +272,7 @@
               </div>
             </noscript>
           {%- when 'buy_buttons' -%}
-            <div {{ block.shopify_attributes }}>
+            <div {{ block.shopify_attributes }} >
               <product-form class="product-form">
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">

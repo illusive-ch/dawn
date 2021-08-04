@@ -1,13 +1,64 @@
 {
   "sections": {
+    "162810126000bf3daa": {
+      "type": "image-with-text",
+      "blocks": {
+        "162810126000bf3daa-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Evyana's 4 Step Routine"
+          }
+        },
+        "162810126000bf3daa-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This 4 step system is everything EVYANA stands for. It’s simple, safe and effective skincare with only the best ingredients to help you achieve and maintain healthy, glowing and youthful skin.<\/p>"
+          }
+        },
+        "162810126000bf3daa-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Details",
+            "button_link": "shopify:\/\/products\/4-step-sytem"
+          }
+        }
+      },
+      "block_order": [
+        "162810126000bf3daa-0",
+        "162810126000bf3daa-1",
+        "162810126000bf3daa-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/FrontAllProductsTransparent580.png",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "text_first"
+      }
+    },
     "banner": {
-      "type": "main-collection-banner"
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false
+      }
     },
     "product-grid": {
-      "type": "main-collection-product-grid"
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": false,
+        "show_vendor": false,
+        "enable_filtering": false,
+        "enable_sorting": false
+      }
     }
   },
   "order": [
+    "162810126000bf3daa",
     "banner",
     "product-grid"
   ]

@@ -128,6 +128,9 @@
 }
 
 /* base */
+html {
+  scroll-behavior: smooth;
+}
 
 .no-js:not(html) {
   display: none !important;
@@ -1238,7 +1241,7 @@ deferred-media {
   font-size: 1.6rem;
   width: 100%;
   box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.55);
-  height: 4.5rem;
+  height: 5.2rem;
   box-sizing: border-box;
   transition: box-shadow var(--duration-short) ease;
 }
@@ -2101,7 +2104,9 @@ details-disclosure > details {
 .m-0{
   margin:0;
 }
-
+.bold{
+  font-weight: bold;
+}
 .badge {
   border: 1px solid transparent;
   border-radius: 4rem;

@@ -1,0 +1,23 @@
+.product-buybox{
+
+}
+.product-buybox-content{
+    padding: 4rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.product-buybox-content > .price-item {
+    font-weight: bold;
+    font-size:1.6rem;
+    margin-bottom:1rem;
+}
+.product-buybox-content > .star {
+    margin-bottom:1rem;
+}
+.product-buybox-content > .scrollbutton {
+    text-align: center;
+    width:30rem;
+}

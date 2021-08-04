@@ -1,26 +1,52 @@
 {
   "sections": {
     "cart-items": {
-      "type": "main-cart-items"
+      "type": "main-cart-items",
+      "settings": {
+        "show_vendor": false
+      }
     },
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
         "subtotal": {
-          "type": "subtotal"
+          "type": "subtotal",
+          "settings": {
+          }
         },
         "buttons": {
-          "type": "buttons"
+          "type": "buttons",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "subtotal",
         "buttons"
-      ]
+      ],
+      "settings": {
+        "show_cart_note": false
+      }
+    },
+    "16281011366b5ce07c": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "You May Also Like",
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": false,
+        "show_vendor": false
+      }
     }
   },
   "order": [
     "cart-items",
-    "cart-footer"
+    "cart-footer",
+    "16281011366b5ce07c"
   ]
 }

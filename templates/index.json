@@ -1,60 +1,70 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "1628101753d610c2b6": {
+      "type": "image-banner-3",
       "settings": {
-        "desktop_text_box_position": "flex-end"
-      },
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_label_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "button"
-      ]
-    },
-    "featured_products": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products"
+        "image": "shopify:\/\/shop_images\/2.jpg",
+        "image_2": "shopify:\/\/shop_images\/1.jpg",
+        "image_3": "shopify:\/\/shop_images\/3.jpg",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false
       }
     },
     "image_text": {
       "type": "image-with-text",
       "blocks": {
         "heading": {
-          "type": "heading"
+          "type": "heading",
+          "settings": {
+            "heading": "Evyana's 4 Step Routine"
+          }
         },
         "text": {
-          "type": "text"
+          "type": "text",
+          "settings": {
+            "text": "<p>This 4 step routine is everything EVYANA stands for. It’s simple, safe and effective skincare with only the best ingredients to help you achieve and maintain healthy, glowing and youthful skin.<\/p>"
+          }
         },
         "button": {
-          "type": "button"
+          "type": "button",
+          "settings": {
+            "button_label": "View Details",
+            "button_link": "shopify:\/\/products\/4-step-sytem"
+          }
         }
       },
       "block_order": [
         "heading",
         "text",
         "button"
-      ]
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/FrontAllProductsTransparent580.png",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
+    "featured_products": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
+      }
     }
   },
   "order": [
-    "image_banner",
-    "featured_products",
-    "image_text"
+    "1628101753d610c2b6",
+    "image_text",
+    "featured_products"
   ]
 }

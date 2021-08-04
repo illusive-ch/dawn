@@ -52,6 +52,23 @@
       <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
       <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
     </div>
+    <div class="field select">
+      <select class="field__input" required="required" name="contact[How can we help?]" id="How can we help">
+        <option value="" disabled="disabled">How can we help?</option>
+        <option value="Order Status">Order Status</option>
+        <option value="Product Issues/Concerns">Product Issues/Concerns</option>
+        <option value="Gift Card Balance">Gift Card Balance</option>
+        <option value="Return Status">Return Status</option>
+        <option value="PR/Media Inquiries">PR/Media Inquiries</option>
+        <option value="Blogger/Social Media Inquiries">Blogger/Social Media Inquiries</option>
+        <option value="Spa Services">Spa Services</option>
+        <option value="Other">Other</option></select>
+      <label class="field__label" for="ContactForm-phone">How Can We Help</label>
+    </div>
+    <div class="field">
+      <input type="tel" id="ContactForm-ordernumber" class="field__input" autocomplete="tel" name="contact[Order Number]" pattern="[0-9\-]*" value="" placeholder="">
+      <label class="field__label" for="ContactForm-phone">Order Number If Applicable</label>
+    </div>
     <div class="field">
       <textarea
         rows="10"

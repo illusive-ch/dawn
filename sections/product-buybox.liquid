@@ -1,0 +1,68 @@
+{% assign buyimage = product.media[0]  %}
+{{ 'component-star.css' | asset_url | stylesheet_tag }}
+{{ 'section-product-buybox.css' | asset_url | stylesheet_tag }}
+
+<div class="product-buybox background-{{ section.settings.background_style }}">
+    <div class="page-width product-buybox-content">
+        <h2>{{ product.title }}</h2>
+        <img srcset="{{ buyimage | img_url: '300x' }}"
+             src="{{ buyimage | img_url: '300x' }}"
+             alt="{{ buyimage.alt | escape }}"
+             loading="lazy"
+             width="300"
+             height="300"
+             data-media-id="{{ media.id }}"
+        >
+        <span class="price-item">{{ product.price | money }}</span>
+        <div class="star center">
+            {% for i in (1..5) %}
+                {% render 'icon-star'%}
+            {% endfor %}
+        </div>
+
+
+    <div class="scrollbutton" >
+        <a href="#buybox" type="button"
+                class="shopify-payment-button__button shopify-payment-button__button--unbranded"
+                data-testid="Checkout-button">Buy it now
+        </a>
+    </div>
+    </div>
+</div>
+{% assign faq = product.metafields.my_fields.frequently_asked_questions.value %}
+
+{% comment %}background-{{ section.settings.background_style }}{% endcomment %}
+{% schema %}
+{
+"name": "Buy Button",
+"tag": "section",
+"class": "spaced-section spaced-section--full-width",
+"settings": [
+{
+"type": "select",
+"id": "background_style",
+"options": [
+{
+"value": "none",
+"label": "t:sections.multicolumn.settings.background_style.options__1.label"
+},
+{
+"value": "primary",
+"label": "t:sections.multicolumn.settings.background_style.options__2.label"
+},
+{
+"value": "secondary",
+"label": "t:sections.multicolumn.settings.background_style.options__3.label"
+}
+],
+"default": "primary",
+"label": "t:sections.multicolumn.settings.background_style.label"
+}
+],
+"presets": [
+{
+"name": "Buy Button"
+}
+]
+}
+{% endschema %}
