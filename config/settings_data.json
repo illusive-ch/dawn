@@ -1,5 +1,5 @@
 {
-    "current": {
+  "current": {
     "colors_accent_1": "#e8cfe4",
     "colors_accent_2": "#f69fa7",
     "colors_outline_button_labels": "#f69fa7",
@@ -7,8 +7,6 @@
     "colors_background_2": "#fedcc1",
     "social_instagram_link": "https:\/\/instagram.com\/my.evyana",
     "currency_code_enabled": false,
-    "type_header_font": "neue_plak_n3",
-    "type_body_font": "neue_plak_n3",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -83,24 +81,50 @@
           "newsletter_heading": "Sign up to our emails",
           "show_social": false,
           "enable_country_selector": false,
-          "enable_language_selector": false
+          "enable_language_selector": false,
+          "payment_enable": true
+        }
+      },
+      "sellingpoints-bar": {
+        "type": "sellingpoints-bar",
+        "blocks": {
+          "sellingpoints-bar-0": {
+            "type": "text",
+            "settings": {
+              "point": "Point #1"
+            }
+          },
+          "822bae2e-4484-45d2-9ac6-7593dc6384a0": {
+            "type": "text",
+            "settings": {
+              "point": "asdfasdfasdf"
+            }
+          },
+          "8178bbb1-7127-4461-9598-f6ce949398be": {
+            "type": "text",
+            "settings": {
+              "point": "Point #3"
+            }
+          },
+          "3929097b-1a43-419f-a564-b63d8fa8e491": {
+            "type": "text",
+            "settings": {
+              "point": "Point #4"
+            }
           }
         },
         "block_order": [
-          "footer-0"
+          "sellingpoints-bar-0",
+          "822bae2e-4484-45d2-9ac6-7593dc6384a0",
+          "8178bbb1-7127-4461-9598-f6ce949398be",
+          "3929097b-1a43-419f-a564-b63d8fa8e491"
         ],
         "settings": {
-          "color_scheme": "background-1",
-          "newsletter_enable": true,
-          "newsletter_heading": "Sign up to our emails",
-          "show_social": false,
-          "enable_country_selector": true,
-          "enable_language_selector": true,
-          "payment_enable": true
         }
       }
     },
     "content_for_index": [
-    ]
-}
 
+    ]
+  }
+}

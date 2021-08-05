@@ -82,7 +82,7 @@
             <div class="star">
               {% if block.settings.rating != blank %}<span>{{ block.settings.rating }}</span>{% endif %}
               {% for i in (1..5) %}
-                {% render 'icon-star'%}
+                {% render 'icon-star' %}
               {% endfor %}
             </div>
           {%- when 'title' -%}

@@ -444,6 +444,8 @@ class SliderComponent extends HTMLElement {
     this.pageTotal = this.querySelector('.slider-counter--total');
     this.prevButton = this.querySelector('button[name="previous"]');
     this.nextButton = this.querySelector('button[name="next"]');
+    this.autoplay = this.querySelector('.slider-option-autoplay');
+
 
     if (!this.slider || !this.nextButton) return;
 
@@ -453,6 +455,10 @@ class SliderComponent extends HTMLElement {
     this.slider.addEventListener('scroll', this.update.bind(this));
     this.prevButton.addEventListener('click', this.onButtonClick.bind(this));
     this.nextButton.addEventListener('click', this.onButtonClick.bind(this));
+
+    if(this.autoplay){
+      setInterval(() => this.nextButton.click(), 2500);
+    }
   }
 
   initPages() {
@@ -466,25 +472,48 @@ class SliderComponent extends HTMLElement {
     if (!this.pageCount || !this.pageTotal) return;
     this.currentPage = Math.round(this.slider.scrollLeft / this.sliderItems[0].clientWidth) + 1;
 
-    if (this.currentPage === 1) {
-      this.prevButton.setAttribute('disabled', true);
-    } else {
-      this.prevButton.removeAttribute('disabled');
-    }
+    // if (this.currentPage === 1) {
+    //   this.prevButton.setAttribute('disabled', true);
+    // } else {
+    //   this.prevButton.removeAttribute('disabled');
+    // }
 
-    if (this.currentPage === this.totalPages) {
-      this.nextButton.setAttribute('disabled', true);
-    } else {
-      this.nextButton.removeAttribute('disabled');
-    }
+    // if (this.currentPage === this.totalPages) {
+    //   this.nextButton.setAttribute('disabled', true);
+    // } else {
+    //   this.nextButton.removeAttribute('disabled');
+    // }
 
     this.pageCount.textContent = this.currentPage;
     this.pageTotal.textContent = this.totalPages;
   }
+  gotoPage(page){
+    let val = 0
+    if(page > this.currentPage){
+      val = this.slider.scrollLeft + (this.sliderItems[0].clientWidth * (page - this.currentPage) )
+    }else{
+      val = this.slider.scrollLeft - (this.sliderItems[0].clientWidth * (this.currentPage - page) )
+    }
+    return val;
+  }
 
   onButtonClick(event) {
+    let target = event.currentTarget.name
+    let loop = false
     event.preventDefault();
-    const slideScrollPosition = event.currentTarget.name === 'next' ? this.slider.scrollLeft + this.sliderItems[0].clientWidth : this.slider.scrollLeft - this.sliderItems[0].clientWidth;
+    let slideScrollPosition = this.slider.scrollLeft + this.sliderItems[0].clientWidth
+
+    if (this.currentPage === this.totalPages && target == 'next') {
+      loop = true;
+      slideScrollPosition = this.gotoPage(1)
+    }
+    if (this.currentPage === 1 && target == 'previous') {
+      loop = true;
+      slideScrollPosition = this.gotoPage(this.totalPages)
+    }
+    if(target != 'next' && !loop ){
+      slideScrollPosition = this.slider.scrollLeft - this.sliderItems[0].clientWidth;
+    }
     this.slider.scrollTo({
       left: slideScrollPosition
     });

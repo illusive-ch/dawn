@@ -13,6 +13,9 @@
       {%- endif -%}
     </div>
     <slider-component class="slider-mobile-gutter">
+      {% if section.settings.autoplay_on_mobile %}
+      <span class="slider-option-autoplay"></span>
+      {% endif %}
       <ul class="multicolumn-list grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}"
         id="Slider-{{ section.id }}"
         role="list"
@@ -201,7 +204,14 @@
       "id": "swipe_on_mobile",
       "default": false,
       "label": "t:sections.multicolumn.settings.swipe_on_mobile.label"
+    },
+    {
+    "type": "checkbox",
+    "id": "autoplay_on_mobile",
+    "default": false,
+    "label": "Auto Play swipe on mobile"
     }
+
   ],
   "blocks": [
     {

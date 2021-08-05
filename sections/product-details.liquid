@@ -1,11 +1,15 @@
 {{ 'section-product-details.css' | asset_url | stylesheet_tag }}
+{%
+    if section.settings.headingl != blank and section.settings.descriptionl != blank and section.settings.imagel != blank
+    and section.settings.headingr != blank and section.settings.descriptionr != blank and section.settings.imager != blank
+%}
 <div class="grid--2-col-desktop">
     <ul class="product-details-list grid grid--1-col grid--2-col-desktop" role="list">
         <li class="product-details-list__item grid__item">
             <div class="product-details-card">
                 <div class="product-details-card__info">
                     <div class="ml-20">
-                        <h1>{{  section.settings.headingl }}</h1>
+                        <h1>{{ section.settings.headingl }}</h1>
                         <div class="rte mb-5">
                             <p>
                                 {{ section.settings.descriptionl }}
@@ -71,6 +75,7 @@
     </ul>
 
 </div>
+{% endif %}
 
 
 {% schema %}

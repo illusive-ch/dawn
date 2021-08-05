@@ -112,8 +112,14 @@
     "16280128414675bb6f": {
       "type": "product-details",
       "settings": {
-        "headingl": "",
-        "headingr": ""
+        "headingl": "{{ product.metafields.my_fields.left_benefit_title.value }}",
+        "descriptionl": "<p>{{ product.metafields.my_fields.left_benefit_description | metafield_tag }}<\/p>",
+        "imagel": "{{ product.metafields.my_fields.left_benefit_image.value }}",
+        "headingr": "{{ product.metafields.my_fields.right_benefit_title.value }}",
+        "descriptionr": "<p>{{ product.metafields.my_fields.right_benefit_description | metafield_tag }}<\/p>",
+        "imager": "{{ product.metafields.my_fields.right_benefit_image.value }}",
+        "shipping": "<p>At Evyana, we're committed to giving you the most bang for your buck. That's why every order receives FREE shipping within the USA, courtesy of Evyana!<\/p>",
+        "guarantee": "<p>We stand behind our products. If for any reason you are not completely satisfied with your Evyana Skincare, we offer a full refund less shipping.<\/p>"
       }
     },
     "162801284558a56104": {
@@ -157,14 +163,13 @@
         "background_style": "secondary",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": true
+        "swipe_on_mobile": true,
+        "autoplay_on_mobile": false
       }
     },
     "16281021700d3c6f67": {
       "type": "product-testimonials",
       "settings": {
-        "headingl": "",
-        "headingr": ""
       }
     }
   },

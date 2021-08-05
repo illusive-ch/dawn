@@ -1,0 +1,15 @@
+.slider.sellingpoints-slide {
+    display:flex;
+    flex-direction: row;
+    padding-bottom:1rem;
+    padding-top:1rem;
+}
+.sellingpoints-slide li{
+    width:100%
+}
+
+@media screen and (min-width: 750px) {
+    .sellingpoints-slide li{
+        width:25%
+    }
+}

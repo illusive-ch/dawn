@@ -1,5 +1,5 @@
-{%- if icon != 'none' -%}
-    {% assign myclass = 'icon icon-' | append: icon | append: ' ' |  append: class %}
+{% if icon != 'none' %}
+    {% assign myclass = 'icon icon-' | append: icon | append: ' ' | append: class %}
         {%- case icon -%}
             {%- when 'bunny' -%}
                 {% render 'icon-bunny', class: myclass %}
@@ -9,5 +9,7 @@
                 {% render 'icon-earth', class: myclass %}
             {%- when 'star' -%}
                 {% render 'icon-star', class: myclass %}
+            {%- when 'checkmark' -%}
+                {% render 'icon-checkmark', class: myclass %}
         {%- endcase -%}
 {%- endif -%}

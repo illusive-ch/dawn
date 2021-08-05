@@ -2107,6 +2107,18 @@ details-disclosure > details {
 .bold{
   font-weight: bold;
 }
+.h-4{
+  height:1rem;
+}
+.h-5{
+  height:1rem;
+}
+.w-4{
+  height:1rem;
+}
+.w-5{
+  height:1rem;
+}
 .badge {
   border: 1px solid transparent;
   border-radius: 4rem;
