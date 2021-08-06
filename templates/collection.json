@@ -29,7 +29,7 @@
         "162810126000bf3daa-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/FrontAllProductsTransparent580.png",
+        "image": "shopify:\/\/shop_images\/Evyana40_628d21d6-3805-4133-9e81-60a1dc707e2a.jpg",
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "text_first"
@@ -53,7 +53,8 @@
         "show_image_outline": false,
         "show_vendor": false,
         "enable_filtering": false,
-        "enable_sorting": false
+        "enable_sorting": false,
+        "collapse_on_larger_devices": false
       }
     }
   },

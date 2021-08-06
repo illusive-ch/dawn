@@ -3,9 +3,9 @@
     "1628101753d610c2b6": {
       "type": "image-banner-3",
       "settings": {
-        "image": "shopify:\/\/shop_images\/2.jpg",
-        "image_2": "shopify:\/\/shop_images\/1.jpg",
-        "image_3": "shopify:\/\/shop_images\/3.jpg",
+        "image": "shopify:\/\/shop_images\/2_cab41a8a-f29e-41a4-93fb-24f0d40b495a.jpg",
+        "image_2": "shopify:\/\/shop_images\/5.jpg",
+        "image_3": "shopify:\/\/shop_images\/Evyana39.jpg",
         "color_scheme": "background-1",
         "stack_images_on_mobile": true,
         "adapt_height_first_image": false
@@ -40,7 +40,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/FrontAllProductsTransparent580.png",
+        "image": "shopify:\/\/shop_images\/Evyana40_628d21d6-3805-4133-9e81-60a1dc707e2a.jpg",
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first"

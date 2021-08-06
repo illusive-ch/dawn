@@ -457,7 +457,8 @@ class SliderComponent extends HTMLElement {
     this.nextButton.addEventListener('click', this.onButtonClick.bind(this));
 
     if(this.autoplay){
-      setInterval(() => this.nextButton.click(), 2500);
+      let event = new Event("click");
+      setInterval(() => this.nextButton.dispatchEvent(event), 2500);
     }
   }
 

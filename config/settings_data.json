@@ -1,10 +1,13 @@
 {
   "current": {
-    "colors_accent_1": "#e8cfe4",
-    "colors_accent_2": "#f69fa7",
-    "colors_outline_button_labels": "#f69fa7",
-    "colors_background_1": "#f1f6f5",
-    "colors_background_2": "#fedcc1",
+    "colors_accent_1": "#fe8da1",
+    "colors_accent_2": "#75e0d0",
+    "colors_outline_button_labels": "#81007f",
+    "colors_background_1": "#fcf8fb",
+    "colors_background_2": "#fdd8e0",
+    "type_header_font": "lato_n4",
+    "type_body_font": "lato_n4",
+    "page_width": "1600",
     "social_instagram_link": "https:\/\/instagram.com\/my.evyana",
     "currency_code_enabled": false,
     "sections": {
@@ -91,25 +94,25 @@
           "sellingpoints-bar-0": {
             "type": "text",
             "settings": {
-              "point": "Point #1"
+              "point": "Peta-certified Cruelty Free"
             }
           },
           "822bae2e-4484-45d2-9ac6-7593dc6384a0": {
             "type": "text",
             "settings": {
-              "point": "asdfasdfasdf"
+              "point": "Over 734 Glowing Reviews"
             }
           },
           "8178bbb1-7127-4461-9598-f6ce949398be": {
             "type": "text",
             "settings": {
-              "point": "Point #3"
+              "point": "FREE Delivery Available"
             }
           },
           "3929097b-1a43-419f-a564-b63d8fa8e491": {
             "type": "text",
             "settings": {
-              "point": "Point #4"
+              "point": "Sustainably Sourced"
             }
           }
         },
