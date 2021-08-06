@@ -46,6 +46,53 @@
         "layout": "image_first"
       }
     },
+    "1628274153d9117756": {
+      "type": "section-testimonial-single",
+      "blocks": {
+        "1628274153d9117756-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "ALLURE",
+            "heading_size": "h1"
+          }
+        },
+        "1628274153d9117756-1": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "MAGAZINE"
+          }
+        },
+        "1628274153d9117756-2": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "I'm OBSESSED with Evyana! It is easy to use and has some AMAZING ingredients that make my skin vibrant and smooth! Love it, just love it!"
+          }
+        },
+        "1628274153d9117756-3": {
+          "type": "name",
+          "settings": {
+            "name": "Rachel R."
+          }
+        },
+        "1628274153d9117756-4": {
+          "type": "job",
+          "settings": {
+            "job": "Editor"
+          }
+        }
+      },
+      "block_order": [
+        "1628274153d9117756-0",
+        "1628274153d9117756-1",
+        "1628274153d9117756-2",
+        "1628274153d9117756-3",
+        "1628274153d9117756-4"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true
+      }
+    },
     "featured_products": {
       "type": "featured-collection",
       "settings": {
@@ -60,11 +107,96 @@
         "show_image_outline": true,
         "show_vendor": false
       }
+    },
+    "16282769894021820e": {
+      "type": "image-with-text",
+      "blocks": {
+        "16282769894021820e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Prevention Is The Key"
+          }
+        },
+        "16282769894021820e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Long-term, good skincare will save you money. An effective daily skincare routine can prevent deep wrinkles, hyperpigmentation, acne scarring, or other skin issues from developing, which can save you time and money in the long run. But don’t worry - you can still reverse the damage if you’ve neglected your skin in the past. We can do it, but it will take time and effort. It is highly recommended that you get yourself a good skincare regimen to avoid further damage to your skin. There is no such thing as too late!<\/p><p><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16282769894021820e-0",
+        "16282769894021820e-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3_d2b090a5-ec56-4a35-ad24-e6390da20481.jpg",
+        "height": "small",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
+    "1628277161cf03dd3f": {
+      "type": "image-with-text",
+      "blocks": {
+        "1628277161cf03dd3f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Real Science. Real Results"
+          }
+        },
+        "1628277161cf03dd3f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Having hydrated skin is key to having healthy skin. EVYANA’S 4 STEP SYSTEM contains only quality ingredients and actives, and it shows: 89% of women felt 24-hour hydration after applying once, and 82% saw fewer fine lines in 28 days. Newbies can expect to see results as early as week one.<\/p><p>Our four product routine was designed for common skin types. One product is simply not enough to get your skin completely healthy. Like working out any part of the body, you need various exercises to get a complete workout.<br\/>There’s no need to scan through information on exfoliation, pH balance, or how much hydration is needed. Pick your set, use it, and give your good looks a chance.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1628277161cf03dd3f-0",
+        "1628277161cf03dd3f-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2_547860d0-23b4-4e37-8505-6a664197d673.jpg",
+        "height": "small",
+        "color_scheme": "background-1",
+        "layout": "text_first"
+      }
+    },
+    "1628277365a1d18733": {
+      "type": "image-with-text",
+      "blocks": {
+        "1628277365a1d18733-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "When you look good, you feel good."
+          }
+        },
+        "1628277365a1d18733-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Proper skincare is not attributed to just one ingredient but a combination of several ingredients which together promote healthy skin. <\/p><p><\/p><p>Dark Circles? Wrinkles? Acne Scars? Dry Skin? Dull Skin? With their products and ingredients designed to combat all issues related to aging, EVYANA doesn’t just focus on one concern. Maintaining clean, clear skin can keep you looking your best and boost your self-confidence. When someone meets you, their first impression is of your face, so they shine brightly. With a daily skincare routine, you can accomplish just that.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1628277365a1d18733-0",
+        "1628277365a1d18733-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled_design_1.jpg",
+        "height": "small",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
     }
   },
   "order": [
     "1628101753d610c2b6",
     "image_text",
-    "featured_products"
+    "1628274153d9117756",
+    "featured_products",
+    "16282769894021820e",
+    "1628277161cf03dd3f",
+    "1628277365a1d18733"
   ]
 }
