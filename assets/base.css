@@ -1622,11 +1622,16 @@ input[type='checkbox'] {
   z-index: 4;
 }
 
+@media screen and (max-width: 750px) {
+  .hidden-mobile {
+    display:none;
+  }
+}
+
 .announcement-bar {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.2);
   color: rgb(var(--color-foreground));
 }
-
 .announcement-bar__link {
   display: block;
   width: 100%;
