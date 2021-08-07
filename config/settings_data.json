@@ -11,6 +11,7 @@
     "page_width": "1600",
     "social_facebook_link": "https:\/\/facebook.com\/my.evyana",
     "social_instagram_link": "https:\/\/instagram.com\/my.evyana",
+    "favicon": "shopify:\/\/shop_images\/favicon.jpg",
     "currency_code_enabled": false,
     "checkout_body_background_color": "#ffffff",
     "checkout_input_background_color_mode": "white",
