@@ -1,5 +1,8 @@
 .brushstroke{
     position: relative;
+    min-height: 7rem;
+    display: flex;
+    align-items: center;
 }
 .brushstroke h2{
     position:relative;
