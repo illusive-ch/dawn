@@ -63,15 +63,15 @@
           "39aebcd9-1548-4248-bcc6-77be204748cb": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "Customer Care",
+              "menu": "footer-menu-2"
             }
           },
           "70ab36b2-0c95-4b84-9579-7a25f7c5ec29": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "The Dry Stuff",
+              "menu": "footer-menu-3"
             }
           },
           "5eade744-649a-4f3e-8a9b-1b2bb55bbb13": {
