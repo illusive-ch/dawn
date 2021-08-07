@@ -47,7 +47,9 @@
         "16282769894021820e-0": {
           "type": "heading",
           "settings": {
-            "heading": "Prevention Is The Key"
+            "heading": "Prevention Is The Key",
+            "is_brush": true,
+            "color_scheme": "brushstroke-accent-2"
           }
         },
         "16282769894021820e-1": {
@@ -74,7 +76,9 @@
         "1628277161cf03dd3f-0": {
           "type": "heading",
           "settings": {
-            "heading": "Real Science. Real Results"
+            "heading": "Real Science. Real Results",
+            "is_brush": true,
+            "color_scheme": "brushstroke-accent-1"
           }
         },
         "1628277161cf03dd3f-1": {
@@ -116,7 +120,9 @@
         "1628277365a1d18733-0": {
           "type": "heading",
           "settings": {
-            "heading": "When you look good, you feel good."
+            "heading": "When you look good, you feel good.",
+            "is_brush": true,
+            "color_scheme": "brushstroke-background-2"
           }
         },
         "1628277365a1d18733-1": {
@@ -191,7 +197,9 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Evyana's 4 Step Routine"
+            "heading": "Evyana's 4 Step Routine",
+            "is_brush": false,
+            "color_scheme": "brushstroke-background-1"
           }
         },
         "text": {

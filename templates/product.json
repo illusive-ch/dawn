@@ -98,17 +98,6 @@
         "enable_video_looping": false
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "heading": "Companion Products",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false
-      }
-    },
     "16280128414675bb6f": {
       "type": "product-details",
       "settings": {
@@ -171,13 +160,24 @@
       "type": "product-testimonials",
       "settings": {
       }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "Companion Products",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations",
     "16280128414675bb6f",
     "162801284558a56104",
-    "16281021700d3c6f67"
+    "16281021700d3c6f67",
+    "product-recommendations"
   ]
 }
