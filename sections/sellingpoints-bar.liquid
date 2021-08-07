@@ -1,6 +1,7 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'sellingpoints-bar.css' | asset_url | stylesheet_tag }}
-<div class="announcement-bar sellingpoints-bar color-{{ block.settings.color_scheme }}" role="region"
+
+<div class="announcement-bar sellingpoints-bar" role="region"
      aria-label="{{ 'sections.header.sellingpoints' | t }}" {{ block.shopify_attributes }}>
     <div class="page-width">
         <slider-component class="slider-mobile-gutter">

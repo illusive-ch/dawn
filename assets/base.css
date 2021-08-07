@@ -1624,7 +1624,7 @@ input[type='checkbox'] {
 
 @media screen and (max-width: 750px) {
   .hidden-mobile {
-    display:none;
+    display:none !important;
   }
 }
 

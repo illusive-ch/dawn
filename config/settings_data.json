@@ -7,9 +7,18 @@
     "colors_background_2": "#fdd8e0",
     "type_header_font": "lato_n4",
     "type_body_font": "lato_n4",
+    "accent_icons": "accent-2",
     "page_width": "1600",
+    "social_facebook_link": "https:\/\/facebook.com\/my.evyana",
     "social_instagram_link": "https:\/\/instagram.com\/my.evyana",
     "currency_code_enabled": false,
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_color": "#fcf8fb",
+    "checkout_heading_font": "Lato",
+    "checkout_body_font": "Lato",
+    "checkout_accent_color": "#1878b9",
+    "checkout_button_color": "#1878b9",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -94,13 +103,13 @@
           "sellingpoints-bar-0": {
             "type": "text",
             "settings": {
-              "point": "Peta-certified Cruelty Free"
+              "point": "100% Risk Free"
             }
           },
           "822bae2e-4484-45d2-9ac6-7593dc6384a0": {
             "type": "text",
             "settings": {
-              "point": "Over 734 Glowing Reviews"
+              "point": "18,000+ Glowing Reviews"
             }
           },
           "8178bbb1-7127-4461-9598-f6ce949398be": {
