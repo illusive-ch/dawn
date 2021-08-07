@@ -11,12 +11,21 @@
     right: 0;
     left: auto;
 }
+.banner-3-box{
+    opacity: .85;
+}
 
 @media screen and (max-width: 749px) {
+    .banner__settings .banner__media:not(:first-child){
+        display:none;
+    }
     .banner--stacked .banner__media.banner__media-third {
         width: 100%;
         right:0;
         left:auto;
+    }
+    .banner-3-box{
+        opacity: 1;
     }
     .banner--stacked .banner__media-third + .banner__media-third {
         order: 1;

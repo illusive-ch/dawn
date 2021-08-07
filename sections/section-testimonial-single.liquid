@@ -18,9 +18,9 @@
                     {%- when 'testimonial' -%}
                     <div class="testimonial-single_text">
                         <p class="h1" {{ block.shopify_attributes }}>
-                          {{ block.settings.testimonial }}                        </p>
+                          {{ block.settings.testimonial }}
+                        </p>
                     </div>
-
                     {%- when 'name' -%}
                     <div class="">{{ block.settings.name }}</div>
                     {%- when 'position' -%}
@@ -142,9 +142,9 @@
       ]
     },
     {
-      "type": "testimonial",
       "name": "testimonial",
-      "limit": 1,
+
+"type": "testimonial",     "limit": 1,
       "settings": [
         {
           "type": "text",
