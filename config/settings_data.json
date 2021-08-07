@@ -73,20 +73,12 @@
               "heading": "The Dry Stuff",
               "menu": "footer-menu-3"
             }
-          },
-          "5eade744-649a-4f3e-8a9b-1b2bb55bbb13": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
-            }
           }
         },
         "block_order": [
           "footer-0",
           "39aebcd9-1548-4248-bcc6-77be204748cb",
-          "70ab36b2-0c95-4b84-9579-7a25f7c5ec29",
-          "5eade744-649a-4f3e-8a9b-1b2bb55bbb13"
+          "70ab36b2-0c95-4b84-9579-7a25f7c5ec29"
         ],
         "settings": {
           "color_scheme": "background-2",
