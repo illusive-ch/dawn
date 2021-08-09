@@ -1,134 +1,156 @@
 {{ 'section-product-details.css' | asset_url | stylesheet_tag }}
+
 {%
-    if section.settings.headingl != blank and section.settings.descriptionl != blank and section.settings.imagel != blank
-    and section.settings.headingr != blank and section.settings.descriptionr != blank and section.settings.imager != blank
+        if section.settings.headingl != blank and section.settings.descriptionl != blank
+and section.settings.headingr != blank and section.settings.descriptionr != blank and section.settings.imager != blank
+and section.settings.imagel != blank or product.metafields.my_fields.left_benefit_wistia != blank
 %}
-<div class="grid--2-col-desktop">
-    <ul class="product-details-list grid grid--1-col grid--2-col-desktop" role="list">
-        <li class="product-details-list__item grid__item">
-            <div class="product-details-card">
-                <div class="product-details-card__info">
-                    <div class="ml-20">
-                        <h1>{{ section.settings.headingl }}</h1>
-                        <div class="rte mb-5">
-                            <p>
-                                {{ section.settings.descriptionl }}
-                            </p>
+
+    <div class="grid--2-col-desktop">
+        <ul class="product-details-list grid grid--1-col grid--2-col-desktop" role="list">
+            <li class="product-details-list__item grid__item">
+                <div class="product-details-card">
+                    <div class="product-details-card__info">
+                        <div class="ml-20">
+                            <h1>{{ section.settings.headingl }}</h1>
+                            <div class="rte mb-5">
+                                <p>
+                                    {{ section.settings.descriptionl }}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="media" style="padding-bottom: 100.0%;">
-                        <img
-                                srcset="{%- if section.settings.imagel.width >= 275 -%}{{ section.settings.imagel | img_url: '275x' }} 275w,{%- endif -%}
+                        <div class="media" style="">
+                            {% if product.metafields.my_fields.left_benefit_wistia != blank %}
+                                <script src="https://fast.wistia.com/embed/medias/{{ product.metafields.my_fields.left_benefit_wistia | strip }}.jsonp" async></script>
+                                <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                                <div class="wistia_responsive_padding" style="padding:100.0% 0 0 0;position:relative;">
+                                    <div class="wistia_responsive_wrapper"
+                                         style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                        <div class="wistia_embed wistia_async_{{ product.metafields.my_fields.left_benefit_wistia | strip }} seo=false videoFoam=true"
+                                             style="height:100%;position:relative;width:100%">
+                                            <div class="wistia_swatch"
+                                                 style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                                                <img src="https://fast.wistia.com/embed/medias/{{ product.metafields.my_fields.left_benefit_wistia | strip }}/swatch"
+                                                     style="filter:blur(5px);height:100%;object-fit:contain;width:100%;"
+                                                     alt="" aria-hidden="true"
+                                                     onload="this.parentNode.style.opacity=1;"/></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% else %}
+                            <img
+                                    srcset="{%- if section.settings.imagel.width >= 275 -%}{{ section.settings.imagel | img_url: '275x' }} 275w,{%- endif -%}
                         {%- if section.settings.imagel.width >= 550 -%}{{ section.settings.imagel | img_url: '550x' }} 550w,{%- endif -%}
                         {%- if section.settings.imagel.width >= 710 -%}{{ section.settings.imagel | img_url: '710x' }} 710w,{%- endif -%}
                         {%- if section.settings.imagel.width >= 1420 -%}{{ section.settings.imagel | img_url: '1420x' }} 1420w,{%- endif -%}"
-                                src="{{ section.settings.imagel | img_url: '550x' }}"
-                                sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
+                                    src="{{ section.settings.imagel | img_url: '550x' }}"
+                                    sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
                         (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %},
                         calc(100vw - 30px)"
-                                alt="{{ block.settings.title }}"
-                                height="{{ section.settings.imagel.height }}"
-                                width="{{ section.settings.imagel.width }}"
-                                loading="lazy"
-                        >
+                                    alt="{{ block.settings.title }}"
+                                    height="{{ section.settings.imagel.height }}"
+                                    width="{{ section.settings.imagel.width }}"
+                                    loading="lazy"
+                            >
+                            {% endif %}
+                        </div>
                     </div>
-                </div>
 
-            </div>
-        </li>
-        <li class="product-details-list__item grid__item">
-            <div class="product-details-card">
-                <div class="product-details-card__info">
-                    <div class="product-detail-points mb-5">
-                        <div class="product-details-box free-shipping center">
-                            {% render 'icon-truck' %}
-                            <h2>FREE Shipping</h2>
-                            <p>{{ section.settings.shipping }}</p>
+                </div>
+            </li>
+            <li class="product-details-list__item grid__item">
+                <div class="product-details-card">
+                    <div class="product-details-card__info">
+                        <div class="product-detail-points mb-5">
+                            <div class="product-details-box free-shipping center">
+                                {% render 'icon-truck' %}
+                                <h2>FREE Shipping</h2>
+                                <p>{{ section.settings.shipping }}</p>
+                            </div>
+                            <div class="product-details-box money-back-guarantee center">
+                                {% render 'icon-refresh' %}
+                                <h2>Money Back Guarantee</h2>
+                                {{ section.settings.guarantee }}
+                            </div>
                         </div>
-                        <div class="product-details-box money-back-guarantee center">
-                            {% render 'icon-refresh' %}
-                            <h2>Money Back Guarantee</h2>
-                            {{ section.settings.guarantee }}
-                        </div>
-                    </div>
-                    <h1>{{ section.settings.headingr }}</h1>
-                    <div class="rte mb-5"><p>{{ section.settings.descriptionr }}</p></div>
-                    <div class="media" style="padding-bottom: 100.0%;">
-                        <img
-                                srcset="{%- if section.settings.imager.width >= 275 -%}{{ section.settings.imager | img_url: '275x' }} 275w,{%- endif -%}
+                        <h1>{{ section.settings.headingr }}</h1>
+                        <div class="rte mb-5"><p>{{ section.settings.descriptionr }}</p></div>
+                        <div class="media" style="padding-bottom: 100.0%;">
+                            <img
+                                    srcset="{%- if section.settings.imager.width >= 275 -%}{{ section.settings.imager | img_url: '275x' }} 275w,{%- endif -%}
                         {%- if section.settings.imager.width >= 550 -%}{{ section.settings.imager | img_url: '550x' }} 550w,{%- endif -%}
                         {%- if section.settings.imager.width >= 710 -%}{{ section.settings.imager | img_url: '710x' }} 710w,{%- endif -%}
                         {%- if section.settings.imager.width >= 1420 -%}{{ section.settings.imager | img_url: '1420x' }} 1420w,{%- endif -%}"
-                                src="{{ section.settings.imager | img_url: '550x' }}"
-                                sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
+                                    src="{{ section.settings.imager | img_url: '550x' }}"
+                                    sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
                         (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %},
                         calc(100vw - 30px)"
-                                alt="{{ block.settings.title }}"
-                                height="{{ section.settings.imager.height }}"
-                                width="{{ section.settings.imager.width }}"
-                                loading="lazy"
-                        >
+                                    alt="{{ block.settings.title }}"
+                                    height="{{ section.settings.imager.height }}"
+                                    width="{{ section.settings.imager.width }}"
+                                    loading="lazy"
+                            >
+                        </div>
                     </div>
                 </div>
-            </div>
-        </li>
-    </ul>
+            </li>
+        </ul>
 
-</div>
+    </div>
 {% endif %}
 
 
 {% schema %}
 {
-  "name": "Product Details",
-  "tag": "section",
-  "class": "spaced-section page-width",
-  "settings": [
-    {
-      "type": "text",
-      "id": "headingl",
-      "label":"Heading Left"
-    },
-    {
-      "id": "descriptionl",
-      "type": "richtext",
-      "label": "Left Description"
-    },
-    {
-    "id": "imagel",
-    "type": "image_picker",
-    "label": "Left Image"
-    },
-    {
-      "type": "text",
-      "id": "headingr",
-      "label":"Heading Right"
-    },
-    {
-      "id": "descriptionr",
-      "type": "richtext",
-      "label": "Right Description"
-    },
-    {
-    "id": "imager",
-    "type": "image_picker",
-    "label": "Right Image"
-    },
-    {
-      "id": "shipping",
-      "type": "richtext",
-      "label": "Shipping Description"
-    },
-    {
-      "id": "guarantee",
-      "type": "richtext",
-      "label": "Guarantee Description"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Product Details"
-    }
-  ]
+"name": "Product Details",
+"tag": "section",
+"class": "spaced-section page-width",
+"settings": [
+{
+"type": "text",
+"id": "headingl",
+"label":"Heading Left"
+},
+{
+"id": "descriptionl",
+"type": "richtext",
+"label": "Left Description"
+},
+{
+"id": "imagel",
+"type": "image_picker",
+"label": "Left Image"
+},
+{
+"type": "text",
+"id": "headingr",
+"label":"Heading Right"
+},
+{
+"id": "descriptionr",
+"type": "richtext",
+"label": "Right Description"
+},
+{
+"id": "imager",
+"type": "image_picker",
+"label": "Right Image"
+},
+{
+"id": "shipping",
+"type": "richtext",
+"label": "Shipping Description"
+},
+{
+"id": "guarantee",
+"type": "richtext",
+"label": "Guarantee Description"
+}
+],
+"presets": [
+{
+"name": "Product Details"
+}
+]
 }
 {% endschema %}

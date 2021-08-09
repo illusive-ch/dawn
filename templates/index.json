@@ -33,9 +33,9 @@
         "395be907-6374-4784-b21a-97cb08d11f52"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/2_cab41a8a-f29e-41a4-93fb-24f0d40b495a.jpg",
-        "image_2": "shopify:\/\/shop_images\/5.jpg",
-        "image_3": "shopify:\/\/shop_images\/Evyana39.jpg",
+        "image": "shopify:\/\/shop_images\/Header_Banner_1.jpg",
+        "image_2": "shopify:\/\/shop_images\/Header_Banner_2.jpg",
+        "image_3": "shopify:\/\/shop_images\/Header_Banner_3.jpg",
         "color_scheme": "background-1",
         "stack_images_on_mobile": true,
         "adapt_height_first_image": false
@@ -64,7 +64,7 @@
         "16282769894021820e-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/3_d2b090a5-ec56-4a35-ad24-e6390da20481.jpg",
+        "image": "shopify:\/\/shop_images\/Homepage_Info_1.jpg",
         "height": "small",
         "color_scheme": "background-1",
         "layout": "image_first"
@@ -93,7 +93,7 @@
         "1628277161cf03dd3f-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/2_547860d0-23b4-4e37-8505-6a664197d673.jpg",
+        "image": "shopify:\/\/shop_images\/Homepage_Info_2.jpg",
         "height": "small",
         "color_scheme": "background-1",
         "layout": "text_first"
@@ -137,7 +137,7 @@
         "1628277365a1d18733-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Untitled_design_1.jpg",
+        "image": "shopify:\/\/shop_images\/Homepage_Info_3.jpg",
         "height": "small",
         "color_scheme": "background-1",
         "layout": "image_first"
@@ -175,7 +175,7 @@
         "e26aead2-ee96-4d63-9ee5-3b43114730e9": {
           "type": "position",
           "settings": {
-            "position": "CEO Allure"
+            "position": "Skin Science - Editor"
           }
         }
       },
@@ -222,8 +222,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Evyana40_628d21d6-3805-4133-9e81-60a1dc707e2a.jpg",
-        "height": "adapt",
+        "image": "shopify:\/\/shop_images\/Header_Banner_3_3d836681-59bc-4bb1-9941-f732dc0143bb.jpg",
+        "height": "large",
         "color_scheme": "background-1",
         "layout": "text_first"
       }

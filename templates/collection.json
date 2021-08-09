@@ -6,7 +6,9 @@
         "162810126000bf3daa-0": {
           "type": "heading",
           "settings": {
-            "heading": "Evyana's 4 Step Routine"
+            "heading": "Evyana's 4 Step Routine",
+            "is_brush": false,
+            "color_scheme": "brushstroke-background-1"
           }
         },
         "162810126000bf3daa-1": {
@@ -29,8 +31,8 @@
         "162810126000bf3daa-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Evyana40_628d21d6-3805-4133-9e81-60a1dc707e2a.jpg",
-        "height": "adapt",
+        "image": "shopify:\/\/shop_images\/Header_Banner_3_3d836681-59bc-4bb1-9941-f732dc0143bb.jpg",
+        "height": "large",
         "color_scheme": "background-1",
         "layout": "text_first"
       }

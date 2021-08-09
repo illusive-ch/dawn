@@ -11,6 +11,7 @@
     "page_width": "1600",
     "social_facebook_link": "https:\/\/facebook.com\/my.evyana",
     "social_instagram_link": "https:\/\/instagram.com\/my.evyana",
+    "favicon": "shopify:\/\/shop_images\/favicon.jpg",
     "currency_code_enabled": false,
     "checkout_body_background_color": "#ffffff",
     "checkout_input_background_color_mode": "white",
@@ -55,42 +56,35 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "Shop",
               "menu": "footer"
             }
           },
           "39aebcd9-1548-4248-bcc6-77be204748cb": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "Customer Care",
+              "menu": "footer-menu-2"
             }
           },
           "70ab36b2-0c95-4b84-9579-7a25f7c5ec29": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
-            }
-          },
-          "5eade744-649a-4f3e-8a9b-1b2bb55bbb13": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "The Dry Stuff",
+              "menu": "footer-menu-3"
             }
           }
         },
         "block_order": [
           "footer-0",
           "39aebcd9-1548-4248-bcc6-77be204748cb",
-          "70ab36b2-0c95-4b84-9579-7a25f7c5ec29",
-          "5eade744-649a-4f3e-8a9b-1b2bb55bbb13"
+          "70ab36b2-0c95-4b84-9579-7a25f7c5ec29"
         ],
         "settings": {
           "color_scheme": "background-2",
           "newsletter_enable": true,
           "newsletter_heading": "Sign up to our emails",
+          "newsletter_subheading": "Subscribe to our emails (they're super fun, promise) and get 15% off your first online order",
           "show_social": false,
           "enable_country_selector": false,
           "enable_language_selector": false,
