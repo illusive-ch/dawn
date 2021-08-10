@@ -1018,7 +1018,7 @@ summary::-webkit-details-marker {
   background-color: transparent;
 }
 
-.media > *:not(.zoom, .deferred-media__poster-button),
+.media > *:not(.zoom, .deferred-media__poster-button, .banner__image__text),
 .media model-viewer {
   display: block;
   max-width: 100%;
