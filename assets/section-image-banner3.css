@@ -65,7 +65,7 @@
         display:block
     }
     .media.banner__media-third{
-        width:33%
+        width:34%
     }
     .banner__media-third + .banner__media-third:nth-of-type(2) {
         left: 34%;
