@@ -115,6 +115,17 @@
   max-width: 76rem;
   margin: 0 auto;
 }
+.accordion:empty + .footer-block {
+  margin-top: 0;
+}
+
+.footer .accordion {
+  margin-top: 0;
+}
+
+.footer .small-hide + .accordion {
+  border-top: none;
+}
 
 @media screen and (min-width: 750px) {
   .footer-block {
@@ -397,6 +408,11 @@ noscript .localization-selector.link {
   100% {
     opacity: 1;
     margin-top: 0;
+  }
+}
+@media screen and (min-width: 750px) {
+  footer .accordion {
+    display: none;
   }
 }
 
