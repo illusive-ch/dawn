@@ -33,7 +33,10 @@
         "395be907-6374-4784-b21a-97cb08d11f52"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Header_Banner_1.jpg",
+        "image": "shopify:\/\/shop_images\/Header_Banner_1_80af9380-9d55-414c-9fb5-77baece844c0.jpg",
+        "headline_1": "Your Perfect",
+        "headline_2": "Skincare Routine",
+        "headline_3": "Simplified.",
         "image_2": "shopify:\/\/shop_images\/Header_Banner_2.jpg",
         "image_3": "shopify:\/\/shop_images\/Header_Banner_3.jpg",
         "color_scheme": "background-1",
