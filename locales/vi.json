@@ -207,7 +207,7 @@
       "update": "Cập nhật",
       "login": {
         "title": "Bạn đã có tài khoản?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Đăng nhập</a> để thanh toán nhanh hơn."
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Đăng nhập<\/a> để thanh toán nhanh hơn."
       }
     },
     "footer": {
@@ -243,8 +243,8 @@
       "to": "Đến",
       "use_fewer_filters_html": "Sử dụng ít bộ lọc hơn hoặc <a class=\"{{ class }}\" href=\"{{ link }}\">xóa tất cả<\/a>",
       "product_count": {
-        "one": "{{ product_count }}/{{ count }} sản phẩm",
-        "other": "{{ product_count }}/{{ count }} sản phẩm"
+        "one": "{{ product_count }}\/{{ count }} sản phẩm",
+        "other": "{{ product_count }}\/{{ count }} sản phẩm"
       },
       "filters_selected": {
         "one": "Đã chọn {{ count }}",

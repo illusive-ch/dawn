@@ -207,7 +207,7 @@
       "note": "Специални инструкции за поръчката",
       "login": {
         "title": "Имате профил?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Влезте</a> за по-бързо преминаване към плащане."
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Влезте<\/a> за по-бързо преминаване към плащане."
       }
     },
     "footer": {

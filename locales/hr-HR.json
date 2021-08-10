@@ -210,7 +210,7 @@
       },
       "login": {
         "title": "Imate li račun?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Prijavite se</a> za bržu provjeru."
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Prijavite se<\/a> za bržu provjeru."
       }
     },
     "footer": {

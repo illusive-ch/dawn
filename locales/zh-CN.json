@@ -207,7 +207,7 @@
       "update": "更新",
       "login": {
         "title": "已有账户？",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">登录</a>以快速结账。"
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">登录<\/a>以快速结账。"
       }
     },
     "footer": {
@@ -243,8 +243,8 @@
       "to": "收件人",
       "use_fewer_filters_html": "减少使用的筛选条件数量或<a class=\"{{ class }}\" href=\"{{ link }}\">清除所有内容<\/a>",
       "product_count": {
-        "one": "{{ product_count }}/{{ count }} 件产品",
-        "other": "{{ product_count }}/{{ count }} 件产品"
+        "one": "{{ product_count }}\/{{ count }} 件产品",
+        "other": "{{ product_count }}\/{{ count }} 件产品"
       },
       "filters_selected": {
         "one": "已选择 {{ count }} 个",

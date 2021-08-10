@@ -207,7 +207,7 @@
       "update": "Päivitä",
       "login": {
         "title": "Onko sinulla tili?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Kirjaudu sisään</a>, jotta voit maksaa kassalla nopeammin."
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Kirjaudu sisään<\/a>, jotta voit maksaa kassalla nopeammin."
       }
     },
     "footer": {
@@ -231,8 +231,8 @@
       "sort_by_label": "Lajittele:",
       "sort_button": "Lajittele",
       "product_count": {
-        "one": "{{ product_count }}/{{ count }} tuotetta",
-        "other": "{{ product_count }}/{{ count }} tuotetta"
+        "one": "{{ product_count }}\/{{ count }} tuotetta",
+        "other": "{{ product_count }}\/{{ count }} tuotetta"
       },
       "empty": "Tuotteita ei löytynyt",
       "apply": "Käytä",
@@ -249,7 +249,7 @@
       "max_price": "Korkein hinta on {{ price }}",
       "reset": "Palauta",
       "to": "Vastaanottaja:",
-      "use_fewer_filters_html": "Käytä vähemmän suodattimia tai <a class=\"{{ class }}\" href=\"{{ link }}\">tyhjennä kaikki</a>",
+      "use_fewer_filters_html": "Käytä vähemmän suodattimia tai <a class=\"{{ class }}\" href=\"{{ link }}\">tyhjennä kaikki<\/a>",
       "product_count_simple": {
         "one": "{{ count }} tuote",
         "other": "{{ count }} tuotetta"

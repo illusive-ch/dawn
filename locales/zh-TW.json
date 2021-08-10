@@ -207,7 +207,7 @@
       "update": "更新",
       "login": {
         "title": "是否有帳號？",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">登入</a>以加速結帳。"
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">登入<\/a>以加速結帳。"
       }
     },
     "footer": {

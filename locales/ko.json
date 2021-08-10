@@ -207,7 +207,7 @@
       "update": "업데이트",
       "login": {
         "title": "계정이 있습니까?",
-        "paragraph_html": "더 빠르게 결제하려면 <a href=\"{{ link }}\" class=\"link underlined-link\">로그인</a>하십시오."
+        "paragraph_html": "더 빠르게 결제하려면 <a href=\"{{ link }}\" class=\"link underlined-link\">로그인<\/a>하십시오."
       }
     },
     "footer": {
@@ -243,8 +243,8 @@
       "to": "로",
       "use_fewer_filters_html": "더 적은 수의 필터를 사용하거나 <a class=\"{{ class }}\" href=\"{{ link }}\">모두 지우기<\/a>",
       "product_count": {
-        "one": "{{ product_count }}/{{ count }}개 제품",
-        "other": "{{ product_count }}/{{ count }}개 제품"
+        "one": "{{ product_count }}\/{{ count }}개 제품",
+        "other": "{{ product_count }}\/{{ count }}개 제품"
       },
       "filters_selected": {
         "one": "{{ count }}개 선택됨",

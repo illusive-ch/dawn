@@ -207,7 +207,7 @@
       "update": "アップデート",
       "login": {
         "title": "アカウントをお持ちですか?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">ログイン</a>することで、チェックアウトがスピーディーに行えます。"
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">ログイン<\/a>することで、チェックアウトがスピーディーに行えます。"
       }
     },
     "footer": {

@@ -207,7 +207,7 @@
       "update": "Frissítés",
       "login": {
         "title": "Már van fiókod?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Jelentkezz be</a> a gyorsabb fizetéshez."
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Jelentkezz be<\/a> a gyorsabb fizetéshez."
       }
     },
     "footer": {
@@ -243,8 +243,8 @@
       "to": "Eddig:",
       "use_fewer_filters_html": "Használj kevesebb szűrőt, vagy <a class=\"{{ class }}\" href=\"{{ link }}\">töröld az összeset<\/a>.",
       "product_count": {
-        "one": "{{ count }}/{{ product_count }} termék",
-        "other": "{{ count }}/{{ product_count }} termék"
+        "one": "{{ count }}\/{{ product_count }} termék",
+        "other": "{{ count }}\/{{ product_count }} termék"
       },
       "filters_selected": {
         "one": "{{ count }} elem kijelölve",

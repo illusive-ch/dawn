@@ -213,7 +213,7 @@
       },
       "login": {
         "title": "Masz już konto?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Zaloguj się</a>, aby szybciej realizować zakupy."
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Zaloguj się<\/a>, aby szybciej realizować zakupy."
       }
     },
     "footer": {
