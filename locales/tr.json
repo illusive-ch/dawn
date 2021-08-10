@@ -207,7 +207,7 @@
       "update": "Güncelle",
       "login": {
         "title": "Hesabınız var mı?",
-        "paragraph_html": "Daha hızlı ödeme yapmak için <a href=\"{{ link }}\" class=\"link underlined-link\">oturum açın</a>."
+        "paragraph_html": "Daha hızlı ödeme yapmak için <a href=\"{{ link }}\" class=\"link underlined-link\">oturum açın<\/a>."
       }
     },
     "footer": {
@@ -231,8 +231,8 @@
       "sort_by_label": "Sıralama ölçütü:",
       "sort_button": "Sırala",
       "product_count": {
-        "one": "{{ count }}/{{ product_count }} ürün",
-        "other": "{{ count }}/{{ product_count }} ürün"
+        "one": "{{ count }}\/{{ product_count }} ürün",
+        "other": "{{ count }}\/{{ product_count }} ürün"
       },
       "empty": "Ürün bulunamadı",
       "apply": "Uygula",

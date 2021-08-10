@@ -23,13 +23,15 @@
       "block_order": [
         "subtotal",
         "buttons"
-      ]
+      ],
+      "settings": {
+      }
     },
     "featured-products": {
       "type": "featured-collection",
       "settings": {
-        "collection": "all",
-        "title": "You May Also Like"
+        "title": "You May Also Like",
+        "collection": "all"
       }
     }
   },

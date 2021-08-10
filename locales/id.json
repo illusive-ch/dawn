@@ -207,7 +207,7 @@
       "update": "Perbarui",
       "login": {
         "title": "Sudah punya akun?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Login</a> untuk checkout lebih cepat."
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Login<\/a> untuk checkout lebih cepat."
       }
     },
     "footer": {

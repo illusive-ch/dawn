@@ -27,7 +27,6 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "FREE SHIPPING. 100% MONEY BACK GUARANTEE",
               "color_scheme": "accent-1",
               "link": ""
             }
@@ -85,7 +84,7 @@
           "newsletter_enable": true,
           "newsletter_heading": "Sign up to our emails",
           "newsletter_subheading": "Subscribe to our emails (they're super fun, promise) and get 15% off your first online order",
-          "show_social": false,
+          "show_social": true,
           "enable_country_selector": false,
           "enable_language_selector": false,
           "payment_enable": true

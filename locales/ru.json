@@ -213,7 +213,7 @@
       },
       "login": {
         "title": "Уже есть учетная запись?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Войти</a>, чтобы оформить заказ быстрее."
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Войти<\/a>, чтобы оформить заказ быстрее."
       }
     },
     "footer": {

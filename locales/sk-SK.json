@@ -213,7 +213,7 @@
       },
       "login": {
         "title": "Máte konto?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Prihláste sa</a> a prejdite pokladňou rýchlejšie."
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Prihláste sa<\/a> a prejdite pokladňou rýchlejšie."
       }
     },
     "footer": {

@@ -207,7 +207,7 @@
       "update": "Ενημέρωση",
       "login": {
         "title": "Έχετε λογαριασμό;",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Συνδεθείτε</a> για ταχύτερη ολοκλήρωση των αγορών σας."
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Συνδεθείτε<\/a> για ταχύτερη ολοκλήρωση των αγορών σας."
       }
     },
     "footer": {

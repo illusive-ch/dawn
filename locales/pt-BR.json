@@ -207,7 +207,7 @@
       "update": "Atualizar",
       "login": {
         "title": "Tem uma conta?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Faça login</a> para finalizar a compra com mais rapidez."
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Faça login<\/a> para finalizar a compra com mais rapidez."
       }
     },
     "footer": {
