@@ -19,7 +19,7 @@ and section.settings.imagel != blank or product.metafields.my_fields.left_benefi
                                 </p>
                             </div>
                         </div>
-                        <div class="media" style="">
+                        <div class="media" style="{% if product.metafields.my_fields.left_benefit_wistia == blank %} padding-bottom: 100.0%;{% endif %}">
                             {% if product.metafields.my_fields.left_benefit_wistia != blank %}
                                 <script src="https://fast.wistia.com/embed/medias/{{ product.metafields.my_fields.left_benefit_wistia | strip }}.jsonp" async></script>
                                 <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
