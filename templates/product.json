@@ -11,13 +11,6 @@
             "testimonial_content": "<p>{{ product.metafields.my_fields.head_testimonial.value }}<\/p>"
           }
         },
-        "subtitle": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -65,6 +58,15 @@
             "icon": "none"
           }
         },
+        "3338f3bd-daf7-49b7-a472-abb2f19c34a9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How To Use Each Piece",
+            "content": "",
+            "page": "{{ product.metafields.my_fields.how_to_use_bundle.value }}",
+            "icon": "none"
+          }
+        },
         "f0fc64dc-1547-425f-9ef4-bed1ec7e1267": {
           "type": "collapsible_tab",
           "settings": {
@@ -91,7 +93,6 @@
       },
       "block_order": [
         "title",
-        "subtitle",
         "price",
         "buy_buttons",
         "3b897637-7f14-4efd-8d13-cea18330983a",
@@ -99,6 +100,7 @@
         "description",
         "f4a78db0-35b8-4105-848c-c568e751ed3c",
         "cf591291-3b44-4698-bab1-dc3bae6e6dad",
+        "3338f3bd-daf7-49b7-a472-abb2f19c34a9",
         "f0fc64dc-1547-425f-9ef4-bed1ec7e1267",
         "9bff529d-9e56-4c0d-8d48-9d3a17d29dcc",
         "share"
