@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cypress open",
-    "e2e": "cypress run",
+    "start": "cypress open --env host=https://evyana.com",
+    "start-dev": "cypress open --env host=https://v9p3yksl37me5m1j-1669136419.shopifypreview.com",
+    "e2e": "cypress run --env host=https://evyana.com ",
+    "e2e-dev": "cypress run --env host=https://v9p3yksl37me5m1j-1669136419.shopifypreview.com",
     "stack-init": "browserstack-cypress init",
     "stack": "browserstack-cypress run --sync"
   },

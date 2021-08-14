@@ -20,7 +20,7 @@
 
 describe('home page', () => {
     it('loads the home page', function () {
-        cy.visit('https://evyana.com')
+        cy.visit(Cypress.env('host'))
         // should see a button
         cy.get('.banner__image__text').should(($button) => {
             expect($button).to.have.length(1)

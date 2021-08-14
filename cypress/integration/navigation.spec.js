@@ -1,6 +1,6 @@
 describe('navigation',()=>{
     beforeEach(() => {
-        cy.visit('https://evyana.com')
+        cy.visit(Cypress.env('host'))
     })
     it('shows mobile navigation when small screen', ()=>{
         cy.viewport('iphone-8')
@@ -27,7 +27,7 @@ describe('navigation',()=>{
 })
 describe('footer navigation',()=>{
     beforeEach(() => {
-        cy.visit('https://evyana.com')
+        cy.visit(Cypress.env('host'))
         cy.viewport('iphone-8')
     })
     it('shows mobile navigation when small screen', ()=>{
