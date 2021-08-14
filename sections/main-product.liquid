@@ -131,7 +131,11 @@
                     <div {{ block.shopify_attributes }}>
                         {%- form 'product', product, data-productid: product.id, id: 'product-form-installment', class: 'installment caption-large' -%}
                             <input type="hidden" name="id" data-productid="{{ product.id }}" value="{{ product.selected_or_first_available_variant.id }}">
+<<<<<<< HEAD
+                        {{ form | payment_terms }}
+=======
                             {{ form | payment_terms }}
+>>>>>>> parent of 88d6aca... testing - subscription setup
                         {%- endform -%}
                     </div>
                 {%- when 'description' -%}
@@ -321,7 +325,23 @@
                 <div {{ block.shopify_attributes }} >
                     <product-form class="product-form">
                         {%- form 'product', product, data-productid: product.id, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+<<<<<<< HEAD
+                            <input type="hidden" name="id" data-productid="{{ product.id }}"
+                                   value="{{ product.selected_or_first_available_variant.id }}">
+                            {% if product.selling_plans %}
+                                <ul class="sellingplans">
+                                    {% for plan in product.selling_plans %}
+                                        <li>
+                                            <input type="radio" id="plan-{{ plan.id }}" value="{{ plan.id }}" name="selling_plan"/>
+                                            <label for="plan-{{ plan.id }}">{{ plan.name | remove: "Delivery every " }}</label>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+
+=======
                             <input type="hidden" name="id" data-productid="{{ product.id }}" value="{{ product.selected_or_first_available_variant.id }}">
+>>>>>>> parent of 88d6aca... testing - subscription setup
                             <div class="product-form__buttons">
                                 <button
                                         type="submit"
