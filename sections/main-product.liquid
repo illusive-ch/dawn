@@ -128,10 +128,11 @@
                     <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
                         {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
                     </div>
+                    {{ product.selling_plans }}
                     <div {{ block.shopify_attributes }}>
                         {%- form 'product', product, data-productid: product.id, id: 'product-form-installment', class: 'installment caption-large' -%}
                             <input type="hidden" name="id" data-productid="{{ product.id }}" value="{{ product.selected_or_first_available_variant.id }}">
-                            {% if product.selling_plans %} }
+                            {% if product.selling_plans %}
                             <ul class="sellingplans">
                                 {% for plan in product.selling_plans %}
                                 <li>
