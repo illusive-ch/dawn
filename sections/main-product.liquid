@@ -131,11 +131,7 @@
                     <div {{ block.shopify_attributes }}>
                         {%- form 'product', product, data-productid: product.id, id: 'product-form-installment', class: 'installment caption-large' -%}
                             <input type="hidden" name="id" data-productid="{{ product.id }}" value="{{ product.selected_or_first_available_variant.id }}">
-<<<<<<< HEAD
                         {{ form | payment_terms }}
-=======
-                            {{ form | payment_terms }}
->>>>>>> parent of 88d6aca... testing - subscription setup
                         {%- endform -%}
                     </div>
                 {%- when 'description' -%}
