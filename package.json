@@ -1,0 +1,27 @@
+{
+  "name": "evyana",
+  "version": "1.0.0",
+  "description": "[![Build status](https://github.com/shopify/dawn/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Shopify/dawn/actions/workflows/ci.yml?query=branch%3Amain)\r [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?color=informational)](/CONTRIBUTING.md)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cypress open",
+    "e2e": "cypress run",
+    "stack-init": "browserstack-cypress init",
+    "stack": "browserstack-cypress run --sync"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/illusive-ch/dawn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/illusive-ch/dawn/issues"
+  },
+  "homepage": "https://github.com/illusive-ch/dawn#readme",
+  "dependencies": {
+    "browserstack-cypress-cli": "^1.8.1",
+    "cypress": "^8.2.0"
+  }
+}

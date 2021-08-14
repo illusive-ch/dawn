@@ -9,3 +9,9 @@ ehthumbs.db
 Thumbs.db
 .idea/
 *.zipifypages.liquid
+node_modules/
+package-lock.json
+/cypress/examples/1-getting-started/
+/cypress/examples/2-advanced-examples/
+/cypress/videos
+/log/
