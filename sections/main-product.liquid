@@ -21,6 +21,7 @@
     <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}"
           media="print" onload="this.media='all'">
 {%- endif -%}
+
 <section class="page-width">
     <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
         <div class="grid__item product__media-wrapper">
@@ -47,7 +48,8 @@
                     {% if product.metafields.my_fields.gallery_wistia != blank %}
                         <li class="product__media-item grid__item slider__slide product__media-item--full"
                             data-media-id="{{ section.id }}-vid">
-                            <script src="https://fast.wistia.com/embed/medias/{{ product.metafields.my_fields.gallery_wistia }}.jsonp" async></script>
+                            <script src="https://fast.wistia.com/embed/medias/{{ product.metafields.my_fields.gallery_wistia }}.jsonp"
+                                    async></script>
                             <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
                             <div class="wistia_responsive_padding" style="padding:100.0% 0 0 0;position:relative;">
                                 <div class="wistia_responsive_wrapper"
@@ -130,8 +132,9 @@
                     </div>
                     <div {{ block.shopify_attributes }}>
                         {%- form 'product', product, data-productid: product.id, id: 'product-form-installment', class: 'installment caption-large' -%}
-                            <input type="hidden" name="id" data-productid="{{ product.id }}" value="{{ product.selected_or_first_available_variant.id }}">
-                        {{ form | payment_terms }}
+                            <input type="hidden" name="id" data-productid="{{ product.id }}"
+                                   value="{{ product.selected_or_first_available_variant.id }}">
+                            {{ form | payment_terms }}
                         {%- endform -%}
                     </div>
                 {%- when 'description' -%}
@@ -151,7 +154,7 @@
                                         {% render 'icon-accordion', icon: block.settings.icon %}
                                         <h2 class="h4 accordion__title">
                                             {% assign accordionHeading = block.settings.heading %}
-                                            {% if block.settings.heading == "Why It's So Effective" and product.metafields.my_fields.whats_included != blank  %}
+                                            {% if block.settings.heading == "Why It's So Effective" and product.metafields.my_fields.whats_included != blank %}
                                                 {% assign accordionHeading = "Why Each Piece Is So Effective" %}
                                             {% endif %}
                                             {{ accordionHeading | default: block.settings.page.title }}
@@ -258,6 +261,7 @@
                                 <script type="application/json">
                     {{ product.variants | json }}
 
+
                                 </script>
                             </variant-radios>
                         {%- else -%}
@@ -289,6 +293,7 @@
                                 <script type="application/json">
                     {{ product.variants | json }}
 
+
                                 </script>
                             </variant-selects>
                         {%- endif -%}
@@ -299,7 +304,8 @@
                             <label class="form__label"
                                    for="Variants-{{ section.id }}">{{ 'products.product.product_variants' | t }}</label>
                             <div class="select">
-                                <select name="id" data-productid="{{ product.id }}" id="Variants-{{ section.id }}" class="select__select"
+                                <select name="id" data-productid="{{ product.id }}" id="Variants-{{ section.id }}"
+                                        class="select__select"
                                         form="product-form">
                                     {%- for variant in product.variants -%}
                                         <option
@@ -321,23 +327,8 @@
                 <div {{ block.shopify_attributes }} >
                     <product-form class="product-form">
                         {%- form 'product', product, data-productid: product.id, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-<<<<<<< HEAD
                             <input type="hidden" name="id" data-productid="{{ product.id }}"
                                    value="{{ product.selected_or_first_available_variant.id }}">
-                            {% if product.selling_plans %}
-                                <ul class="sellingplans">
-                                    {% for plan in product.selling_plans %}
-                                        <li>
-                                            <input type="radio" id="plan-{{ plan.id }}" value="{{ plan.id }}" name="selling_plan"/>
-                                            <label for="plan-{{ plan.id }}">{{ plan.name | remove: "Delivery every " }}</label>
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-                            {% endif %}
-
-=======
-                            <input type="hidden" name="id" data-productid="{{ product.id }}" value="{{ product.selected_or_first_available_variant.id }}">
->>>>>>> parent of 88d6aca... testing - subscription setup
                             <div class="product-form__buttons">
                                 <button
                                         type="submit"
@@ -538,6 +529,7 @@ customElements.define('product-modal', ProductModal);
 {%- if first_3d_model -%}
     <script type="application/json" id="ProductJSON-{{ product.id }}">
     {{ product.media | where: 'media_type', 'model' | json }}
+
 
     </script>
 
