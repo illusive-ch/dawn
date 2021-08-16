@@ -41,7 +41,7 @@
       "settings": {
         "type_header_font": {
           "label": "Fontti",
-          "info": "Muun fontin valitseminen voi vaikuttaa kauppasi nopeuteen. [Lue lisää järjestelmäfonteista.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)"
+          "info": "Muun fontin valitseminen voi vaikuttaa kauppasi nopeuteen. [Lue lisää järjestelmäfonteista.](https:\/\/help.shopify.com\/en\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
         },
         "header__1": {
           "content": "Otsikot"
@@ -51,7 +51,7 @@
         },
         "type_body_font": {
           "label": "Fontti",
-          "info": "Muun fontin valitseminen voi vaikuttaa kauppasi nopeuteen. [Lue lisää järjestelmäfonteista.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)"
+          "info": "Muun fontin valitseminen voi vaikuttaa kauppasi nopeuteen. [Lue lisää järjestelmäfonteista.](https:\/\/help.shopify.com\/en\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
         }
       }
     },
@@ -154,7 +154,7 @@
         },
         "social_vimeo_link": {
           "label": "Vimeo",
-          "info": "https://vimeo.com/shopify"
+          "info": "https:\/\/vimeo.com\/shopify"
         },
         "header": {
           "content": "Sosiaalisen median tilit"
@@ -374,7 +374,7 @@
           "options__3": {
             "label": "Neliö"
           },
-          "info": "Jos haluat lisätä kuvia, [muokkaa kokoelmiasi](https://help.shopify.com/en/manual/products/collections)"
+          "info": "Jos haluat lisätä kuvia, [muokkaa kokoelmiasi](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -592,7 +592,7 @@
         },
         "header__1": {
           "content": "Sähköpostitilaaja",
-          "info": "Tilaajat lisättiin \"markkinoinnin hyväksyneiden\" [asiakasluetteloon.](https://help.shopify.com/en/manual/customers/manage-customers)"
+          "info": "Tilaajat lisättiin \"markkinoinnin hyväksyneiden\" [asiakasluetteloon.](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers)"
         },
         "header__2": {
           "content": "Some-kuvakkeet",
@@ -605,7 +605,7 @@
           "content": "Maa-\/aluevalitsin"
         },
         "header__4": {
-          "info": "Lisää maa/alue siirtymällä [maksuasetuksiisi.](/admin/settings/payments)"
+          "info": "Lisää maa\/alue siirtymällä [maksuasetuksiisi.](\/admin\/settings\/payments)"
         },
         "enable_country_selector": {
           "label": "Näytä maa-\/aluevalitsin"
@@ -614,7 +614,7 @@
           "content": "Kielivalitsin"
         },
         "header__6": {
-          "info": "Lisää kieli siirtymällä [kieliasetuksiisi.](/admin/settings/languages)"
+          "info": "Lisää kieli siirtymällä [kieliasetuksiisi.](\/admin\/settings\/languages)"
         },
         "enable_language_selector": {
           "label": "Ota kielivalitsin käyttöön"
@@ -877,10 +877,10 @@
           "name": "Jaa",
           "settings": {
             "featured_image_info": {
-              "content": "Jos lisäät sosiaalisen median julkaisuihin linkkejä, esikatselukuvana näkyy sivun esittelykuva. [Lisätietoja](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+              "content": "Jos lisäät sosiaalisen median julkaisuihin linkkejä, esikatselukuvana näkyy sivun esittelykuva. [Lisätietoja](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "Esikatselukuvassa näkyy kaupan nimi ja kuvaus. [Lisätietoja](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "Esikatselukuvassa näkyy kaupan nimi ja kuvaus. [Lisätietoja](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
             }
           }
         }
@@ -897,7 +897,7 @@
           "info": "Saat parhaat tulokset käyttämällä kuvaa, jonka kuvasuhde on 2:3."
         },
         "paragraph": {
-          "content": "Jos haluat muuttaa otteita, muokkaa [blogijulkaisujasi.](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Jos haluat muuttaa otteita, muokkaa [blogijulkaisujasi.](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "show_date": {
           "label": "Näytä päivämäärä"
@@ -954,7 +954,7 @@
       "name": "Kokoelmabanneri",
       "settings": {
         "paragraph": {
-          "content": "Jos haluat muuttaa kokoelmien kuvauksia tai kuvia, [muokkaa kokoelmiasi.](/admin/collections)"
+          "content": "Jos haluat muuttaa kokoelmien kuvauksia tai kuvia, [muokkaa kokoelmiasi.](\/admin\/collections)"
         },
         "show_collection_description": {
           "label": "Näytä kokoelman kuvaus"
@@ -994,11 +994,11 @@
         },
         "enable_tags": {
           "label": "Ota suodatus käyttöön",
-          "info": "[Mukauta suodattimia](/admin/menus)"
+          "info": "[Mukauta suodattimia](\/admin\/menus)"
         },
         "enable_filtering": {
           "label": "Ota suodatus käyttöön",
-          "info": "[Mukauta suodattimia](/admin/menus)"
+          "info": "[Mukauta suodattimia](\/admin\/menus)"
         },
         "enable_sorting": {
           "label": "Ota lajittelu käyttöön"
@@ -1058,7 +1058,7 @@
           "options__3": {
             "label": "Neliö"
           },
-          "info": "Jos haluat lisätä kuvia, [muokkaa kokoelmiasi](https://help.shopify.com/en/manual/products/collections)"
+          "info": "Jos haluat lisätä kuvia, [muokkaa kokoelmiasi](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -1203,7 +1203,7 @@
           "name": "Jaa",
           "settings": {
             "featured_image_info": {
-              "content": "Jos lisäät sosiaalisen median julkaisuihin linkkejä, esikatselukuvana näkyy sivun esittelykuva. [Lisätietoja](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+              "content": "Jos lisäät sosiaalisen median julkaisuihin linkkejä, esikatselukuvana näkyy sivun esittelykuva. [Lisätietoja](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
               "content": "Esikatselukuvassa näkyy kaupan nimi ja kuvaus. [Lisätietoja](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
@@ -1323,7 +1323,7 @@
       "settings": {
         "header": {
           "content": "Media",
-          "info": "Lisätietoja [mediatyypeistä](https://help.shopify.com/manual/products/product-media)"
+          "info": "Lisätietoja [mediatyypeistä](https:\/\/help.shopify.com\/manual\/products\/product-media)"
         },
         "enable_video_looping": {
           "label": "Ota videosilmukka käyttöön"
@@ -1484,7 +1484,7 @@
           "label": "Tee osiosta täysleveä"
         },
         "paragraph": {
-          "content": "Kun asiakkaat rekisteröityvät sähköpostimarkkinoinnin tilaajiksi, asiakastilit luodaan. [Lisätietoja](https://help.shopify.com/en/manual/customers)"
+          "content": "Kun asiakkaat rekisteröityvät sähköpostimarkkinoinnin tilaajiksi, asiakastilit luodaan. [Lisätietoja](https:\/\/help.shopify.com\/en\/manual\/customers)"
         }
       },
       "blocks": {

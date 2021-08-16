@@ -154,7 +154,7 @@
         },
         "social_vimeo_link": {
           "label": "Vimeo",
-          "info": "https://vimeo.com/shopify"
+          "info": "https:\/\/vimeo.com\/shopify"
         },
         "header": {
           "content": "Socialmedia-accounts"
@@ -877,10 +877,10 @@
           "name": "Delen",
           "settings": {
             "featured_image_info": {
-              "content": "De uitgelichte afbeelding van de pagina wordt weergegeven als een voorbeeldafbeelding als je een link in je posts op social media plaatst. [Meer informatie](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+              "content": "De uitgelichte afbeelding van de pagina wordt weergegeven als een voorbeeldafbeelding als je een link in je posts op social media plaatst. [Meer informatie](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "Een winkelnaam en beschrijving worden weergegeven in de voorbeeldafbeelding. [Meer informatie](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)"
+              "content": "Een winkelnaam en beschrijving worden weergegeven in de voorbeeldafbeelding. [Meer informatie](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
             }
           }
         }
@@ -897,7 +897,7 @@
           "info": "Voor de beste resultaten, gebruik je een afbeelding met een beeldverhouding van 2:3."
         },
         "paragraph": {
-          "content": "Om uittreksels te wijzigen, bewerk je je [blogberichten.](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Om uittreksels te wijzigen, bewerk je je [blogberichten.](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "show_date": {
           "label": "Datum weergeven"
@@ -954,7 +954,7 @@
       "name": "Collectiebanner",
       "settings": {
         "paragraph": {
-          "content": "Om collectiebeschrijvingen of collectie-afbeeldingen te veranderen, [bewerk je je collecties](/admin/collections)."
+          "content": "Om collectiebeschrijvingen of collectie-afbeeldingen te veranderen, [bewerk je je collecties](\/admin\/collections)."
         },
         "show_collection_description": {
           "label": "Collectiebeschrijving weergeven"
