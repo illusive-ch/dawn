@@ -154,7 +154,7 @@
         },
         "social_vimeo_link": {
           "label": "Vimeo",
-          "info": "https://vimeo.com/shopify"
+          "info": "https:\/\/vimeo.com\/shopify"
         },
         "header": {
           "content": "Účty na sociálních sítích"
@@ -877,10 +877,10 @@
           "name": "Sdílet",
           "settings": {
             "featured_image_info": {
-              "content": "Pokud v příspěvcích na sociálních sítích uvedete odkaz, jako náhledový obrázek se zobrazí propagovaný obrázek stránky. [Zjistit více](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+              "content": "Pokud v příspěvcích na sociálních sítích uvedete odkaz, jako náhledový obrázek se zobrazí propagovaný obrázek stránky. [Zjistit více](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "U náhledového obrázku je uveden také název a popis obchodu. [Zjistit více](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "U náhledového obrázku je uveden také název a popis obchodu. [Zjistit více](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
             }
           }
         }
@@ -897,7 +897,7 @@
           "info": "Nejlepších výsledků dosáhnete pomocí obrázku s poměrem stran 2:3."
         },
         "paragraph": {
-          "content": "Úryvky změníte tak, že upravíte své [blogové příspěvky.](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Úryvky změníte tak, že upravíte své [blogové příspěvky.](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "show_date": {
           "label": "Zobrazit datum"

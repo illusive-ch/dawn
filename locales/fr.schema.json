@@ -154,7 +154,7 @@
         },
         "social_vimeo_link": {
           "label": "Vimeo",
-          "info": "https://vimeo.com/shopify"
+          "info": "https:\/\/vimeo.com\/shopify"
         },
         "header": {
           "content": "Comptes sociaux"
@@ -877,10 +877,10 @@
           "name": "Partager",
           "settings": {
             "featured_image_info": {
-              "content": "Si vous incluez un lien dans les publications sur les réseaux sociaux, l'image vedette de la page sera affichée comme image d'aperçu. [En savoir plus](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+              "content": "Si vous incluez un lien dans les publications sur les réseaux sociaux, l'image vedette de la page sera affichée comme image d'aperçu. [En savoir plus](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "Un titre et une description de la boutique sont inclus avec l'image d'aperçu. [En savoir plus](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "Un titre et une description de la boutique sont inclus avec l'image d'aperçu. [En savoir plus](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
             }
           }
         }
@@ -897,7 +897,7 @@
           "info": "Pour obtenir de meilleurs résultats, utilisez une image avec un rapport d'aspect 2:3."
         },
         "paragraph": {
-          "content": "Pour changer les extraits, modifiez vos [article de blog.](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Pour changer les extraits, modifiez vos [article de blog.](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "show_date": {
           "label": "Afficher la date"

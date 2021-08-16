@@ -154,7 +154,7 @@
         },
         "social_vimeo_link": {
           "label": "Vimeo",
-          "info": "https://vimeo.com/shopify"
+          "info": "https:\/\/vimeo.com\/shopify"
         },
         "header": {
           "content": "Konta społecznościowe"
@@ -592,7 +592,7 @@
         },
         "header__1": {
           "content": "Osoba zarejestrowana w celu otrzymywania e-maili",
-          "info": "Subskrybenci dodani do [listy klientów](https://help.shopify.com/en/manual/customers/manage-customers) „wyrażających zgodę na marketing”."
+          "info": "Subskrybenci dodani do [listy klientów](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers) „wyrażających zgodę na marketing”."
         },
         "header__2": {
           "content": "Ikony mediów społecznościowych",
@@ -877,10 +877,10 @@
           "name": "Udostępnij",
           "settings": {
             "featured_image_info": {
-              "content": "Jeśli dodasz link w postach mediów społecznościowych, wyróżniony obraz strony będzie wyświetlany jako obraz podglądu. [Dowiedz się więcej](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+              "content": "Jeśli dodasz link w postach mediów społecznościowych, wyróżniony obraz strony będzie wyświetlany jako obraz podglądu. [Dowiedz się więcej](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "Tytuł i opis strony są dodawane wraz z obrazem podglądu. [Dowiedz się więcej](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "Tytuł i opis strony są dodawane wraz z obrazem podglądu. [Dowiedz się więcej](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
             }
           }
         }
@@ -897,7 +897,7 @@
           "info": "Aby uzyskać najlepsze wyniki, użyj obrazu o współczynniku proporcji 2:3."
         },
         "paragraph": {
-          "content": "Aby zmienić fragmenty, edytuj swoje [posty na blogu.](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Aby zmienić fragmenty, edytuj swoje [posty na blogu.](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "show_date": {
           "label": "Pokaż datę"

@@ -154,7 +154,7 @@
         },
         "social_vimeo_link": {
           "label": "Vimeo",
-          "info": "https://vimeo.com/shopify"
+          "info": "https:\/\/vimeo.com\/shopify"
         },
         "header": {
           "content": "소셜 계정"
@@ -597,7 +597,7 @@
           "label": "제목"
         },
         "header__1": {
-          "info": "“마케팅 수락” [고객 목록](https://help.shopify.com/en/manual/customers/manage-customers)에 추가된 가입자입니다.",
+          "info": "“마케팅 수락” [고객 목록](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers)에 추가된 가입자입니다.",
           "content": "이메일 가입"
         },
         "header__2": {
@@ -611,7 +611,7 @@
           "content": "국가\/지역 선택기"
         },
         "header__4": {
-          "info": "국가/지역을 추가하려면 [결제 설정](/admin/settings/payments)으로 이동하십시오."
+          "info": "국가\/지역을 추가하려면 [결제 설정](\/admin\/settings\/payments)으로 이동하십시오."
         },
         "enable_country_selector": {
           "label": "국가\/지역 선택기 사용"
@@ -620,7 +620,7 @@
           "content": "언어 선택기"
         },
         "header__6": {
-          "info": "언어를 추가하려면 [언어 설정](/admin/settings/languages)으로 이동하십시오."
+          "info": "언어를 추가하려면 [언어 설정](\/admin\/settings\/languages)으로 이동하십시오."
         },
         "enable_language_selector": {
           "label": "언어 선택기 사용"
@@ -885,10 +885,10 @@
           "name": "공유",
           "settings": {
             "featured_image_info": {
-              "content": "소셜 미디어 게시글에 링크를 포함하면 페이지의 미리 보기 이미지에 추천 이미지가 표시됩니다. [자세히 알아보기](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+              "content": "소셜 미디어 게시글에 링크를 포함하면 페이지의 미리 보기 이미지에 추천 이미지가 표시됩니다. [자세히 알아보기](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "미리 보기 이미지에 스토어 제목 및 설명이 포함됩니다. [자세히 알아보기](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)"
+              "content": "미리 보기 이미지에 스토어 제목 및 설명이 포함됩니다. [자세히 알아보기](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
             }
           }
         }
@@ -905,7 +905,7 @@
           "info": "최고의 결과를 얻으려면 이미지의 가로 세로 비율을 2:3으로 사용하십시오."
         },
         "paragraph": {
-          "content": "요약을 변경하려면 [블로그 게시물](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)을 편집하십시오."
+          "content": "요약을 변경하려면 [블로그 게시물](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)을 편집하십시오."
         },
         "show_date": {
           "label": "날짜 표시"
@@ -1339,7 +1339,7 @@
       "settings": {
         "header": {
           "content": "미디어",
-          "info": "[미디어 유형](https://help.shopify.com/manual/products/product-media)에 대해 자세히 알아보기"
+          "info": "[미디어 유형](https:\/\/help.shopify.com\/manual\/products\/product-media)에 대해 자세히 알아보기"
         },
         "enable_video_looping": {
           "label": "동영상 루프 활성화"

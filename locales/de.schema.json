@@ -154,7 +154,7 @@
         },
         "social_vimeo_link": {
           "label": "Vimeo",
-          "info": "https://vimeo.com/shopify"
+          "info": "https:\/\/vimeo.com\/shopify"
         },
         "header": {
           "content": "Social-Media-Konten"
@@ -877,10 +877,10 @@
           "name": "Teilen",
           "settings": {
             "featured_image_info": {
-              "content": "Wenn du einen Link in Social-Media-Posts einfügst, wird das Feature-Bild der Seite als Vorschaubild angezeigt. [Mehr Informationen](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)"
+              "content": "Wenn du einen Link in Social-Media-Posts einfügst, wird das Feature-Bild der Seite als Vorschaubild angezeigt. [Mehr Informationen](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)"
             },
             "title_info": {
-              "content": "Ein Titel und eine Beschreibung des Shops sind im Vorschaubild enthalten. [Mehr Informationen](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)"
+              "content": "Ein Titel und eine Beschreibung des Shops sind im Vorschaubild enthalten. [Mehr Informationen](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
             }
           }
         }
@@ -897,7 +897,7 @@
           "info": "Verwende für Bilder ein Seitenverhältnis von 2:3 für optimale Ergebnisse."
         },
         "paragraph": {
-          "content": "Um Auszüge zu ändern, bearbeite deine [Blog-Beiträge.](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Um Auszüge zu ändern, bearbeite deine [Blog-Beiträge.](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "show_date": {
           "label": "Datum anzeigen"

@@ -25,14 +25,22 @@
         "buttons"
       ],
       "settings": {
+        "show_cart_note": false
       }
     },
     "featured-products": {
       "type": "featured-collection",
       "settings": {
         "title": "You May Also Like",
-        "collection": "all",
-        "image_ratio": "square"
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
       }
     }
   },

@@ -154,7 +154,7 @@
         },
         "social_vimeo_link": {
           "label": "Vimeo",
-          "info": "https://vimeo.com/shopify"
+          "info": "https:\/\/vimeo.com\/shopify"
         },
         "header": {
           "content": "SoMe-konti"
@@ -877,10 +877,10 @@
           "name": "Del",
           "settings": {
             "featured_image_info": {
-              "content": "Hvis du inkluderer et link i opslag på sociale medier, vil sidens udvalgte billede blive vist som billedeksempel. [Få mere at vide](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+              "content": "Hvis du inkluderer et link i opslag på sociale medier, vil sidens udvalgte billede blive vist som billedeksempel. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "Der er inkluderet en butikstitel og -beskrivelse med billedeksemplet. [Få mere at vide](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "Der er inkluderet en butikstitel og -beskrivelse med billedeksemplet. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
             }
           }
         }
@@ -897,7 +897,7 @@
           "info": "Brug et billede med et højde-bredde-forhold på 2:3 for at opnå det bedste resultat."
         },
         "paragraph": {
-          "content": "Hvis du vil ændre uddrag, skal du redigere dine [blogopslag.](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Hvis du vil ændre uddrag, skal du redigere dine [blogopslag.](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "show_date": {
           "label": "Vis dato"
@@ -1208,7 +1208,7 @@
               "info": "Når du slår et link fra din webshop op på sociale medier, vises det udvalgte billede for denne side. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images). Angiv en titel og en beskrivelse for din webshop. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
             },
             "featured_image_info": {
-              "content": "Hvis du inkluderer et link i opslag på sociale medier, vil sidens udvalgte billede blive vist som billedeksempel. [Få mere at vide](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+              "content": "Hvis du inkluderer et link i opslag på sociale medier, vil sidens udvalgte billede blive vist som billedeksempel. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
               "content": "Der er inkluderet en butikstitel og -beskrivelse med billedeksemplet. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
