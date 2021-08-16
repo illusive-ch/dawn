@@ -31,7 +31,8 @@
       "type": "featured-collection",
       "settings": {
         "title": "You May Also Like",
-        "collection": "all"
+        "collection": "all",
+        "image_ratio": "square"
       }
     }
   },
