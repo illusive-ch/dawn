@@ -1,0 +1,10 @@
+{
+  "sections": {
+    "quiz": {
+      "type": "section-quiz"
+    }
+  },
+  "order": [
+    "quiz"
+  ]
+}
