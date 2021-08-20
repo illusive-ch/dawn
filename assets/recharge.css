@@ -1,0 +1,9 @@
+.rc_popup{
+    display:none;
+}
+.rc_widget__option__discount{
+    max-width: 2ch;
+}
+.rc_widget__option__discount::after{
+    content:'%'
+}
