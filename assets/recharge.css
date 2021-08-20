@@ -1,5 +1,5 @@
-.rc_popup{
-    display:none;
+.rc_popup__block__footer, .rc_popup__learn_more {
+ display:none;
 }
 .rc_widget__option__discount{
     max-width: 2ch;
