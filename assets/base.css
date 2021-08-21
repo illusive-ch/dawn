@@ -24,6 +24,10 @@
   --color-foreground: var(--color-base-solid-button-labels);
   --color-background: var(--color-base-accent-2);
 }
+.color-accent-3 {
+  --color-foreground: var(--color-base-solid-button-labels);
+  --color-background: var(--color-base-accent-3);
+}
 
 .color-foreground-outline-button {
   --color-foreground: var(--color-base-outline-button-labels);
@@ -35,6 +39,9 @@
 
 .color-foreground-accent-2 {
   --color-foreground: var(--color-base-accent-2);
+}
+.color-foreground-accent-2 {
+  --color-foreground: var(--color-base-accent-3);
 }
 
 :root,

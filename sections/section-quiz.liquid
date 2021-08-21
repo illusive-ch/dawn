@@ -1,0 +1,707 @@
+{{ 'quiz.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<template x-if="step < ques.length" x-data="quiz()" x-cloak>
+  <section class="quiz page-width spaced-section">
+    <div x-ref="top">
+      <div class="quiz">
+        <div class="quiz__progress">
+          <div class="progress__bar">
+            <p :style="`width: ${progressWidth()}%`" x-text="`Step ${step+1}`">1</p>
+            <progress max="100" :value="progressWidth()" class="html5">
+              <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+              <div class="progress-bar">
+                <span :style="`width: ${progressWidth()}%`" x-text="`Step ${step+1}`">80%</span>
+              </div>
+            </progress>
+          </div>
+        </div>
+        <div class="quiz__question">
+          <h1 class="" x-html="ques[step].title"></h1>
+          <div class="">
+            <template x-for="(answer,index) in ques[step].answers" :key="index">
+              <div class="quiz__answers">
+                <template x-if="answer.type === 'button'">
+                  <button
+                            :class="{ 'border-accent text-accent': isSelected(index) }"
+                            @click="setAnswer(index)"
+                            type="button"
+                            class="button-primary"
+                  >
+                    <template x-if="answer.image">
+                      <svg x-html="answer.image" xmlns="http://www.w3.org/2000/svg"
+                           class=""
+                           fill="none" viewBox="0 0 24 24"
+                           stroke="currentColor"></svg>
+                    </template>
+                    <div :class="{'text-left': answer.image }" class="quiz__answer">
+                      <span class="quiz__answer_title h2" x-text="answer.title"></span>
+                      <template x-if="answer.subtitle">
+                        <span class="quiz__answer_subtitle" x-text="`(${answer.subtitle})`"></span>
+                      </template>
+                    </div>
+                  </button>
+                </template>
+              </div>
+            </template>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/alpine-collective/alpine-magic-helpers@1.2.x/dist/scroll.min.js"></script>
+<script>
+    function toCaps(s) {
+        return s.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
+    }
+
+    function onlyUnique(value, index, self) {
+        return self.indexOf(value) === index;
+    }
+
+    function quiz() {
+        return {
+            cartTotal: 0,
+            spButtonDisabled: false,
+            buttonSubmissionText: 'Applying Discount...',
+            trialButtonText: 'Subscribe &amp; Save - $147',
+            spButtonText: 'Single Purchase - $187.00',
+            hasCart: false,
+            step: 0,
+            type: 1,
+            email: {errorMessage: "", blurred: false},
+            answers: {},
+            buttontext: 'Add To Cart',
+            loading: false,
+            type: 1,
+            frequency: 1,
+            often: 'Months',
+            variant: null,
+            cleanserDescription: '',
+
+            progressWidth() {
+                if (this.step == 0) {
+                    return ((this.step + 1) / this.ques.length) * 100 + 5
+                }
+                return ((this.step + 1) / this.ques.length) * 100
+            },
+            descriptions: {
+                serum: {
+                    to_start_how_does_your_skin_typically_feel: {
+                        oily: [
+                            'Helps decrease oil production in the skin',
+                        ],
+                        dry: [
+                            "helps increase the skin's ability to retain moisture"
+                        ],
+                        combination: [
+                            'helps regulate oil production throughout face'
+                        ]
+                    },
+                    location_everything_where_do_you_and_your_skin_live: {
+                        dry_or_desert_climate: [
+                            "Seal in moisture when living in desert climates",
+                        ],
+                    },
+                    do_you_find_your_skin_to_be_extra_sensitive: {
+                        yes: [
+                            'perfect for sensitive skin'
+                        ]
+                    },
+
+                    i_have_redness_because: {
+                        my_skin_reacts_easily_hot_cold_emotions_spices_alcohol: [
+                            "sooths and calms inflamed skin cells"
+                        ],
+                        my_skin_is_fair_and_shows_signs_of_every_little_external_aggression: [
+                            "sooths and calms inflamed skin cells"
+                        ]
+                    },
+
+                    i_have_spots: {
+                        because_of_acne_scars: [
+                            "Lightens scars & blemishes caused by acne"
+                        ],
+                        from_sun_exposure: [
+                            "Lightens spots caused by sun exposure"
+                        ],
+                        age_related: [
+                            "Reduces fine lines and wrinkles"
+                        ]
+                    },
+                    my_skin_is_getting_more_mature: {
+                        i_only_have_a_few_first_wrinkles_expression_lines_around_the_eyes: [
+                            "Reduces fine lines and wrinkles"
+                        ],
+                        i_would_like_to_protect_myself_against_getting_wrinkles: [
+                            "Improves skin firmness and elasticity"
+                        ]
+                    },
+                    around_the_eyes: {
+                        i_have_dark_circles: [
+                            "improves the look of dark spots"
+                        ],
+
+                        fine_lines: [
+                            "Reduces fine lines and wrinkles"
+                        ],
+                        a_few_marked_wrinkles: [
+                            "Reduces fine lines and wrinkles"
+                        ]
+                    },
+                    what_are_your_3_most_important_concerns_regarding_your_face: {
+                        clarify_acneblemishes: [
+                            "Lightens scars & blemishes caused by acne"
+                        ],
+                        boost_overall_radiance_and_glow: [
+                            "Restores the original suppleness of the skin"
+                        ],
+                        brighten_dark_spots_and_hyperpigmentation: [
+                            "improves the look of dark spots", "lightens skin tone"
+                        ],
+                        prevent_early_signs_of_aging: [
+                            "Reduces fine lines and wrinkles",
+                            "Improves skin firmness and elasticity"
+                        ],
+                        treat_and_reverse_signs_of_aging: [
+                            "Reduces fine lines and wrinkles"
+                        ],
+                        target_under_eye_area: [
+                            "improves the look of dark spots",
+                            "Combats inflammation"
+                        ],
+                        minimize_blackheads_and_pores: []
+                    }
+                }
+            },
+
+
+            klaviyoanswers: {
+                'g': 'VEaTQC',
+                '$fields': '$source,$email,survey_to_start_how_does_your_skin_typically_feel,survey_location_everything_where_do_you_and_your_skin_live,survey_do_you_find_your_skin_to_be_extra_sensitive,survey_my_skin_is_tight,survey_i_have_redness_because,survey_my_complexion_is,survey_i_have_spots,survey_my_skin_is_getting_more_mature,survey_around_the_eyes,survey_what_are_your_3_most_important_concerns_regarding_your_face,dob,$consent_method,$consent_form_id,$consent_form_version',
+                '$source': 'Skin Quiz',
+                '$consent_method': 'Klaviyo Form',
+                '$consent_form_version': 2882495,
+                '$consent_form_id': 'VA28kF',
+                '$email': '',
+            },
+            ques:
+                [
+                    {
+                        'title': 'To start, how does your skin typically feel?',
+                        'slug': 'to_start_how_does_your_skin_typically_feel',
+                        'multiple': 1,
+                        'answers': [
+                            {
+                                'title': 'oily',
+                                'value': 'oily',
+                                'subtitle': 'stays shiny throughout the day',
+                                'image': `<path stroke="none" d="M0 0h24v24H0z"/>
+<path d="M6.8 11a6 6 0 1010.396 0l-5.197-8-5.2 8zM6 14h12M7.305 17.695L11 14"/>
+<path d="M10.26 19.74L16 14l-5.74 5.74z"/>
+`,
+                                'selected': false,
+                                'type': 'button',
+                                'sales': `Your skin type right now would be considered Oily, this is caused by an
+                                over-secretion of sebum, an oily substance our skin needs in order to function properly.
+                                Too much of this sebum can cause acne and too little can cause dry, cracked skin
+                                You likely experience breakouts and visible and enlarged looking pores with a slight shine on your face.`
+                            },
+                            {
+                                'title': 'Dry',
+                                'value': 'dry',
+                                'subtitle': 'tight & dehydrated',
+                                'image': `<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M12 3v6l3 -3m-6 0l3 3"></path>
+<path d="M12 21v-6l3 3m-6 0l3 -3"></path>
+<line x1="4" y1="12" x2="5" y2="12"></line>
+<line x1="9" y1="12" x2="10" y2="12"></line>
+<line x1="14" y1="12" x2="15" y2="12"></line>
+<line x1="19" y1="12" x2="20" y2="12"></line>
+`,
+                                'selected': false,
+                                'type': 'button',
+                                'sales': `Your skin type right now would be considered Dry, this is characterised by ‘poor epidermal function’ and potential damage to the epidermal layer,
+                                the protective outer layer of the skin. Some people who have dry skin can attribute it to a genetic predisposition or
+                                inappropriate skincare habits but for others, there is no apparent reason. As dry skin can be extra sensitive to external stimulation,
+                                it is important to choose a dedicated skincare routine which is gentle on your skin.`
+                            },
+                            {
+                                'title': 'Combination',
+                                'value': 'combination',
+                                'subtitle': 'some dry areas, others parts oily',
+                                'image': `<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<line x1="20" y1="6" x2="13" y2="6"></line>
+<line x1="20" y1="12" x2="11" y2="12"></line>
+<line x1="20" y1="18" x2="13" y2="18"></line>
+<path d="M8 8l-4 4l4 4"></path>
+`,
+                                'selected': false,
+                                'type': 'button',
+                                'sales': `Your skin type right now would be Combination. When talking about combination skin, it means we have at least two different
+                                types of facial skin and may need to adjust our skincare habits accordingly. You more then likely have oily or normal skin around the T-Zone area of the face
+                                or Dry or normal skin around the U-ZONE.`
+                            },
+                            {
+                                'title': 'Balanced',
+                                'value': 'balanced',
+                                'subtitle': 'feeling calm & comfortable',
+                                'image': `<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<circle cx="12" cy="12" r="9"></circle>
+<path d="M13 12h5"></path>
+<path d="M13 15h4"></path>
+<path d="M13 18h1"></path>
+<path d="M13 9h4"></path>
+<path d="M13 6h1"></path>
+`
+                            },
+                        ],
+                    },
+                    {
+                        'title': 'Location = everything. Where do you (and your skin) live?',
+                        'slug': 'location_everything_where_do_you_and_your_skin_live',
+                        'multiple': 1,
+                        'answers': [
+                            {
+                                'title': 'Dry or Desert Climate',
+                                'value': 'dry_or_desert_climate',
+                                'image': `<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<circle cx="12" cy="12" r="4"></circle>
+<path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+`,
+                                'selected': false,
+                                'type': 'button'
+                            },
+                            {
+                                'title': 'Hot/humid in the summer, moderate to severely cold winters',
+                                'value': 'hothumid_in_the_summer_moderate_to_severely_cold_winters',
+                                'image': `<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M12 9a3 3 0 0 0 0 6v-6z"></path>
+<path d="M6 6h3.5l2.5 -2.5l2.5 2.5h3.5v3.5l2.5 2.5l-2.5 2.5v3.5h-3.5l-2.5 2.5l-2.5 -2.5h-3.5v-3.5l-2.5 -2.5l2.5 -2.5z"></path>
+`,
+                                'selected': false,
+                                'type': 'button'
+                            },
+                            {
+                                'title': 'City/urban area',
+                                'value': 'cityurban_area',
+                                'image': `<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<line x1="3" y1="21" x2="21" y2="21"></line>
+<line x1="3" y1="10" x2="21" y2="10"></line>
+<polyline points="5 6 12 3 19 6"></polyline>
+<line x1="4" y1="10" x2="4" y2="21"></line>
+<line x1="20" y1="10" x2="20" y2="21"></line>
+<line x1="8" y1="14" x2="8" y2="17"></line>
+<line x1="12" y1="14" x2="12" y2="17"></line>
+<line x1="16" y1="14" x2="16" y2="17"></line>
+`,
+                                'selected': false,
+                                'type': 'button'
+                            },
+                            {
+                                'title': 'Mountain/high altitude environment',
+                                'value': 'mountainhigh_altitude_environment',
+                                'image': `<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<rect x="4" y="4" width="16" height="16" rx="2"></rect>
+<line x1="4" y1="16" x2="20" y2="16"></line>
+<path d="M4 12l3 -3c.928 -.893 2.072 -.893 3 0l4 4"></path>
+<path d="M13 12l2 -2c.928 -.893 2.072 -.893 3 0l2 2"></path>
+<line x1="14" y1="7" x2="14.01" y2="7"></line>
+`
+                            },
+                            {
+                                'title': 'Coastal/beach area',
+                                'value': 'coastalbeach_area',
+                                'image': `<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M2 20a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1"></path>
+<path d="M4 18l-1 -3h18l-1 3"></path>
+<path d="M11 12h7l-7 -9v9"></path>
+<line x1="8" y1="7" x2="6" y2="12"></line>
+`
+                            },
+                        ],
+                    },
+                    {
+                        'title': 'Do you find your skin to be extra sensitive?',
+                        'slug': 'do_you_find_your_skin_to_be_extra_sensitive',
+                        'multiple': 1,
+                        'answers': [
+                            {
+                                'title': 'Yes',
+                                'value': 'yes',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                            {
+                                'title': 'No',
+                                'value': 'no',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                        ],
+                    },
+                    {
+                        'title': 'My skin is tight...',
+                        'slug': 'my_skin_is_tight',
+                        'multiple': 1,
+                        'answers': [
+                            {
+                                'title': 'All Day Long',
+                                'value': 'all_day_long',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                            {
+                                'title': 'Only After Cleaning',
+                                'value': 'only_after_cleaning',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                            {
+                                'title': 'Never',
+                                'value': 'never',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                        ],
+                    },
+                    {
+                        'title': 'My complexion is...',
+                        'slug': 'my_complexion_is',
+                        'multiple': 1,
+                        'answers': [
+                            {
+                                'title': 'often dull',
+                                'value': 'often_dull',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                            {
+                                'title': 'dull lately',
+                                'value': 'dull_lately',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                            {
+                                'title': 'normal',
+                                'value': 'normal',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                        ],
+                    },
+                    {
+                        'title': 'I have spots...',
+                        'slug': 'i_have_spots',
+                        'multiple': 1,
+                        'answers': [
+                            {
+                                'title': 'because of acne scars',
+                                'value': 'because_of_acne_scars',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                            {
+                                'title': 'from a pregnancy',
+                                'value': 'from_a_pregnancy',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                            {
+                                'title': 'from sun exposure',
+                                'value': 'from_sun_exposure',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                            {
+                                'title': 'age-related',
+                                'value': 'age_related',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                            {
+                                'title': 'I don\'t have red spots',
+                                'value': 'i_dont_have_red_spots',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                        ],
+                    },
+                    {
+                        'title': 'Around the eyes...',
+                        'slug': 'around_the_eyes',
+                        'multiple': 1,
+                        'answers': [
+                            {
+                                'title': 'I have dark circles',
+                                'value': 'i_have_dark_circles',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                            {
+                                'title': 'bags',
+                                'value': 'bags',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                            {
+                                'title': 'fine lines',
+                                'value': 'fine_lines',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                            {
+                                'title': 'a few marked wrinkles',
+                                'value': 'a_few_marked_wrinkles',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                            {
+                                'title': 'dryness',
+                                'value': 'dryness',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                            {
+                                'title': 'everything is fine',
+                                'value': 'everything_is_fine',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                        ],
+                    },
+                    {
+                        'title': 'What are your <span class="text-pink-600 underline font-semibold">3 most important</span> concerns regarding your face?',
+                        'slug': 'what_are_your_3_most_important_concerns_regarding_your_face',
+                        'multiple': 3,
+                        'answers': [
+                            {
+                                'title': 'clarify acne/blemishes',
+                                'value': 'clarify_acneblemishes',
+                                'selected': false,
+                                'type': 'button',
+                            },
+                            {
+                                'title': 'boost overall radiance and glow',
+                                'value': 'boost_overall_radiance_and_glow',
+                                'selected': false,
+                                'type': 'button',
+                            },
+                            {
+                                'title': 'Brighten dark spots and hyperpigmentation',
+                                'value': 'brighten_dark_spots_and_hyperpigmentation',
+                                'selected': false,
+                                'type': 'button',
+                            },
+                            {
+                                'title': 'Prevent early signs of aging',
+                                'value': 'prevent_early_signs_of_aging',
+                                'selected': false,
+                                'type': 'button',
+                            },
+                            {
+                                'title': 'Treat and reverse signs of aging',
+                                'value': 'treat_and_reverse_signs_of_aging',
+                                'selected': false,
+                                'type': 'button'
+                            },
+                            {
+                                'title': 'Target under-eye area',
+                                'value': 'target_under_eye_area',
+                                'selected': false,
+                                'type': 'button',
+                            },
+                        ],
+                    },
+                ],
+            blur:
+                function (event) {
+                    let ele = event.target;
+                    this[ele.name].blurred = true;
+                    let rules = JSON.parse(ele.dataset.rules)
+                    this[ele.name].errorMessage = this.getErrorMessage(ele.value, rules);
+                }
+
+            ,
+            input: function (event) {
+                let ele = event.target;
+                let rules = JSON.parse(ele.dataset.rules)
+                this[ele.name].errorMessage = this.getErrorMessage(ele.value, rules);
+            },
+            getErrorMessage: function (value, rules) {
+                let isValid = Iodine.is(value, rules);
+                if (isValid !== true) {
+                    return Iodine.getErrorMessage(isValid);
+                }
+                return '';
+            },
+            addToDesc: function (compare, val, newdesc) {
+                if (compare === val) {
+                    return desc = desc + newdesc
+                }
+            },
+            get headline() {
+                let skintype = ''
+                if (this.answers[0] !== undefined) {
+                    skintype = this.ques[0].answers[this.answers[0]].title
+                }
+                return `We have analyzed all YOUR problems and have this routine that would solve all your problems for
+                    your <span class="font-bold uppercase">${skintype}</span> skin today`
+            },
+
+            get serumSales() {
+                let response = []
+                for (const [question, answer] of Object.entries(this.answers)) {
+                    let q = this.ques[question].slug
+                    let v = null
+                    if (Array.isArray(answer)) {
+                        for (const item of answer) {
+                            v = this.ques[question].answers[item].value
+                            if (this.descriptions.serum[q] !== undefined && this.descriptions.serum[q][v] !== undefined) {
+                                response = [...response, ...this.descriptions.serum[q][v]]
+                            }
+                        }
+                    } else {
+                        v = this.ques[question].answers[answer].value
+                        if (this.descriptions.serum[q] !== undefined && this.descriptions.serum[q][v] !== undefined) {
+                            response = [...response, ...this.descriptions.serum[q][v]]
+                        }
+                    }
+                }
+                let uniqueResponse = response.filter(onlyUnique)
+                return uniqueResponse
+            },
+            isSelected(val) {
+                if (typeof this.answers[this.step] === 'undefined') {
+                    return false
+                }
+
+                if (!Array.isArray(this.answers[this.step])) {
+                    return this.answers[this.step] === val
+                }
+                return this.answers[this.step].indexOf(val) >= 0
+            },
+            setAnswer(val) {
+                if (this.ques[this.step].multiple == 1) {
+                    this.answers[this.step] = val
+                    this.nextstep()
+                } else {
+                    if (!Array.isArray(this.answers[this.step])) {
+                        this.answers[this.step] = []
+                    }
+                    if (this.answers[this.step].indexOf(val) >= 0) {
+                        return
+                    }
+                    if (this.answers[this.step].length >= this.ques[this.step].multiple) {
+                        this.answers[this.step].shift()
+                    }
+                    this.answers[this.step].push(val)
+                    if (this.answers[this.step].length >= this.ques[this.step].multiple) {
+                        this.nextstep()
+                    }
+                }
+
+            }
+            ,
+            nextstep(newUrl = false) {
+                this.$scroll(0)
+                ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'quiz',
+                    eventAction: 'click_to_question_' + this.step,
+                    eventLabel: this.ques[this.step]
+                });
+                if (newUrl == false) {
+                    let answer = ''
+                    if (Array.isArray(this.answers[this.step])) {
+                        let stringAnswers = []
+                        for (i = 0; i < this.answers[this.step].length; i++) {
+                            val = this.ques[this.step].answers[this.answers[this.step][i]].value
+                            stringAnswers.push(val)
+                        }
+                        answer = stringAnswers.join('-')
+                    } else {
+                        answer = this.ques[this.step].answers[this.answers[this.step]].value
+                    }
+                    newUrl = this.ques[this.step].slug + '/' + answer
+                }
+                newUrl = '/pages/skincare-finder/' + newUrl
+                history.pushState({'url': newUrl}, 'New URL: ' + newUrl, newUrl);
+                this.step++
+            },
+            async clearCart() {
+                await axios.post('/cart/clear.js', '', {
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+            },
+            async cartSubmit(type) {
+                this.type = type
+                this.loading = true
+                this.buttontext = 'Adding To Cart...'
+                let cartData = {
+                    selling_plan_51347499: this.type == 1 ? 'subsave' : 'onetime',
+                    form_type: 'product',
+                    utf8: '✓',
+                    id: 39271317733419,
+                    quantity: 1,
+                }
+                if (this.type == 1) {
+                    cartData['selling_plan'] = 414875691
+                }
+                await this.clearCart()
+                const json = JSON.stringify(cartData);
+                const res = await axios.post('/cart/add.js', json, {
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+                window.location.href = '/checkout';
+            },
+            async submitQuiz() {
+                let q = ''
+                this.klaviyoanswers['$email'] = this.klaviyoanswers.email
+                let body = new URLSearchParams(this.klaviyoanswers).toString() + '&'
+                for (const [question, answer] of Object.entries(this.answers)) {
+                    q = ''
+                    if (Array.isArray(answer)) {
+                        qa = []
+                        for (const val of Object.values(answer)) {
+                            qa.push(encodeURIComponent('survey_' + this.ques[question].slug) + '=' + encodeURIComponent(this.ques[question].answers[val].title))
+                        }
+                        q = qa.join('&');
+                    } else {
+                        q = encodeURIComponent(encodeURIComponent('survey_' + this.ques[question].slug)) + '=' + encodeURIComponent(this.ques[question].answers[answer].title)
+                    }
+                    body = body.concat(q + '&')
+                }
+                let d = new Date
+                let offset = (d.getTimezoneOffset() / 60) * -1
+                body = body.concat(`timezone_offset=${offset}`)
+                try {
+                    const res = await axios.post('https://a.klaviyo.com/ajax/subscriptions/subscribe', body, {
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        }
+                    });
+                } catch (error) {
+
+                }
+                ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'quiz',
+                    eventAction: 'submitted_email',
+                });
+                fbq('track', 'Lead');
+                this.nextstep('results')
+            }
+        }
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/gh/mattkingshott/iodine@3/dist/iodine.min.js" defer></script>

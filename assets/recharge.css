@@ -1,0 +1,6 @@
+.rc_popup__block__footer, .rc_popup__learn_more, .rc-option__discount {
+ display:none !important;
+}
+.rc_widget__option__plans__dropdown{
+    padding: 1rem;
+}

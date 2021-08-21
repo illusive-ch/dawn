@@ -154,7 +154,7 @@
         },
         "social_vimeo_link": {
           "label": "Vimeo",
-          "info": "https://vimeo.com/shopify"
+          "info": "https:\/\/vimeo.com\/shopify"
         },
         "header": {
           "content": "Sosiale kontoer"
@@ -605,7 +605,7 @@
           "content": "Land-\/regionvelger"
         },
         "header__4": {
-          "info": "Gå til [betalingsinnstillingene](/admin/settings/payments) for å legge til et land/region."
+          "info": "Gå til [betalingsinnstillingene](\/admin\/settings\/payments) for å legge til et land\/region."
         },
         "enable_country_selector": {
           "label": "Ativer land-\/regionvelger"
@@ -877,10 +877,10 @@
           "name": "Del",
           "settings": {
             "featured_image_info": {
-              "content": "Hvis du inkluderer en kobling i innlegg på sosiale medier, vil sidens fremhevede bilde vises som forhåndsvisningsbilde. [Finn ut mer](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+              "content": "Hvis du inkluderer en kobling i innlegg på sosiale medier, vil sidens fremhevede bilde vises som forhåndsvisningsbilde. [Finn ut mer](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "En butikktittel og -beskrivelse inkluderes med forhåndsvisningsbildet. [Finn ut mer](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "En butikktittel og -beskrivelse inkluderes med forhåndsvisningsbildet. [Finn ut mer](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
             }
           }
         }
@@ -897,7 +897,7 @@
           "info": "Bruk et bilde med størrelsesforhold 2:3 for best resultat."
         },
         "paragraph": {
-          "content": "For å endre utdrag, må du redigere [blogginnleggene.](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "For å endre utdrag, må du redigere [blogginnleggene.](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "show_date": {
           "label": "Vis dato"
@@ -1203,10 +1203,10 @@
           "name": "Del",
           "settings": {
             "featured_image_info": {
-              "content": "Hvis du inkluderer en kobling i innlegg på sosiale medier, vil sidens fremhevede bilde vises som forhåndsvisningsbilde. [Finn ut mer](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+              "content": "Hvis du inkluderer en kobling i innlegg på sosiale medier, vil sidens fremhevede bilde vises som forhåndsvisningsbilde. [Finn ut mer](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "En butikktittel og -beskrivelse inkluderes med forhåndsvisningsbildet. [Finn ut mer](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "En butikktittel og -beskrivelse inkluderes med forhåndsvisningsbildet. [Finn ut mer](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
             }
           }
         },
@@ -1323,7 +1323,7 @@
       "settings": {
         "header": {
           "content": "Medier",
-          "info": "Finn ut mer om [medietyper](https://help.shopify.com/manual/products/product-media)"
+          "info": "Finn ut mer om [medietyper](https:\/\/help.shopify.com\/manual\/products\/product-media)"
         },
         "enable_video_looping": {
           "label": "Aktiver løkkeavspilling av video"
@@ -1557,7 +1557,7 @@
           "label": "Vis selger"
         },
         "paragraph__1": {
-          "content": "Dynamiske anbefalinger bruker bestillings- og produktinformasjon til å endres og forbedres over tid. [Finn ut mer](https://help.shopify.com/en/themes/development/recommended-products)"
+          "content": "Dynamiske anbefalinger bruker bestillings- og produktinformasjon til å endres og forbedres over tid. [Finn ut mer](https:\/\/help.shopify.com\/en\/themes\/development\/recommended-products)"
         },
         "show_image_outline": {
           "label": "Vis bildeomriss"

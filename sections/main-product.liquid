@@ -5,6 +5,8 @@
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-star.css' | asset_url | stylesheet_tag }}
+{{ 'recharge.css' | asset_url | stylesheet_tag }}
+
 
 <link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -298,6 +300,8 @@
             <div {{ block.shopify_attributes }}>
               <product-form class="product-form">
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+<div class="rc-widget-injection-parent" style="display: initial;"></div>
+
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                   <div class="product-form__buttons">
                     <button

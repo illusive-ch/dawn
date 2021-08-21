@@ -41,7 +41,7 @@
       "settings": {
         "type_header_font": {
           "label": "Font",
-          "info": "La selezione di un font diverso può influenzare la velocità del tuo negozio. [Maggiori informazioni sui font di sistema.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)"
+          "info": "La selezione di un font diverso può influenzare la velocità del tuo negozio. [Maggiori informazioni sui font di sistema.](https:\/\/help.shopify.com\/en\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
         },
         "header__1": {
           "content": "Titoli"
@@ -51,7 +51,7 @@
         },
         "type_body_font": {
           "label": "Font",
-          "info": "La selezione di un font diverso può influenzare la velocità del tuo negozio. [Maggiori informazioni sui font di sistema.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)"
+          "info": "La selezione di un font diverso può influenzare la velocità del tuo negozio. [Maggiori informazioni sui font di sistema.](https:\/\/help.shopify.com\/en\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
         }
       }
     },
@@ -154,7 +154,7 @@
         },
         "social_vimeo_link": {
           "label": "Vimeo",
-          "info": "https://vimeo.com/shopify"
+          "info": "https:\/\/vimeo.com\/shopify"
         },
         "header": {
           "content": "Account social"
@@ -374,7 +374,7 @@
           "options__3": {
             "label": "Quadrate"
           },
-          "info": "Per aggiungere immagini, [modifica le collezioni](https://help.shopify.com/en/manual/products/collections)"
+          "info": "Per aggiungere immagini, [modifica le collezioni](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -592,7 +592,7 @@
         },
         "header__1": {
           "content": "Iscrizione alla newsletter",
-          "info": "Iscritti aggiunti all'[elenco dei clienti che accettano le comunicazioni di marketing.](https://help.shopify.com/en/manual/customers/manage-customers)"
+          "info": "Iscritti aggiunti all'[elenco dei clienti che accettano le comunicazioni di marketing.](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers)"
         },
         "header__2": {
           "content": "Icone dei social media",
@@ -877,10 +877,10 @@
           "name": "Condividi",
           "settings": {
             "featured_image_info": {
-              "content": "Se includi un link in post sui social media, l'immagine in evidenza della pagina verrà mostrata come immagine di anteprima. [Maggiori informazioni](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+              "content": "Se includi un link in post sui social media, l'immagine in evidenza della pagina verrà mostrata come immagine di anteprima. [Maggiori informazioni](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "Insieme all'immagine di anteprima sono inclusi un titolo e una descrizione del negozio. [Maggiori informazioni](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "Insieme all'immagine di anteprima sono inclusi un titolo e una descrizione del negozio. [Maggiori informazioni](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
             }
           }
         }
@@ -897,7 +897,7 @@
           "info": "Per un risultato ottimale utilizza un'immagine con proporzioni 2:3."
         },
         "paragraph": {
-          "content": "Per modificare i riassunti, modifica gli [articoli del blog.](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Per modificare i riassunti, modifica gli [articoli del blog.](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "show_date": {
           "label": "Mostra data"
@@ -1208,10 +1208,10 @@
               "info": "Quando pubblichi sui social media un link del tuo negozio online, viene mostrata l'immagine in evidenza della pagina. [Maggiori informazioni](https:\/\/help.shopify.com\/it\/manual\/online-store\/images\/showing-social-media-thumbnail-images). Imposta un titolo e una descrizione per il tuo negozio online. [Maggiori informazioni](https:\/\/help.shopify.com\/it\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
             },
             "featured_image_info": {
-              "content": "Se includi un link in post sui social media, l'immagine in evidenza della pagina verrà mostrata come immagine di anteprima. [Maggiori informazioni](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+              "content": "Se includi un link in post sui social media, l'immagine in evidenza della pagina verrà mostrata come immagine di anteprima. [Maggiori informazioni](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "Insieme all'immagine di anteprima sono inclusi un titolo e una descrizione del negozio. [Maggiori informazioni](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "Insieme all'immagine di anteprima sono inclusi un titolo e una descrizione del negozio. [Maggiori informazioni](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
             }
           }
         },
@@ -1488,7 +1488,7 @@
           "label": "Crea sezione a larghezza intera"
         },
         "paragraph": {
-          "content": "Quando i clienti si iscrivono alla mailing list vengono creati account cliente. [Maggiori informazioni](https://help.shopify.com/en/manual/customers)"
+          "content": "Quando i clienti si iscrivono alla mailing list vengono creati account cliente. [Maggiori informazioni](https:\/\/help.shopify.com\/en\/manual\/customers)"
         }
       },
       "blocks": {
@@ -1565,7 +1565,7 @@
           "label": "Mostra fornitore"
         },
         "paragraph__1": {
-          "content": "Le raccomandazioni dinamiche utilizzano i dati di ordini e prodotti per cambiare e migliorare nel tempo. [Maggiori informazioni](https://help.shopify.com/en/themes/development/recommended-products)"
+          "content": "Le raccomandazioni dinamiche utilizzano i dati di ordini e prodotti per cambiare e migliorare nel tempo. [Maggiori informazioni](https:\/\/help.shopify.com\/en\/themes\/development\/recommended-products)"
         },
         "show_image_outline": {
           "label": "Mostra contorno dell'immagine"

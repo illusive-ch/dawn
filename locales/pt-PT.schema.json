@@ -154,7 +154,7 @@
         },
         "social_vimeo_link": {
           "label": "Vimeo",
-          "info": "https://vimeo.com/shopify"
+          "info": "https:\/\/vimeo.com\/shopify"
         },
         "header": {
           "content": "Contas de redes sociais"
@@ -611,7 +611,7 @@
           "content": "Seletor de país\/região"
         },
         "header__4": {
-          "info": "Para adicionar um país/região, vá a [definições de pagamento.](/admin/settings/payments)"
+          "info": "Para adicionar um país\/região, vá a [definições de pagamento.](\/admin\/settings\/payments)"
         },
         "enable_country_selector": {
           "label": "Ativar seletor de país\/região"
@@ -620,7 +620,7 @@
           "content": "Seletor de idioma"
         },
         "header__6": {
-          "info": "Para adicionar um idioma, vá a [definições de idioma.](/admin/settings/languages)"
+          "info": "Para adicionar um idioma, vá a [definições de idioma.](\/admin\/settings\/languages)"
         },
         "enable_language_selector": {
           "label": "Ativar seletor de idioma"
@@ -885,10 +885,10 @@
           "name": "Partilhar",
           "settings": {
             "featured_image_info": {
-              "content": "Se incluir uma ligação nas publicações das redes sociais, a imagem em destaque da página será demonstrada como a imagem de pré-visualização. [Saber mais](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+              "content": "Se incluir uma ligação nas publicações das redes sociais, a imagem em destaque da página será demonstrada como a imagem de pré-visualização. [Saber mais](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "É incluído um título de loja e descrição com a imagem de pré-visualização. [Saber mais](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "É incluído um título de loja e descrição com a imagem de pré-visualização. [Saber mais](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
             }
           }
         }
@@ -905,7 +905,7 @@
           "info": "Para obter os melhores resultados, utilize uma imagem com uma proporção de 2:3."
         },
         "paragraph": {
-          "content": "Para editar resumos, edite as suas [publicações no blogue.](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Para editar resumos, edite as suas [publicações no blogue.](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "show_date": {
           "label": "Mostrar data"
@@ -962,7 +962,7 @@
       "name": "Faixa de coleção",
       "settings": {
         "paragraph": {
-          "content": "Para alterar as descrições da coleção ou as imagens da coleção, [edite as suas coleções.](/admin/collections)"
+          "content": "Para alterar as descrições da coleção ou as imagens da coleção, [edite as suas coleções.](\/admin\/collections)"
         },
         "show_collection_description": {
           "label": "Mostrar descrição da coleção"

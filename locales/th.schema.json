@@ -154,7 +154,7 @@
         },
         "social_vimeo_link": {
           "label": "Vimeo",
-          "info": "https://vimeo.com/shopify"
+          "info": "https:\/\/vimeo.com\/shopify"
         },
         "header": {
           "content": "บัญชีผู้ใช้โซเชียลมีเดีย"
@@ -375,7 +375,7 @@
           "options__3": {
             "label": "สี่เหลี่ยมจัตุรัส"
           },
-          "info": "หากต้องการเพิ่มรูปภาพ [แก้ไขคอลเลกชันของคุณ](https://help.shopify.com/en/manual/products/collections)"
+          "info": "หากต้องการเพิ่มรูปภาพ [แก้ไขคอลเลกชันของคุณ](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -611,7 +611,7 @@
           "content": "ตัวเลือกประเทศ\/ภูมิภาค"
         },
         "header__4": {
-          "info": "หากต้องการเพิ่มประเทศ/ภูมิภาค ให้ไปที่ [การตั้งค่าการชำระเงิน](/admin/settings/payments)"
+          "info": "หากต้องการเพิ่มประเทศ\/ภูมิภาค ให้ไปที่ [การตั้งค่าการชำระเงิน](\/admin\/settings\/payments)"
         },
         "enable_country_selector": {
           "label": "เปิดใช้งานตัวเลือกประเทศ\/ภูมิภาค"
@@ -620,7 +620,7 @@
           "content": "ตัวเลือกภาษา"
         },
         "header__6": {
-          "info": "หากต้องการเพิ่มภาษา ให้ไปที่ [การตั้งค่าภาษา](/admin/settings/languages)"
+          "info": "หากต้องการเพิ่มภาษา ให้ไปที่ [การตั้งค่าภาษา](\/admin\/settings\/languages)"
         },
         "enable_language_selector": {
           "label": "เปิดใช้งานตัวเลือกภาษา"
@@ -885,10 +885,10 @@
           "name": "แชร์",
           "settings": {
             "featured_image_info": {
-              "content": "หากคุณใส่ลิงก์ในโพสต์บนโซเชียลมีเดีย รูปภาพที่แสดงของหน้านั้นจะแสดงเป็นรูปภาพตัวอย่าง [ดูข้อมูลเพิ่มเติม](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)"
+              "content": "หากคุณใส่ลิงก์ในโพสต์บนโซเชียลมีเดีย รูปภาพที่แสดงของหน้านั้นจะแสดงเป็นรูปภาพตัวอย่าง [ดูข้อมูลเพิ่มเติม](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)"
             },
             "title_info": {
-              "content": "ชื่อร้านค้าและคำอธิบายจะรวมอยู่ในรูปภาพตัวอย่าง [ดูข้อมูลเพิ่มเติม](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)"
+              "content": "ชื่อร้านค้าและคำอธิบายจะรวมอยู่ในรูปภาพตัวอย่าง [ดูข้อมูลเพิ่มเติม](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
             }
           }
         }
@@ -905,7 +905,7 @@
           "info": "ใช้รูปภาพที่มีอัตราส่วนภาพ 2:3 เพื่อผลลัพธ์ที่ดีที่สุด"
         },
         "paragraph": {
-          "content": "หากต้องการเปลี่ยนแปลงเนื้อหาบางส่วน ให้แก้ไข [บล็อกโพสต์](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post) ของคุณ"
+          "content": "หากต้องการเปลี่ยนแปลงเนื้อหาบางส่วน ให้แก้ไข [บล็อกโพสต์](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post) ของคุณ"
         },
         "show_date": {
           "label": "แสดงวันที่"
@@ -962,7 +962,7 @@
       "name": "แบนเนอร์คอลเลกชัน",
       "settings": {
         "paragraph": {
-          "content": "หากต้องการเปลี่ยนแปลงคำอธิบายคอลเลกชันหรือรูปภาพคอลเลกชัน [แก้ไขคอลเลกชันของคุณ](/admin/collections)"
+          "content": "หากต้องการเปลี่ยนแปลงคำอธิบายคอลเลกชันหรือรูปภาพคอลเลกชัน [แก้ไขคอลเลกชันของคุณ](\/admin\/collections)"
         },
         "show_collection_description": {
           "label": "แสดงคำอธิบายคอลเลกชัน"
@@ -1008,11 +1008,11 @@
         },
         "enable_tags": {
           "label": "เปิดใช้งานการกรอง",
-          "info": "[ปรับแต่งตัวกรอง](/admin/menus)"
+          "info": "[ปรับแต่งตัวกรอง](\/admin\/menus)"
         },
         "enable_filtering": {
           "label": "เปิดใช้การกรอง",
-          "info": "[ปรับแต่งตัวกรอง](/admin/menus)"
+          "info": "[ปรับแต่งตัวกรอง](\/admin\/menus)"
         },
         "enable_sorting": {
           "label": "เปิดใช้การจัดเรียง"
@@ -1069,7 +1069,7 @@
           "options__3": {
             "label": "สี่เหลี่ยมจัตุรัส"
           },
-          "info": "หากต้องการเพิ่มรูปภาพ [แก้ไขคอลเลกชันของคุณ](https://help.shopify.com/en/manual/products/collections)"
+          "info": "หากต้องการเพิ่มรูปภาพ [แก้ไขคอลเลกชันของคุณ](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
         },
         "color_scheme": {
           "options__1": {
