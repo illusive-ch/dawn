@@ -44,9 +44,6 @@
             {% if product.metafields.my_fields.gallery_wistia != blank %}
                 <li class="product__media-item grid__item slider__slide product__media-item--full"
                     data-media-id="{{ section.id }}-vid">
-                    <script src="https://fast.wistia.com/embed/medias/{{ product.metafields.my_fields.gallery_wistia }}.jsonp"
-                            async></script>
-                    <script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
                     <div class="wistia_responsive_padding" style="padding:100.0% 0 0 0;position:relative;">
                         <div class="wistia_responsive_wrapper"
                              style="height:100%;left:0;position:absolute;top:0;width:100%;">
@@ -457,7 +454,11 @@
     </modal-dialog>
   {%- endfor -%}
 </section>
-
+{% if product.metafields.my_fields.gallery_wistia != blank %}
+  <script src="https://fast.wistia.com/embed/medias/{{ product.metafields.my_fields.gallery_wistia }}.jsonp"
+          defer></script>
+  <script src="//fast.wistia.com/assets/external/E-v1.js" defer></script>
+{% endif %}
 {% javascript %}
   class ProductModal extends ModalDialog {
     constructor() {
