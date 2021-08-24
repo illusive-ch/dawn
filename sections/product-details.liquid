@@ -21,8 +21,10 @@ and section.settings.imagel != blank or product.metafields.my_fields.left_benefi
                         </div>
                         <div class="media" style="{% if product.metafields.my_fields.left_benefit_wistia == blank %} padding-bottom: 100.0%;{% endif %}">
                             {% if product.metafields.my_fields.left_benefit_wistia != blank %}
-                                <script src="https://fast.wistia.com/embed/medias/{{ product.metafields.my_fields.left_benefit_wistia | strip }}.jsonp" async></script>
-                                <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                                <script src="https://fast.wistia.com/embed/medias/{{ product.metafields.my_fields.left_benefit_wistia | strip }}.jsonp" defer></script>
+                                {% if product.metafields.my_fields.gallery_wistia == blank %}
+                                <script src="https://fast.wistia.com/assets/external/E-v1.js" defer></script>
+                                {% endif %}
                                 <div class="wistia_responsive_padding" style="padding:100.0% 0 0 0;position:relative;">
                                     <div class="wistia_responsive_wrapper"
                                          style="height:100%;left:0;position:absolute;top:0;width:100%;">
