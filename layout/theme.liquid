@@ -149,5 +149,8 @@
         unavailable: `{{ 'products.product.unavailable' | t }}`,
       }
     </script>
-  {% render 'page-footer.zipifypages', renderctx: 'thm', ocuapp: ocuapp %}</body>
+  
+{% render 'oneclickupsellapp-theme', oneclickupsellapp: oneclickupsellapp %}
+{% assign oneclickupsellapp = true %}
+{% render 'page-footer.zipifypages', renderctx: 'thm', ocuapp: ocuapp %}</body>
 </html>
