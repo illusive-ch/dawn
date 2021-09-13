@@ -47,12 +47,14 @@
       "copy_to_clipboard": "Copiați linkul",
       "share": "Distribuiți",
       "share_url": "Link",
-      "success_message": "Linkul a fost copiat în clipboard",
-      "close": "Închide partajarea"
+      "success_message": "Linkul a fost copiat în clipboard!"
     }
   },
+  "date_formats": {
+    "month_year": "%B %Y"
+  },
   "newsletter": {
-    "label": "E-mail",
+    "label": "E-mailul dvs.",
     "success": "Vă mulțumim că v-ați abonat",
     "button_label": "Abonați-vă"
   },
@@ -71,9 +73,7 @@
       "external": "Deschide site-ul extern."
     },
     "of": "din",
-    "skip_to_product_info": "Salt la informațiile despre produs",
-    "total_reviews": "total recenzii",
-    "star_reviews_info": "{{ rating_value }} din {{ rating_max }} stele"
+    "skip_to_product_info": "Salt la informațiile despre produs"
   },
   "blogs": {
     "article": {
@@ -140,8 +140,7 @@
         "open_media": "Deschideți în vizualizarea galerie conținutul media {{ index }}",
         "play_model": "Redați în vizualizatorul 3D",
         "play_video": "Redați videoclipul"
-      },
-      "view_full_details": "Vedeți detaliile complete"
+      }
     },
     "modal": {
       "label": "Galerie media"
@@ -156,9 +155,7 @@
         "other": "S-au găsit {{ count }} rezultate pentru „{{ terms }}”",
         "few": "S-au găsit {{ count }} rezultate pentru „{{ terms }}”"
       },
-      "page": "Pagină",
-      "products": "Produse",
-      "search_for": "Caută „{{ terms }}”"
+      "page": "Pagină"
     },
     "cart": {
       "cart": "Coș"

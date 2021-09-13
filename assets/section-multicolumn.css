@@ -79,12 +79,6 @@
   padding: 4rem 0 5rem;
 }
 
-@media screen and (max-width: 749px) {
-  .multicolumn.background-secondary .slider-buttons {
-    margin-bottom: -2rem;
-  }
-}
-
 .multicolumn:not(.background-secondary) {
   margin: 5rem 0;
 }

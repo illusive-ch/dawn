@@ -47,9 +47,11 @@
       "copy_to_clipboard": "Copiar link",
       "share": "Compartilhar",
       "share_url": "Link",
-      "success_message": "Link copiado para a área de transferência",
-      "close": "Fechar compartilhamento"
+      "success_message": "Link copiado para a área de transferência."
     }
+  },
+  "date_formats": {
+    "month_year": "%B de %Y"
   },
   "newsletter": {
     "label": "E-mail",
@@ -71,9 +73,7 @@
     "previous_slide": "Deslizar para a esquerda",
     "loading": "Carregando...",
     "of": "de",
-    "skip_to_product_info": "Pular para as informações do produto",
-    "total_reviews": "total de avaliações",
-    "star_reviews_info": "{{ rating_value }} de {{ rating_max }} estrelas"
+    "skip_to_product_info": "Pular para as informações do produto"
   },
   "blogs": {
     "article": {
@@ -139,8 +139,7 @@
         "open_media": "Abrir mídia {{ index }} na visualização em galeria",
         "play_model": "Reproduzir o visualizador em 3D",
         "play_video": "Reproduzir vídeo"
-      },
-      "view_full_details": "Ver informações completas"
+      }
     },
     "modal": {
       "label": "Galeria de mídia"
@@ -154,9 +153,7 @@
         "other": "{{ count }} resultados encontrados para “{{ terms }}”"
       },
       "title": "Resultados da pesquisa",
-      "page": "Página",
-      "products": "Produtos",
-      "search_for": "Pesquisar \"{{ terms }}\""
+      "page": "Página"
     },
     "cart": {
       "cart": "Carrinho"
@@ -247,8 +244,8 @@
       "filter_button": "Filtrar",
       "max_price": "O maior preço é {{ price }}",
       "reset": "Redefinir",
-      "to": "Até",
-      "use_fewer_filters_html": "Usar menos filtros ou <a class=\"{{ class }}\" href=\"{{ link }}\">limpar tudo</a>",
+      "to": "Para",
+      "use_fewer_filters_html": "Usar menos filtros ou <a class=\"{{ class }}\" href=\"{{ link }}\">limpar tudo<\/a>",
       "filters_selected": {
         "one": "{{ count }} selecionado",
         "other": "{{ count }} selecionados"

@@ -47,9 +47,11 @@
       "copy_to_clipboard": "Salin tautan",
       "share": "Bagikan",
       "share_url": "Tautan",
-      "success_message": "Tautan disalin ke clipboard",
-      "close": "Tutup bagikan"
+      "success_message": "Tautan disalin ke clipboard!"
     }
+  },
+  "date_formats": {
+    "month_year": "%B %Y"
   },
   "newsletter": {
     "label": "Email",
@@ -71,9 +73,7 @@
     "previous_slide": "Geser kiri",
     "loading": "Memuat...",
     "of": "dari",
-    "skip_to_product_info": "Langsung ke informasi produk",
-    "total_reviews": "ulasan keseluruhan",
-    "star_reviews_info": "{{ rating_value }} dari {{ rating_max }} bintang"
+    "skip_to_product_info": "Langsung ke informasi produk"
   },
   "blogs": {
     "article": {
@@ -139,8 +139,7 @@
         "open_media": "Buka media {{ index }} di tampilan galeri",
         "play_model": "Putar Penampil 3D",
         "play_video": "Putar video"
-      },
-      "view_full_details": "Lihat detail lengkap"
+      }
     },
     "modal": {
       "label": "Galeri media"
@@ -154,9 +153,7 @@
         "other": "{{ count }} hasil ditemukan untuk “{{ terms }}”"
       },
       "title": "Hasil pencarian",
-      "page": "Halaman",
-      "products": "Produk",
-      "search_for": "Cari “{{ terms }}”"
+      "page": "Halaman"
     },
     "cart": {
       "cart": "Keranjang"

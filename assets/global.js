@@ -54,39 +54,6 @@ function trapFocus(container, elementToFocus = container) {
   elementToFocus.focus();
 }
 
-// Here run the querySelector to figure out if the browser supports :focus-visible or not and run code based on it.
-try {
-  document.querySelector(":focus-visible");
-} catch {
-  focusVisiblePolyfill();
-}
-
-function focusVisiblePolyfill() {
-  const navKeys = ['ARROWUP', 'ARROWDOWN', 'ARROWLEFT', 'ARROWRIGHT', 'TAB', 'ENTER', 'SPACE', 'ESCAPE', 'HOME', 'END', 'PAGEUP', 'PAGEDOWN']
-  let currentFocusedElement = null;
-  let mouseClick = null;
-
-  window.addEventListener('keydown', (event) => {
-    if(navKeys.includes(event.code.toUpperCase())) {
-      mouseClick = false;
-    }
-  });
-
-  window.addEventListener('mousedown', (event) => {
-    mouseClick = true;
-  });
-
-  window.addEventListener('focus', () => {
-    if (currentFocusedElement) currentFocusedElement.classList.remove('focused');
-
-    if (mouseClick) return;
-
-    currentFocusedElement = document.activeElement;
-    currentFocusedElement.classList.add('focused');
-
-  }, true);
-}
-
 function pauseAllMedia() {
   document.querySelectorAll('.js-youtube').forEach((video) => {
     video.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -95,9 +62,7 @@ function pauseAllMedia() {
     video.contentWindow.postMessage('{"method":"pause"}', '*');
   });
   document.querySelectorAll('video').forEach((video) => video.pause());
-  document.querySelectorAll('product-model').forEach((model) => {
-    if (model.modelViewerUI) modelViewerUI.pause();
-  });
+  document.querySelectorAll('product-model').forEach((model) => model.modelViewerUI?.pause());
 }
 
 function removeTrapFocus(elementToFocus = null) {
@@ -106,17 +71,6 @@ function removeTrapFocus(elementToFocus = null) {
   document.removeEventListener('keydown', trapFocusHandlers.keydown);
 
   if (elementToFocus) elementToFocus.focus();
-}
-
-function onKeyUpEscape(event) {
-  if (event.code.toUpperCase() !== 'ESCAPE') return;
-
-  const openDetailsElement = event.target.closest('details[open]');
-  if (!openDetailsElement) return;
-
-  const summaryElement = openDetailsElement.querySelector('summary');
-  openDetailsElement.removeAttribute('open');
-  summaryElement.focus();
 }
 
 class QuantityInput extends HTMLElement {
@@ -152,18 +106,9 @@ function debounce(fn, wait) {
 const serializeForm = form => {
   const obj = {};
   const formData = new FormData(form);
-
   for (const key of formData.keys()) {
-    const regex = /(?:^(properties\[))(.*?)(?:\]$)/;
-
-    if (regex.test(key)) { 
-      obj.properties = obj.properties || {};
-      obj.properties[regex.exec(key)[2]] = formData.get(key);
-    } else {
-      obj[key] = formData.get(key);
-    }
+    obj[key] = formData.get(key);
   }
-
   return JSON.stringify(obj);
 };
 
@@ -433,26 +378,19 @@ class ModalDialog extends HTMLElement {
       'click',
       this.hide.bind(this)
     );
-    this.addEventListener('keyup', (event) => {
+    this.addEventListener('click', (event) => {
+      if (event.target.nodeName === 'MODAL-DIALOG') this.hide();
+    });
+    this.addEventListener('keyup', () => {
       if (event.code.toUpperCase() === 'ESCAPE') this.hide();
     });
-    if (this.classList.contains('media-modal')) {
-      this.addEventListener('pointerup', (event) => {
-        if (event.pointerType === 'mouse' && !event.target.closest('deferred-media, product-model')) this.hide();
-      });
-    } else {
-      this.addEventListener('click', (event) => {
-        if (event.target.nodeName === 'MODAL-DIALOG') this.hide();
-      });
-    }
   }
 
   show(opener) {
     this.openedBy = opener;
-    const popup = this.querySelector('.template-popup');
     document.body.classList.add('overflow-hidden');
     this.setAttribute('open', '');
-    if (popup) popup.loadContent();
+    this.querySelector('.template-popup')?.loadContent();
     trapFocus(this, this.querySelector('[role="dialog"]'));
   }
 
@@ -470,11 +408,8 @@ class ModalOpener extends HTMLElement {
     super();
 
     const button = this.querySelector('button');
-
-    if (!button) return;
-    button.addEventListener('click', () => {
-      const modal = document.querySelector(this.getAttribute('data-modal'));
-      if (modal) modal.show(button);
+    button?.addEventListener('click', () => {
+      document.querySelector(this.getAttribute('data-modal'))?.show(button);
     });
   }
 }
@@ -483,18 +418,16 @@ customElements.define('modal-opener', ModalOpener);
 class DeferredMedia extends HTMLElement {
   constructor() {
     super();
-    const poster = this.querySelector('[id^="Deferred-Poster-"]');
-    if (!poster) return;
-    poster.addEventListener('click', this.loadContent.bind(this));
+    this.querySelector('[id^="Deferred-Poster-"]')?.addEventListener('click', this.loadContent.bind(this));
   }
 
   loadContent() {
-    window.pauseAllMedia();
     if (!this.getAttribute('loaded')) {
       const content = document.createElement('div');
       content.appendChild(this.querySelector('template').content.firstElementChild.cloneNode(true));
 
       this.setAttribute('loaded', true);
+      window.pauseAllMedia();
       this.appendChild(content.querySelector('video, model-viewer, iframe')).focus();
     }
   }
@@ -530,17 +463,15 @@ class SliderComponent extends HTMLElement {
   }
 
   initPages() {
-    const sliderItemsToShow = Array.from(this.sliderItems).filter(element => element.clientWidth > 0);
-    this.sliderLastItem = sliderItemsToShow[sliderItemsToShow.length - 1];
-    if (sliderItemsToShow.length === 0) return;
-    this.slidesPerPage = Math.floor(this.slider.clientWidth / sliderItemsToShow[0].clientWidth);
-    this.totalPages = sliderItemsToShow.length - this.slidesPerPage + 1;
+    if (!this.sliderItems.length === 0) return;
+    this.slidesPerPage = Math.floor(this.slider.clientWidth / this.sliderItems[0].clientWidth);
+    this.totalPages = this.sliderItems.length - this.slidesPerPage + 1;
     this.update();
   }
 
   update() {
     if (!this.pageCount || !this.pageTotal) return;
-    this.currentPage = Math.round(this.slider.scrollLeft / this.sliderLastItem.clientWidth) + 1;
+    this.currentPage = Math.round(this.slider.scrollLeft / this.sliderItems[0].clientWidth) + 1;
 
     // if (this.currentPage === 1) {
     //   this.prevButton.setAttribute('disabled', true);
@@ -628,28 +559,18 @@ class VariantSelects extends HTMLElement {
   }
 
   updateMedia() {
-    if (!this.currentVariant) return;
-    if (!this.currentVariant.featured_media) return;
+    if (!this.currentVariant || !this.currentVariant?.featured_media) return;
     const newMedia = document.querySelector(
       `[data-media-id="${this.dataset.section}-${this.currentVariant.featured_media.id}"]`
     );
-
     if (!newMedia) return;
-    const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
-    const newMediaModal = modalContent.querySelector( `[data-media-id="${this.currentVariant.featured_media.id}"]`);
     const parent = newMedia.parentElement;
-    if (parent.firstChild == newMedia) return;
-    modalContent.prepend(newMediaModal);
     parent.prepend(newMedia);
-    this.stickyHeader = this.stickyHeader || document.querySelector('sticky-header');
-    if(this.stickyHeader) {
-      this.stickyHeader.dispatchEvent(new Event('preventHeaderReveal'));
-    }
-    window.setTimeout(() => { parent.querySelector('li.product__media-item').scrollIntoView({behavior: "smooth"}); });
+    window.setTimeout(() => { parent.scroll(0, 0) });
   }
 
   updateURL() {
-    if (!this.currentVariant || this.dataset.updateUrl === 'false') return;
+    if (!this.currentVariant) return;
     window.history.replaceState({ }, '', `${this.dataset.url}?variant=${this.currentVariant.id}`);
   }
 
@@ -666,7 +587,7 @@ class VariantSelects extends HTMLElement {
     const pickUpAvailability = document.querySelector('pickup-availability');
     if (!pickUpAvailability) return;
 
-    if (this.currentVariant && this.currentVariant.available) {
+    if (this.currentVariant?.available) {
       pickUpAvailability.fetchAvailability(this.currentVariant.id);
     } else {
       pickUpAvailability.removeAttribute('available');
@@ -685,17 +606,13 @@ class VariantSelects extends HTMLElement {
 
         if (source && destination) destination.innerHTML = source.innerHTML;
 
-        const price = document.getElementById(`price-${this.dataset.section}`);
-
-        if (price) price.classList.remove('visibility-hidden');
+        document.getElementById(`price-${this.dataset.section}`)?.classList.remove('visibility-hidden');
         this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
       });
   }
 
   toggleAddButton(disable = true, text, modifyClass = true) {
-    const productForm = document.getElementById(`product-form-${this.dataset.section}`);
-    if (!productForm) return;
-    const addButton = productForm.querySelector('[name="add"]');
+    const addButton = document.getElementById(`product-form-${this.dataset.section}`)?.querySelector('[name="add"]');
 
     if (!addButton) return;
 
@@ -711,12 +628,10 @@ class VariantSelects extends HTMLElement {
   }
 
   setUnavailable() {
-    const button = document.getElementById(`product-form-${this.dataset.section}`);
-    const addButton = button.querySelector('[name="add"]');
-    const price = document.getElementById(`price-${this.dataset.section}`);
+    const addButton = document.getElementById(`product-form-${this.dataset.section}`)?.querySelector('[name="add"]');
     if (!addButton) return;
     addButton.textContent = window.variantStrings.unavailable;
-    if (price) price.classList.add('visibility-hidden');
+    document.getElementById(`price-${this.dataset.section}`)?.classList.add('visibility-hidden');
   }
 
   getVariantData() {

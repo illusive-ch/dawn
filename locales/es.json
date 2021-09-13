@@ -47,12 +47,14 @@
       "copy_to_clipboard": "Copiar enlace",
       "share": "Compartir",
       "share_url": "Enlace",
-      "success_message": "Enlace copiado al portapapeles",
-      "close": "Cerrar compartición"
+      "success_message": "Enlace copiado al portapapeles"
     }
   },
+  "date_formats": {
+    "month_year": "%B %Y"
+  },
   "newsletter": {
-    "label": "Correo electrónico",
+    "label": "Tu correo electrónico",
     "success": "Gracias por suscribirte",
     "button_label": "Suscribirse"
   },
@@ -71,9 +73,7 @@
     "previous_slide": "Diapositiva a la izquierda",
     "loading": "Cargando...",
     "of": "de",
-    "skip_to_product_info": "Ir directamente a la información del producto",
-    "total_reviews": "reseñas totales",
-    "star_reviews_info": "{{ rating_value }} de {{ rating_max }} estrellas"
+    "skip_to_product_info": "Ir directamente a la información del producto"
   },
   "blogs": {
     "article": {
@@ -139,8 +139,7 @@
         "open_media": "Abrir elemento multimedia {{ index }} en vista de galería",
         "play_model": "Reproducir el visor 3D",
         "play_video": "Reproducir video"
-      },
-      "view_full_details": "Ver todos los detalles"
+      }
     },
     "modal": {
       "label": "Galería multimedia"
@@ -154,9 +153,7 @@
         "other": "Se encontraron {{ count }} resultados para \"{{ terms }}\""
       },
       "title": "Resultados de búsqueda",
-      "page": "Página",
-      "products": "Productos",
-      "search_for": "Buscar “{{ terms }}”"
+      "page": "Página"
     },
     "cart": {
       "cart": "Carrito"
