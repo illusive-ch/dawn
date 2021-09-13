@@ -47,14 +47,12 @@
       "copy_to_clipboard": "リンクをコピー",
       "share": "シェア",
       "share_url": "リンク",
-      "success_message": "リンクがクリップボードにコピーされました。"
+      "success_message": "リンクがクリップボードにコピーされました",
+      "close": "共有を閉じる"
     }
   },
-  "date_formats": {
-    "month_year": "%Y年%-m月%"
-  },
   "newsletter": {
-    "label": "メールアドレス",
+    "label": "メール",
     "success": "ご登録ありがとうございます",
     "button_label": "登録"
   },
@@ -72,8 +70,10 @@
     "next_slide": "右にスライド",
     "previous_slide": "左にスライド",
     "loading": "読み込み中…",
-    "of": "\/",
-    "skip_to_product_info": "商品情報にスキップ"
+    "of": "/",
+    "skip_to_product_info": "商品情報にスキップ",
+    "total_reviews": "レビュー数の合計",
+    "star_reviews_info": "{{ rating_max }}つ星中{{ rating_value }}つ"
   },
   "blogs": {
     "article": {
@@ -139,7 +139,8 @@
         "open_media": "ギャラリービューで掲載されているメディア{{ index }}を開く",
         "play_model": "3Dビューアーの再生",
         "play_video": "ビデオを再生"
-      }
+      },
+      "view_full_details": "詳細を表示する"
     },
     "modal": {
       "label": "メディアギャラリー"
@@ -153,7 +154,9 @@
         "other": "「{{ terms }}」の検索結果{{ count }}件"
       },
       "title": "検索結果",
-      "page": "ページ"
+      "page": "ページ",
+      "products": "商品管理",
+      "search_for": "「{{ terms }}」を検索"
     },
     "cart": {
       "cart": "カート"

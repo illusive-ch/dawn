@@ -47,14 +47,12 @@
       "copy_to_clipboard": "Kopírovať prepojenie",
       "share": "Zdieľať",
       "share_url": "Prepojenie",
-      "success_message": "Prepojenie sa skopírovalo do schránky."
+      "success_message": "Prepojenie sa skopírovalo do schránky",
+      "close": "Ukončiť zdieľanie"
     }
   },
-  "date_formats": {
-    "month_year": "%B %Y"
-  },
   "newsletter": {
-    "label": "Váš e-mail",
+    "label": "E-mail",
     "success": "Ďakujeme, že ste sa prihlásili na odber správ",
     "button_label": "Prihlásiť sa na odber"
   },
@@ -73,7 +71,9 @@
       "external": "Otvorí externú webovú lokalitu."
     },
     "of": "z",
-    "skip_to_product_info": "Prejsť na informácie o produkte"
+    "skip_to_product_info": "Prejsť na informácie o produkte",
+    "total_reviews": "celkový počet recenzií",
+    "star_reviews_info": "Počet hviezdičiek: {{ rating_value }}/{{ rating_max }}"
   },
   "blogs": {
     "article": {
@@ -141,7 +141,8 @@
         "open_media": "Otvoriť médium {{ index }} v zobrazení galérie",
         "play_model": "Prehrať 3D zobrazovač",
         "play_video": "Prehrať video"
-      }
+      },
+      "view_full_details": "Zobraziť všetky podrobnosti"
     },
     "modal": {
       "label": "Galéria médií"
@@ -157,7 +158,9 @@
         "few": "Pre výraz „{{ terms }}“ sa našiel tento počet výsledkov: {{ count }}",
         "many": "Pre výraz „{{ terms }}“ sa našiel tento počet výsledkov: {{ count }}"
       },
-      "page": "Strana"
+      "page": "Strana",
+      "products": "Produkty",
+      "search_for": "Vyhľadať výraz „{{ terms }}“"
     },
     "cart": {
       "cart": "Košík"

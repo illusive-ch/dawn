@@ -5,7 +5,13 @@
 }
 
 .card + .card-information {
-  margin-top: 1.2rem;
+  margin-top: 1.3rem;
+}
+
+@media screen and (min-width: 750px) {
+  .card + .card-information {
+    margin-top: 1.7rem;
+  }
 }
 
 .card.card--soft {
@@ -174,8 +180,14 @@
   color: rgb(var(--color-foreground));
 }
 
-.card-information__wrapper > *:not(.visually-hidden:first-child) + * {
-  margin-top: 1.1rem;
+.card-information__wrapper > .rating {
+  margin-top: 0.4rem;
+}
+
+.card-information__wrapper
+  > *:not(.visually-hidden:first-child)
+  + *:not(.rating) {
+  margin-top: 0.7rem;
 }
 
 .card-information__wrapper .caption {
@@ -243,7 +255,8 @@
 
 @media screen and (min-width: 990px) {
   .card .media.media--hover-effect > img:only-child,
-  .card-wrapper .media.media--hover-effect > img:only-child {
+  .card-wrapper .media.media--hover-effect > img:only-child,
+  .card--search img {
     transition: transform var(--duration-long) ease;
   }
 
@@ -267,10 +280,6 @@
   .card-wrapper:hover .card-information__text {
     text-decoration: underline;
     text-underline-offset: 0.3rem;
-  }
-
-  .card--search img {
-    transition: transform var(--duration-default) ease;
   }
 
   .card-wrapper:hover .card--search img {
