@@ -47,11 +47,9 @@
       "copy_to_clipboard": "Kopiraj povezavo",
       "share": "Deli",
       "share_url": "Povezava",
-      "success_message": "Povezava je kopirana v odložišče."
+      "success_message": "Povezava je kopirana v odložišče",
+      "close": "Zapri skupno rabo"
     }
-  },
-  "date_formats": {
-    "month_year": "%B %Y"
   },
   "newsletter": {
     "label": "E-poštni naslov",
@@ -73,7 +71,9 @@
       "external": "Odpre zunanje spletno mesto."
     },
     "of": "od",
-    "skip_to_product_info": "Preskoči na informacije o izdelku"
+    "skip_to_product_info": "Preskoči na informacije o izdelku",
+    "total_reviews": "skupno število pregledov",
+    "star_reviews_info": "{{ rating_value }} od {{ rating_max }} zvezdic"
   },
   "blogs": {
     "article": {
@@ -141,7 +141,8 @@
         "open_media": "Odpri predstavnostno vsebino {{ index }} v pogledu galerije",
         "play_model": "Predvajaj 3D-pregledovalnik",
         "play_video": "Predvajaj videoposnetek"
-      }
+      },
+      "view_full_details": "Prikaži vse podrobnosti"
     },
     "modal": {
       "label": "Galerija predstavnostnih vsebin"
@@ -157,7 +158,9 @@
         "other": "Št. najdenih rezultatov za »{{ terms }}«: {{ count }}»",
         "few": "Št. najdenih rezultatov za »{{ terms }}«: {{ count }}»",
         "two": "Št. najdenih rezultatov za »{{ terms }}«: {{ count }}»"
-      }
+      },
+      "products": "Izdelki",
+      "search_for": "Poiščite »{{ terms }}«"
     },
     "cart": {
       "cart": "Košarica"
