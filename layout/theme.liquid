@@ -64,6 +64,7 @@
         --payment-terms-background-color: {{ settings.colors_background_1 }};
 
         --page-width: {{ settings.page_width | divided_by: 10 }}rem;
+        --page-width-margin: {% if settings.page_width == '1600' %}2{% else %}0{% endif %}rem;
       }
 
       *,
@@ -119,7 +120,6 @@
 
     {% section 'header' %}
     {% section 'sellingpoints-bar' %}
-    {% comment %}{% section 'announcement-bar' %}{% endcomment %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
@@ -151,4 +151,9 @@
     </script>
   
 {% render 'page-footer.zipifypages', renderctx: 'thm', ocuapp: ocuapp %}</body>
+
+    {%- if settings.predictive_search_enabled -%}
+      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+  </body>
 </html>

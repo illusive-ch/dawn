@@ -83,7 +83,8 @@ class CartItems extends HTMLElement {
         }));
 
         this.updateLiveRegions(line, parsedState.item_count);
-        document.getElementById(`CartItem-${line}`)?.querySelector(`[name="${name}"]`)?.focus();
+        const lineItem =  document.getElementById(`CartItem-${line}`);
+        if (lineItem && lineItem.querySelector(`[name="${name}"]`)) lineItem.querySelector(`[name="${name}"]`).focus();
         this.disableLoading();
       }).catch(() => {
         this.querySelectorAll('.loading-overlay').forEach((overlay) => overlay.classList.add('hidden'));

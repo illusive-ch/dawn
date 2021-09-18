@@ -374,7 +374,7 @@
           "options__3": {
             "label": "Square"
           },
-          "info": "Om afbeeldingen toe te voegen, [bewerk je collecties](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
+          "info": "Voeg afbeeldingen toe door je collecties bij te werken. [Meer informatie](https://help.shopify.com/en/manual/products/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -592,7 +592,7 @@
         },
         "header__1": {
           "content": "Aanmelding voor het ontvangen van e-mail",
-          "info": "Abonnees die worden toegevoegd aan je 'geaccepteerde marketing' [klantenlijst.](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers)"
+          "info": "Abonnees die worden toegevoegd aan je 'geaccepteerde marketing'-klantenlijst. [Meer informatie](https://help.shopify.com/en/manual/customers/manage-customers)"
         },
         "header__2": {
           "content": "Pictogrammen voor social media",
@@ -880,7 +880,10 @@
               "content": "De uitgelichte afbeelding van de pagina wordt weergegeven als een voorbeeldafbeelding als je een link in je posts op social media plaatst. [Meer informatie](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "Een winkelnaam en beschrijving worden weergegeven in de voorbeeldafbeelding. [Meer informatie](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
+              "content": "Een winkelnaam en beschrijving worden weergegeven in de voorbeeldafbeelding. [Meer informatie](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)"
+            },
+            "text": {
+              "label": "Tekst"
             }
           }
         }
@@ -897,7 +900,7 @@
           "info": "Voor de beste resultaten, gebruik je een afbeelding met een beeldverhouding van 2:3."
         },
         "paragraph": {
-          "content": "Om uittreksels te wijzigen, bewerk je je [blogberichten.](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Wijzig uittreksels door je blogposts bij te werken. [Meer informatie](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "show_date": {
           "label": "Datum weergeven"
@@ -954,7 +957,7 @@
       "name": "Collectiebanner",
       "settings": {
         "paragraph": {
-          "content": "Om collectiebeschrijvingen of collectie-afbeeldingen te veranderen, [bewerk je je collecties](\/admin\/collections)."
+          "content": "Voeg een beschrijving of afbeelding toe door je collectie bij te werken. [Meer informatie](https://help.shopify.com/en/manual/products/collections/collection-layout)"
         },
         "show_collection_description": {
           "label": "Collectiebeschrijving weergeven"
@@ -1058,7 +1061,7 @@
           "options__3": {
             "label": "Square"
           },
-          "info": "Om afbeeldingen toe te voegen, [bewerk je collecties](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
+          "info": "Voeg afbeeldingen toe door je collecties bij te werken. [Meer informatie](https://help.shopify.com/en/manual/products/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -1211,7 +1214,10 @@
               "content": "De uitgelichte afbeelding van de pagina wordt weergegeven als een voorbeeldafbeelding als je een link in je posts op social media plaatst. [Meer informatie](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "Een winkelnaam en beschrijving worden weergegeven in de voorbeeldafbeelding. [Meer informatie](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
+              "content": "Een winkelnaam en beschrijving worden weergegeven in de voorbeeldafbeelding. [Meer informatie](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)"
+            },
+            "text": {
+              "label": "Tekst"
             }
           }
         },
@@ -1488,7 +1494,7 @@
           "label": "Volledige breedte voor sectie gebruiken"
         },
         "paragraph": {
-          "content": "Wanneer klanten zich abonneren op e-mails, worden klantenaccounts aangemaakt. [Meer informatie](https:\/\/help.shopify.com\/en\/manual\/customers)"
+          "content": "Voor elk abonnement via e-mail wordt een klantaccount aangemaakt. [Meer informatie](https://help.shopify.com/en/manual/customers)"
         }
       },
       "blocks": {

@@ -41,6 +41,11 @@
         "label": "Accent 3"
       },
       {
+        "id": "gradient_accent_2",
+        "type": "color_background",
+        "label": "t:settings_schema.colors.settings.gradient_accent_2.label"
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.colors.settings.header__2.content"
       },
@@ -264,6 +269,26 @@
         "id": "favicon",
         "label": "t:settings_schema.favicon.settings.favicon.label",
         "info": "t:settings_schema.favicon.settings.favicon.info"
+      }
+    ]
+  },
+  {
+    "name": "Cart Testimonial",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "cart_testimonial_image",
+        "label": "Image for testimonial review"
+      },
+      {
+        "type": "text",
+        "id": "cart_testimonial_review",
+        "label": "Review for cart"
+      },
+      {
+        "type": "text",
+        "id": "cart_testimonial_reviewer",
+        "label": "Name of person who left the review"
       }
     ]
   },

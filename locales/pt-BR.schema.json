@@ -374,7 +374,7 @@
           "options__3": {
             "label": "Quadrada"
           },
-          "info": "Para adicionar imagens, [edite as coleções.](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
+          "info": "Edite as coleções para adicionar imagens. [Saiba mais](https://help.shopify.com/en/manual/products/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -592,7 +592,7 @@
         },
         "header__1": {
           "content": "Assinante de e-mail",
-          "info": "Assinantes adicionados à [lista de clientes](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers) que aceitam marketing."
+          "info": "Assinantes adicionados automaticamente à lista de clientes que \"aceitam marketing\". [Saiba mais](https://help.shopify.com/en/manual/customers/manage-customers)"
         },
         "header__2": {
           "content": "Ícones de redes sociais",
@@ -880,7 +880,10 @@
               "content": "Se você incluir um link em publicações nas redes sociais, a imagem em destaque da página será exibida como na pré-visualização. [Saiba mais](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "Um título e uma descrição da loja estão incluídos na imagem de pré-visualização. [Saiba mais](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "Um título e uma descrição da loja estão incluídos na imagem de pré-visualização. [Saiba mais](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+            },
+            "text": {
+              "label": "Texto"
             }
           }
         }
@@ -897,7 +900,7 @@
           "info": "Use uma imagem com proporção de 2:3 para ter os melhores resultados."
         },
         "paragraph": {
-          "content": "Para alterar resumos, edite os [posts do blog.](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Edite os posts do blog para alterar os resumos. [Saiba mais](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "show_date": {
           "label": "Exibir data"
@@ -954,7 +957,7 @@
       "name": "Banner da coleção",
       "settings": {
         "paragraph": {
-          "content": "Para alterar as descrições ou as imagens de coleção, [edite suas coleções](\/admin\/collections)."
+          "content": "Edite a coleção para adicionar imagens ou descrições. [Saiba mais](https://help.shopify.com/en/manual/products/collections/collection-layout)"
         },
         "show_collection_description": {
           "label": "Exibir a descrição da coleção"
@@ -973,7 +976,7 @@
         },
         "enable_filtering": {
           "label": "Habilitar filtragem",
-          "info": "[Personalizar filtros](\/admin\/menus)"
+          "info": "Personalizar [filtros](/admin/menus)"
         },
         "enable_sorting": {
           "label": "Habilitar organização"
@@ -1058,7 +1061,7 @@
           "options__3": {
             "label": "Quadrada"
           },
-          "info": "Para adicionar imagens, [edite as coleções.](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
+          "info": "Edite as coleções para adicionar imagens. [Saiba mais](https://help.shopify.com/en/manual/products/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -1206,7 +1209,10 @@
               "content": "Se você incluir um link em publicações nas redes sociais, a imagem em destaque da página será exibida como na pré-visualização. [Saiba mais](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "Um título e uma descrição da loja estão incluídos na imagem de pré-visualização. [Saiba mais](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "Um título e uma descrição da loja estão incluídos na imagem de pré-visualização. [Saiba mais](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+            },
+            "text": {
+              "label": "Texto"
             }
           }
         },
@@ -1323,7 +1329,7 @@
       "settings": {
         "header": {
           "content": "Mídia",
-          "info": "Saiba mais sobre os [tipos de mídia.](https:\/\/help.shopify.com\/manual\/products\/product-media)"
+          "info": "Saiba mais sobre [tipos de mídia.](https://help.shopify.com/manual/products/product-media)"
         },
         "enable_video_looping": {
           "label": "Habilitar loop de vídeo"
@@ -1484,7 +1490,7 @@
           "label": "Definir seção com largura total"
         },
         "paragraph": {
-          "content": "Quando o cliente se inscreve em e-mails, uma conta de cliente é criada. [Saiba mais.](https:\/\/help.shopify.com\/en\/manual\/customers)"
+          "content": "Cada assinatura por e-mail cria uma conta de cliente. [Saiba mais](https://help.shopify.com/en/manual/customers)"
         }
       },
       "blocks": {

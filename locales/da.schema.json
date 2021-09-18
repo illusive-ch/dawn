@@ -374,7 +374,7 @@
           "options__3": {
             "label": "Firkantet"
           },
-          "info": "Hvis du vil tilføje billeder, skal du [redigere dine kollektioner](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
+          "info": "Tilføj billeder ved at redigere dine kollektioner. [Få mere at vide](https://help.shopify.com/en/manual/products/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -592,7 +592,7 @@
         },
         "header__1": {
           "content": "Tilmelding med mail",
-          "info": "Abonnenter, der er føjet til din \"accepter markedsføring\" [kundeliste.](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers)"
+          "info": "Abonnenter, der automatisk er føjet til kundelisten “Accepterer markedsføring”. [Få mere at vide](https://help.shopify.com/en/manual/customers/manage-customers)"
         },
         "header__2": {
           "content": "Ikoner for sociale medier",
@@ -880,7 +880,10 @@
               "content": "Hvis du inkluderer et link i opslag på sociale medier, vil sidens udvalgte billede blive vist som billedeksempel. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "Der er inkluderet en butikstitel og -beskrivelse med billedeksemplet. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "Der er inkluderet en butikstitel og -beskrivelse med billedeksemplet. [Få mere at vide](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+            },
+            "text": {
+              "label": "Tekst"
             }
           }
         }
@@ -897,7 +900,7 @@
           "info": "Brug et billede med et højde-bredde-forhold på 2:3 for at opnå det bedste resultat."
         },
         "paragraph": {
-          "content": "Hvis du vil ændre uddrag, skal du redigere dine [blogopslag.](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Skift uddrag ved at redigere dine blogopslag. [Få mere at vide](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "show_date": {
           "label": "Vis dato"
@@ -954,7 +957,7 @@
       "name": "Kollektionsbanner",
       "settings": {
         "paragraph": {
-          "content": "Hvis du vil ændre kollektionsbeskrivelser eller kollektionsbilleder, skal du [redigere dine kollektioner.](\/admin\/collections)"
+          "content": "Tilføj en beskrivelse eller et billede ved at redigere din kollektion. [Få mere at vide](https://help.shopify.com/en/manual/products/collections/collection-layout)"
         },
         "show_collection_description": {
           "label": "Vis kollektionsbeskrivelse"
@@ -998,7 +1001,7 @@
         },
         "enable_filtering": {
           "label": "Aktivér filtrering",
-          "info": "[Tilpas filtre](\/admin\/menus)"
+          "info": "Tilpas [filtre](/admin/menus)"
         },
         "enable_sorting": {
           "label": "Aktivér sortering"
@@ -1058,7 +1061,7 @@
           "options__3": {
             "label": "Firkantet"
           },
-          "info": "Hvis du vil tilføje billeder, skal du [redigere dine kollektioner](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
+          "info": "Tilføj billeder ved at redigere dine kollektioner. [Få mere at vide](https://help.shopify.com/en/manual/products/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -1211,7 +1214,10 @@
               "content": "Hvis du inkluderer et link i opslag på sociale medier, vil sidens udvalgte billede blive vist som billedeksempel. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "Der er inkluderet en butikstitel og -beskrivelse med billedeksemplet. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "Der er inkluderet en butikstitel og -beskrivelse med billedeksemplet. [Få mere at vide](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+            },
+            "text": {
+              "label": "Tekst"
             }
           }
         },
@@ -1328,7 +1334,7 @@
       "settings": {
         "header": {
           "content": "Medie",
-          "info": "Få mere at vide om [medietyper](https:\/\/help.shopify.com\/manual\/products\/product-media)"
+          "info": "Få mere at vide om [medietyper.](https://help.shopify.com/manual/products/product-media)"
         },
         "enable_video_looping": {
           "label": "Aktivér looping af videoer"
@@ -1488,7 +1494,7 @@
           "label": "Gør afsnittet til fuld bredde"
         },
         "paragraph": {
-          "content": "Når kunder abonnerer på mails, oprettes der kundekonti. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/customers)"
+          "content": "Alle mailabonnementer opretter en kundekonto. [Få mere at vide](https://help.shopify.com/en/manual/customers)"
         }
       },
       "blocks": {

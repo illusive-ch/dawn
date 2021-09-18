@@ -370,7 +370,7 @@
           "options__3": {
             "label": "Square"
           },
-          "info": "To add images, [edit your collections](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
+          "info": "Add images by editing your collections. [Learn more](https://help.shopify.com/en/manual/products/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -569,7 +569,7 @@
         },
         "header__1": {
           "content": "Email Signup",
-          "info": "Subscribers added to your “accepted marketing” [customer list.](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers)"
+          "info": "Subscribers added automatically to your “accepted marketing” customer list. [Learn more](https://help.shopify.com/en/manual/customers/manage-customers)"
         },
         "header__2": {
           "content": "Social media icons",
@@ -877,7 +877,7 @@
           "label": "Show author"
         },
         "paragraph": {
-          "content": "To change excerpts, edit your [blog posts.](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Change excerpts by editing your blog posts. [Learn more](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
         }
       }
     },
@@ -909,7 +909,7 @@
       "name": "Collection banner",
       "settings": {
         "paragraph": {
-          "content": "To change collection descriptions or collection images, [edit your collections.](\/admin\/collections)"
+          "content": "Add a description or image by editing your collection. [Learn more](https://help.shopify.com/en/manual/products/collections/collection-layout)"
         },
         "show_collection_description": {
           "label": "Show collection description"
@@ -928,7 +928,7 @@
         },
         "enable_filtering": {
           "label": "Enable filtering",
-          "info": "[Customize filters](\/admin\/menus)"
+          "info": "Customize [filters](/admin/menus)"
         },
         "enable_sorting": {
           "label": "Enable sorting"
@@ -1013,7 +1013,7 @@
           "options__3": {
             "label": "Square"
           },
-          "info": "To add images, [edit your collections](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
+          "info": "Add images by editing your collections. [Learn more](https://help.shopify.com/en/manual/products/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -1279,7 +1279,7 @@
       "settings": {
         "header": {
           "content": "Media",
-          "info": "Learn more about [media types](https:\/\/help.shopify.com\/manual\/products\/product-media)"
+          "info": "Learn more about [media types.](https://help.shopify.com/manual/products/product-media)"
         },
         "enable_sticky_info": {
           "label": "Enable sticky product information on large screens"
@@ -1439,7 +1439,7 @@
           "label": "Make section full width"
         },
         "paragraph": {
-          "content": "When customers subscribe to emails, customer accounts are created. [Learn more](https:\/\/help.shopify.com\/en\/manual\/customers)"
+          "content": "Each email subscription creates a customer account. [Learn more](https://help.shopify.com/en/manual/customers)"
         }
       },
       "blocks": {

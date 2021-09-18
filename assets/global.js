@@ -534,6 +534,7 @@ class VariantSelects extends HTMLElement {
     this.updateMasterId();
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
+    this.removeErrorMessage();
 
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
@@ -593,6 +594,14 @@ class VariantSelects extends HTMLElement {
       pickUpAvailability.removeAttribute('available');
       pickUpAvailability.innerHTML = '';
     }
+  }
+
+  removeErrorMessage() {
+    const section = this.closest('section');
+    if (!section) return;
+
+    const productForm = section.querySelector('product-form');
+    if (productForm) productForm.handleErrorMessage();
   }
 
   renderProductInfo() {

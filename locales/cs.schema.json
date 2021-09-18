@@ -365,7 +365,7 @@
         },
         "image_ratio": {
           "label": "Poměr obrázku",
-          "info": "Obrázky přidáte tak, že [upravíte kolekce](https:\/\/help.shopify.com\/en\/manual\/products\/collections)",
+          "info": "Přidejte obrázky tak, že začnete upravovat kolekce. [Zjistit více](https://help.shopify.com/en/manual/products/collections)",
           "options__1": {
             "label": "Přizpůsobení obrázku"
           },
@@ -592,7 +592,7 @@
         },
         "header__1": {
           "content": "Přihlášení k odběru e-mailů",
-          "info": "Odběratelé byli přidáni do vašeho [seznamu zákazníků, kteří přijímají marketing.](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers)"
+          "info": "Odběratelé byli automaticky přidáni do vašeho seznamu zákazníků, kteří přijímají marketing. [Zjistit více](https://help.shopify.com/en/manual/customers/manage-customers)"
         },
         "header__2": {
           "content": "Ikony sociálních sítí",
@@ -880,7 +880,10 @@
               "content": "Pokud v příspěvcích na sociálních sítích uvedete odkaz, jako náhledový obrázek se zobrazí propagovaný obrázek stránky. [Zjistit více](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "U náhledového obrázku je uveden také název a popis obchodu. [Zjistit více](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "U náhledového obrázku je uveden také název a popis obchodu. [Zjistit více](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+            },
+            "text": {
+              "label": "Text"
             }
           }
         }
@@ -897,7 +900,7 @@
           "info": "Nejlepších výsledků dosáhnete pomocí obrázku s poměrem stran 2:3."
         },
         "paragraph": {
-          "content": "Úryvky změníte tak, že upravíte své [blogové příspěvky.](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Změňte úryvky tak, že začnete upravovat blogové příspěvky. [Zjistit více](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "show_date": {
           "label": "Zobrazit datum"
@@ -954,7 +957,7 @@
       "name": "Banner kolekce",
       "settings": {
         "paragraph": {
-          "content": "Popisy nebo obrázky kolekcí změníte tak, že [upravíte své kolekce.](\/admin\/collections)"
+          "content": "Přidejte popis nebo obrázek tak, že začnete upravovat příslušnou kolekci. [Zjistit více](https://help.shopify.com/en/manual/products/collections/collection-layout)"
         },
         "show_collection_description": {
           "label": "Zobrazit popis kolekce"
@@ -998,7 +1001,7 @@
         },
         "enable_filtering": {
           "label": "Povolit filtrování",
-          "info": "[Přizpůsobte si filtry](\/admin\/menus)"
+          "info": "Přizpůsobte si [filtry](/admin/menus)"
         },
         "enable_sorting": {
           "label": "Povolit řazení"
@@ -1049,7 +1052,7 @@
         },
         "image_ratio": {
           "label": "Poměr obrázku",
-          "info": "Obrázky přidáte tak, že [upravíte kolekce](https:\/\/help.shopify.com\/en\/manual\/products\/collections)",
+          "info": "Přidejte obrázky tak, že začnete upravovat kolekce. [Zjistit více](https://help.shopify.com/en/manual/products/collections)",
           "options__1": {
             "label": "Přizpůsobení obrázku"
           },
@@ -1211,7 +1214,10 @@
               "content": "Pokud v příspěvcích na sociálních sítích uvedete odkaz, jako náhledový obrázek se zobrazí propagovaný obrázek stránky. [Zjistit více](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "U náhledového obrázku je uveden také název a popis obchodu. [Zjistit více](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "U náhledového obrázku je uveden také název a popis obchodu. [Zjistit více](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+            },
+            "text": {
+              "label": "Text"
             }
           }
         },
@@ -1328,7 +1334,7 @@
       "settings": {
         "header": {
           "content": "Multimédia",
-          "info": "Zjistit více o [typech multimédií](https:\/\/help.shopify.com\/manual\/products\/product-media)"
+          "info": "Zjistěte více o [typech multimédií](https://help.shopify.com/manual/products/product-media)."
         },
         "enable_video_looping": {
           "label": "Povolit smyčky videa"
@@ -1488,7 +1494,7 @@
           "label": "Nastavit plnou šířku sekce"
         },
         "paragraph": {
-          "content": "Jakmile se zákazníci přihlásí k odběru e-mailů, vytvoří se pro ně zákaznické účty. [Zjistit více](https:\/\/help.shopify.com\/en\/manual\/customers)"
+          "content": "Každý odběr e-mailů vytvoří zákaznický účet. [Zjistit více](https://help.shopify.com/en/manual/customers)"
         }
       },
       "blocks": {

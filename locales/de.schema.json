@@ -33,6 +33,18 @@
         },
         "colors_background_2": {
           "label": "Hintergrund 2"
+        },
+        "gradient_accent_1": {
+          "label": "Akzent 1 Farbverlauf"
+        },
+        "gradient_accent_2": {
+          "label": "Akzent 2 Farbverlauf"
+        },
+        "gradient_background_1": {
+          "label": "Hintergrund 1 Farbverlauf"
+        },
+        "gradient_background_2": {
+          "label": "Hintergrund 2 Farbverlauf"
         }
       }
     },
@@ -374,7 +386,7 @@
           "options__3": {
             "label": "Quadratisch"
           },
-          "info": "Um Bilder hinzuzufügen, [bearbeite deine Kategorien](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
+          "info": "Bearbeite deine Kategorien, um Bilder hinzuzufügen. [Mehr Informationen](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -452,7 +464,7 @@
         },
         "show_image": {
           "label": "Feature-Bild anzeigen",
-          "info": "Verwende für Bilder ein Seitenverhältnis von 2:3 für optimale Ergebnisse."
+          "info": "Verwende für Bilder ein Seitenverhältnis von 2:3 für optimale Ergebnisse. [Mehr Informationen](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "soft_background": {
           "label": "Sekundären Hintergrund anzeigen"
@@ -530,7 +542,11 @@
           "label": "Anbieter anzeigen"
         },
         "show_image_outline": {
-          "label": "Bildumriss anzeigen"
+          "label": "Bildrahmen anzeigen"
+        },
+        "show_rating": {
+          "label": "Produktbewertung anzeigen",
+          "info": "Um eine Bewertung anzuzeigen, musst du eine Produktbewertungs-App hinzufügen. [Mehr Informationen](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-collection-show-product-rating)"
         }
       },
       "presets": {
@@ -592,7 +608,7 @@
         },
         "header__1": {
           "content": "E-Mail-Anmeldung",
-          "info": "Abonnenten, die zu deiner “Marketing akzeptiert”-[Kundenliste](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers) hinzugefügt wurden."
+          "info": "Abonnenten, die automatisch zu deiner Kundenliste \"Akzeptiert Marketing\" hinzugefügt wurden. [Mehr Informationen](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers)"
         },
         "header__2": {
           "content": "Social Media-Symbole",
@@ -852,7 +868,7 @@
               "options__3": {
                 "label": "Groß"
               },
-              "info": "Verwende für Bilder ein Seitenverhältnis von 16:9 für optimale Ergebnisse."
+              "info": "Verwende für Bilder ein Seitenverhältnis von 16:9 für optimale Ergebnisse. [Mehr Informationen](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
             }
           }
         },
@@ -881,6 +897,9 @@
             },
             "title_info": {
               "content": "Ein Titel und eine Beschreibung des Shops sind im Vorschaubild enthalten. [Mehr Informationen](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
+            },
+            "text": {
+              "label": "Text"
             }
           }
         }
@@ -894,10 +913,10 @@
         },
         "show_image": {
           "label": "Feature-Bild anzeigen",
-          "info": "Verwende für Bilder ein Seitenverhältnis von 2:3 für optimale Ergebnisse."
+          "info": "Verwende für Bilder ein Seitenverhältnis von 2:3 für optimale Ergebnisse. [Mehr Informationen](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "paragraph": {
-          "content": "Um Auszüge zu ändern, bearbeite deine [Blog-Beiträge.](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Bearbeite deine Blog-Beiträge, um Auszüge zu ändern. [Mehr Informationen](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "show_date": {
           "label": "Datum anzeigen"
@@ -954,14 +973,14 @@
       "name": "Kategoriebanner",
       "settings": {
         "paragraph": {
-          "content": "Um die Beschreibungen oder Bilder deiner Kategorien zu ändern, [bearbeite deine Kategorien.](\/admin\/collections)"
+          "content": "Bearbeite deine Kategorien, um eine Beschreibung oder ein Bild hinzuzufügen. [Mehr Informationen](https:\/\/help.shopify.com\/en\/manual\/products\/collections\/collection-layout)"
         },
         "show_collection_description": {
           "label": "Kategoriebeschreibung anzeigen"
         },
         "show_collection_image": {
           "label": "Kategoriebild anzeigen",
-          "info": "Verwende für Bilder ein Seitenverhältnis von 16:9 für optimale Ergebnisse."
+          "info": "Verwende für Bilder ein Seitenverhältnis von 16:9 für optimale Ergebnisse. [Mehr Informationen](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         }
       }
     },
@@ -973,7 +992,7 @@
         },
         "enable_filtering": {
           "label": "Filtern aktivieren",
-          "info": "[Filter anpassen](\/admin\/menus)"
+          "info": "[Filter](\/admin\/menus) anpassen"
         },
         "enable_sorting": {
           "label": "Sortieren aktivieren"
@@ -1017,6 +1036,10 @@
         },
         "collapse_on_larger_devices": {
           "label": "Auf größeren Bildschirmen minimieren"
+        },
+        "show_rating": {
+          "label": "Produktbewertung anzeigen",
+          "info": "Um eine Bewertung anzuzeigen, musst du eine Produktbewertungs-App hinzufügen. [Mehr Informationen](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-grid-show-product-rating)"
         }
       }
     },
@@ -1058,7 +1081,7 @@
           "options__3": {
             "label": "Quadratisch"
           },
-          "info": "Um Bilder hinzuzufügen, [bearbeite deine Kategorien](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
+          "info": "Bearbeite deine Kategorien, um Bilder hinzuzufügen. [Mehr Informationen](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -1207,6 +1230,9 @@
             },
             "title_info": {
               "content": "Ein Titel und eine Beschreibung des Shops sind im Vorschaubild enthalten. [Mehr Informationen](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+            },
+            "text": {
+              "label": "Text"
             }
           }
         },
@@ -1318,12 +1344,20 @@
               "label": "Benutzerdefiniertes Liquid"
             }
           }
+        },
+        "rating": {
+          "name": "Produktbewertung",
+          "settings": {
+            "paragraph": {
+              "content": "Um eine Bewertung anzuzeigen, musst du eine Produktbewertungs-App hinzufügen. [Mehr Informationen](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-rating-block)"
+            }
+          }
         }
       },
       "settings": {
         "header": {
           "content": "Medien",
-          "info": "Mehr Informationen zu [Medienarten](https:\/\/help.shopify.com\/manual\/products\/product-media)"
+          "info": "Mehr Informationen über [Medienarten](https:\/\/help.shopify.com\/manual\/products\/product-media)."
         },
         "enable_video_looping": {
           "label": "Videoschleife aktivieren"
@@ -1371,7 +1405,11 @@
           "label": "Autor anzeigen"
         },
         "show_image_outline": {
-          "label": "Bildumriss anzeigen"
+          "label": "Bildrahmen anzeigen"
+        },
+        "show_rating": {
+          "label": "Produktbewertung anzeigen",
+          "info": "Um eine Bewertung anzuzeigen, musst du eine Produktbewertungs-App hinzufügen. [Mehr Informationen](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#search-results-show-product-rating)"
         }
       }
     },
@@ -1484,7 +1522,7 @@
           "label": "Abschnitt über die gesamte Breite"
         },
         "paragraph": {
-          "content": "Wenn Kunden E-Mails abonnieren, werden Kundenkonten erstellt. [Weitere Informationen](https:\/\/help.shopify.com\/en\/manual\/customers)"
+          "content": "Durch jedes E-Mail-Abonnement wird ein Kundenkonto erstellt. [Mehr Informationen](https:\/\/help.shopify.com\/en\/manual\/customers)"
         }
       },
       "blocks": {
@@ -1560,7 +1598,11 @@
           "content": "Dynamische Empfehlungen nutzen Bestell- und Produktinformationen, um sich mit der Zeit zu verändern und zu verbessern. [Weitere Informationen](https:\/\/help.shopify.com\/en\/themes\/development\/recommended-products)"
         },
         "show_image_outline": {
-          "label": "Bildumriss anzeigen"
+          "label": "Bildrahmen anzeigen"
+        },
+        "show_rating": {
+          "label": "Produktbewertung anzeigen",
+          "info": "Um eine Bewertung anzuzeigen, musst du eine Produktbewertungs-App hinzufügen. [Mehr Informationen](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-recommendations-show-product-rating)"
         }
       }
     },
@@ -1676,6 +1718,117 @@
       },
       "presets": {
         "name": "Video"
+      }
+    },
+    "featured-product": {
+      "name": "Vorgestelltes Produkt",
+      "blocks": {
+        "text": {
+          "name": "Text",
+          "settings": {
+            "text": {
+              "label": "Text"
+            },
+            "text_style": {
+              "label": "Textstil",
+              "options__1": {
+                "label": "Nachricht"
+              },
+              "options__2": {
+                "label": "Untertitel"
+              },
+              "options__3": {
+                "label": "Großbuchstaben"
+              }
+            }
+          }
+        },
+        "title": {
+          "name": "Titel"
+        },
+        "price": {
+          "name": "Preis"
+        },
+        "quantity_selector": {
+          "name": "Mengenauswahl"
+        },
+        "variant_picker": {
+          "name": "Variantenauswahl",
+          "settings": {
+            "picker_type": {
+              "label": "Art",
+              "options__1": {
+                "label": "Dropdown"
+              },
+              "options__2": {
+                "label": "Schaltfläche"
+              }
+            }
+          }
+        },
+        "buy_buttons": {
+          "name": "Buy Buttons",
+          "settings": {
+            "show_dynamic_checkout": {
+              "label": "Dynamischen Checkout-Button anzeigen",
+              "info": "Wenn sie die Zahlungsmethoden verwenden, die in deinem Shop verfügbar sind, sehen Kunden ihre bevorzugte Option, z. B. PayPal oder Apple Pay. [Mehr Informationen](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            }
+          }
+        },
+        "description": {
+          "name": "Beschreibung"
+        },
+        "share": {
+          "name": "Teilen",
+          "settings": {
+            "featured_image_info": {
+              "content": "Wenn du einen Link in Social-Media-Posts einfügst, wird das Feature-Bild der Seite als Vorschaubild angezeigt. [Mehr Informationen](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)"
+            },
+            "title_info": {
+              "content": "Ein Titel und eine Beschreibung des Shops sind im Vorschaubild enthalten. [Mehr Informationen](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
+            },
+            "text": {
+              "label": "Text"
+            }
+          }
+        },
+        "custom_liquid": {
+          "name": "Benutzerdefiniertes Liquid",
+          "settings": {
+            "custom_liquid": {
+              "label": "Benutzerdefiniertes Liquid"
+            }
+          }
+        },
+        "rating": {
+          "name": "Produktbewertung",
+          "settings": {
+            "paragraph": {
+              "content": "Um eine Bewertung anzuzeigen, musst du eine Produktbewertungs-App hinzufügen. [Mehr Informationen](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-product-rating)"
+            }
+          }
+        }
+      },
+      "settings": {
+        "product": {
+          "label": "Produkt"
+        },
+        "secondary_background": {
+          "label": "Sekundären Hintergrund anzeigen"
+        },
+        "header": {
+          "content": "Medien",
+          "info": "Mehr Informationen zu [Medienarten](https:\/\/help.shopify.com\/manual\/products\/product-media)"
+        },
+        "enable_video_looping": {
+          "label": "Videoschleife aktivieren"
+        },
+        "hide_variants": {
+          "label": "Medien von nicht ausgewählten Varianten auf dem Desktop ausblenden"
+        }
+      },
+      "presets": {
+        "name": "Vorgestelltes Produkt"
       }
     }
   }

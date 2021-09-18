@@ -33,6 +33,18 @@
         },
         "colors_background_2": {
           "label": "2. Arka plan"
+        },
+        "gradient_accent_1": {
+          "label": "1. Vurgu gradyanı"
+        },
+        "gradient_accent_2": {
+          "label": "2. Vurgu gradyanı"
+        },
+        "gradient_background_1": {
+          "label": "1. Arka plan gradyanı"
+        },
+        "gradient_background_2": {
+          "label": "2. Arka plan gradyanı"
         }
       }
     },
@@ -374,7 +386,7 @@
           "options__3": {
             "label": "Kare"
           },
-          "info": "Görsel eklemek için [koleksiyonlarınızı düzenleyin](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
+          "info": "Koleksiyonlarınızı düzenleyerek görsel ekleyin. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -452,7 +464,7 @@
         },
         "show_image": {
           "label": "Öne çıkan görseli göster",
-          "info": "En iyi sonuçlar için 2:3 en-boy oranına sahip bir görsel kullanın."
+          "info": "En iyi sonuçlar için 2:3 en-boy oranına sahip bir görsel kullanın. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "soft_background": {
           "label": "İkincil arka planı göster"
@@ -530,7 +542,11 @@
           "label": "Satıcıyı göster"
         },
         "show_image_outline": {
-          "label": "Görsel dış çizgisini göster"
+          "label": "Görsel kenarlığını göster"
+        },
+        "show_rating": {
+          "label": "Ürün puanlarını göster",
+          "info": "Puan göstermek için bir ürün puanlandırma uygulaması ekleyin. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-collection-show-product-rating)"
         }
       },
       "presets": {
@@ -592,7 +608,7 @@
         },
         "header__1": {
           "content": "E-posta Kaydı",
-          "info": "Şu listenize eklenen aboneler: \"kabul edilen pazarlama\" [müşteri listesi.](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers)"
+          "info": "\"Kabul edilen pazarlama\" müşteri listenize otomatik olarak eklenen aboneler. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers)"
         },
         "header__2": {
           "content": "Sosyal medya simgeleri",
@@ -852,7 +868,7 @@
               "options__3": {
                 "label": "Büyük"
               },
-              "info": "En iyi sonuçlar için 16:9 en-boy oranına sahip bir görsel kullanın."
+              "info": "En iyi sonuçlar için 16:9 en-boy oranına sahip bir görsel kullanın. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
             }
           }
         },
@@ -881,6 +897,9 @@
             },
             "title_info": {
               "content": "Mağaza başlığı ve açıklaması, önizleme görseline dahildir. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+            },
+            "text": {
+              "label": "Metin"
             }
           }
         }
@@ -894,10 +913,10 @@
         },
         "show_image": {
           "label": "Öne çıkan görseli göster",
-          "info": "En iyi sonuçlar için 2:3 en-boy oranına sahip bir görsel kullanın."
+          "info": "En iyi sonuçlar için 2:3 en-boy oranına sahip bir görsel kullanın. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "paragraph": {
-          "content": "Alıntıları değiştirmek için şunu düzenleyin: [blog gönderileriniz.](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Blog gönderilerinizi düzenleyerek alıntılarınızı değiştirin. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "show_date": {
           "label": "Tarihi göster"
@@ -954,14 +973,14 @@
       "name": "Koleksiyon banner'ı",
       "settings": {
         "paragraph": {
-          "content": "Koleksiyon açıklamalarını veya koleksiyon görsellerini değiştirmek için [koleksiyonlarınızı düzenleyin.](\/admin\/collections)"
+          "content": "Koleksiyonunuzu düzenleyerek açıklama veya görsel ekleyin. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/en\/manual\/products\/collections\/collection-layout)"
         },
         "show_collection_description": {
           "label": "Koleksiyon açıklamasını görüntüle"
         },
         "show_collection_image": {
           "label": "Koleksiyon görselini görüntüle",
-          "info": "En iyi sonuçlar için 16:9 en-boy oranına sahip bir görsel kullanın."
+          "info": "En iyi sonuçlar için 16:9 en-boy oranına sahip bir görsel kullanın. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         }
       }
     },
@@ -973,7 +992,7 @@
         },
         "enable_filtering": {
           "label": "Filtrelemeyi etkinleştir",
-          "info": "[Filtreleri özelleştirin](\/admin\/menus)"
+          "info": "Özelleştir [filtreler](\/admin\/menus)"
         },
         "enable_sorting": {
           "label": "Sıralamayı etkinleştir"
@@ -1017,6 +1036,10 @@
         },
         "collapse_on_larger_devices": {
           "label": "Daha büyük ekranlarda daralt"
+        },
+        "show_rating": {
+          "label": "Ürün puanlarını göster",
+          "info": "Puan göstermek için bir ürün puanlandırma uygulaması ekleyin. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-grid-show-product-rating)"
         }
       }
     },
@@ -1058,7 +1081,7 @@
           "options__3": {
             "label": "Kare"
           },
-          "info": "Görsel eklemek için [koleksiyonlarınızı düzenleyin](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
+          "info": "Koleksiyonlarınızı düzenleyerek görsel ekleyin. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -1207,6 +1230,9 @@
             },
             "title_info": {
               "content": "Mağaza başlığı ve açıklaması, önizleme görseline dahildir. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+            },
+            "text": {
+              "label": "Metin"
             }
           }
         },
@@ -1318,12 +1344,20 @@
               "label": "Özel liquid"
             }
           }
+        },
+        "rating": {
+          "name": "Ürün puanı",
+          "settings": {
+            "paragraph": {
+              "content": "Puan göstermek için bir ürün puanlandırma uygulaması ekleyin. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-rating-block)"
+            }
+          }
         }
       },
       "settings": {
         "header": {
           "content": "Medya",
-          "info": "Şunun hakkında daha fazla bilgi edinin: [medya türleri](https:\/\/help.shopify.com\/manual\/products\/product-media)"
+          "info": "Şunun hakkında daha fazla bilgi edinin: [medya türleri.](https:\/\/help.shopify.com\/manual\/products\/product-media)"
         },
         "enable_video_looping": {
           "label": "Video döngüsünü etkinleştir"
@@ -1371,7 +1405,11 @@
           "label": "Yazarı göster"
         },
         "show_image_outline": {
-          "label": "Görsel dış çizgisini göster"
+          "label": "Görsel kenarlığını göster"
+        },
+        "show_rating": {
+          "label": "Ürün puanlarını göster",
+          "info": "Puan göstermek için bir ürün puanlandırma uygulaması ekleyin. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#search-results-show-product-rating)"
         }
       }
     },
@@ -1484,7 +1522,7 @@
           "label": "Bölümü tam genişlikli yap"
         },
         "paragraph": {
-          "content": "Müşteriler e-postalara abone olduğunda müşteri hesapları oluşturulur. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/en\/manual\/customers)"
+          "content": "Her e-posta aboneliği bir müşteri hesabı oluşturur. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/en\/manual\/customers)"
         }
       },
       "blocks": {
@@ -1561,7 +1599,11 @@
           "content": "Dinamik önerilerinin zamanla değişmesi ve gelişmesi için sipariş ve ürün bilgileri kullanılır. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/en\/themes\/development\/recommended-products)"
         },
         "show_image_outline": {
-          "label": "Görsel dış çizgisini göster"
+          "label": "Görsel kenarlığını göster"
+        },
+        "show_rating": {
+          "label": "Ürün puanlarını göster",
+          "info": "Puan göstermek için bir ürün puanlandırma uygulaması ekleyin. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-recommendations-show-product-rating)"
         }
       }
     },
@@ -1677,6 +1719,117 @@
       },
       "presets": {
         "name": "Video"
+      }
+    },
+    "featured-product": {
+      "name": "Öne çıkan ürün",
+      "blocks": {
+        "text": {
+          "name": "Metin",
+          "settings": {
+            "text": {
+              "label": "Metin"
+            },
+            "text_style": {
+              "label": "Metin stili",
+              "options__1": {
+                "label": "Gövde"
+              },
+              "options__2": {
+                "label": "Alt yazı"
+              },
+              "options__3": {
+                "label": "Büyük harf"
+              }
+            }
+          }
+        },
+        "title": {
+          "name": "Başlık"
+        },
+        "price": {
+          "name": "Fiyat"
+        },
+        "quantity_selector": {
+          "name": "Adet seçici"
+        },
+        "variant_picker": {
+          "name": "Varyasyon seçici",
+          "settings": {
+            "picker_type": {
+              "label": "Tür",
+              "options__1": {
+                "label": "Açılır menü"
+              },
+              "options__2": {
+                "label": "Düğme"
+              }
+            }
+          }
+        },
+        "buy_buttons": {
+          "name": "Satın al düğmeleri",
+          "settings": {
+            "show_dynamic_checkout": {
+              "label": "Dinamik ödeme düğmelerini göster",
+              "info": "Müşteriler, mağazanızda bulunan ödeme yöntemlerini kullanarak PayPal veya Apple Pay gibi tercih ettikleri seçeneği görür. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            }
+          }
+        },
+        "description": {
+          "name": "Açıklama"
+        },
+        "share": {
+          "name": "Paylaş",
+          "settings": {
+            "featured_image_info": {
+              "content": "Sosyal medya gönderilerine bağlantı eklerseniz sayfanın öne çıkan görseli, önizleme görseli olarak gösterilir. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)"
+            },
+            "title_info": {
+              "content": "Mağaza başlığı ve açıklaması, önizleme görseline dahildir. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
+            },
+            "text": {
+              "label": "Metin rengi"
+            }
+          }
+        },
+        "custom_liquid": {
+          "name": "Özel liquid",
+          "settings": {
+            "custom_liquid": {
+              "label": "Özel liquid"
+            }
+          }
+        },
+        "rating": {
+          "name": "Ürün puanı",
+          "settings": {
+            "paragraph": {
+              "content": "Puan göstermek için bir ürün puanlandırma uygulaması ekleyin. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-product-rating)"
+            }
+          }
+        }
+      },
+      "settings": {
+        "product": {
+          "label": "Ürün"
+        },
+        "secondary_background": {
+          "label": "İkincil arka planı göster"
+        },
+        "header": {
+          "content": "Medya",
+          "info": "Şunun hakkında daha fazla bilgi edinin: [medya türleri](https:\/\/help.shopify.com\/manual\/products\/product-media)"
+        },
+        "enable_video_looping": {
+          "label": "Video döngüsünü etkinleştir"
+        },
+        "hide_variants": {
+          "label": "Masaüstünde seçimi kaldırılmış varyasyonların medyasını gizle"
+        }
+      },
+      "presets": {
+        "name": "Öne çıkan ürün"
       }
     }
   }

@@ -208,6 +208,20 @@ html.no-js .no-js-hidden {
   margin-bottom: 5rem;
 }
 
+@media screen and (min-width: 750px) {
+  .element-margin {
+    margin-top: calc(5rem + var(--page-width-margin));
+  }
+
+  .spaced-section {
+    margin-top: calc(5rem + var(--page-width-margin));
+  }
+
+  .spaced-section:last-child {
+    margin-bottom: calc(5rem + var(--page-width-margin));
+  }
+}
+
 .spaced-section--full-width + .spaced-section--full-width {
   margin-top: 0;
 }
@@ -237,7 +251,8 @@ body,
 
 @media screen and (min-width: 750px) {
   .background-secondary {
-    padding: 6rem 0 5rem;
+    padding: calc(6rem + var(--page-width-margin)) 0
+      calc(5rem + var(--page-width-margin));
   }
 }
 
@@ -303,6 +318,10 @@ body,
   bottom: 0;
   left: 0;
   z-index: 2;
+}
+
+::selection {
+  background-color: rgba(var(--color-foreground), 0.2);
 }
 
 h1,
@@ -698,7 +717,8 @@ summary::-webkit-details-marker {
 }
 
 /* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus */
-*:focus {
+.focused,
+.no-js *:focus {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: 0.3rem;
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
@@ -721,8 +741,8 @@ summary::-webkit-details-marker {
   box-shadow: 0 0 0.2rem 0 rgba(var(--color-foreground), 0.3);
 }
 
-/* Fallback */
-.focus-inset:focus {
+.focused.focus-inset,
+.no-js .focus-inset:focus {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: -0.2rem;
   box-shadow: 0 0 0.2rem 0 rgba(var(--color-foreground), 0.3);
@@ -743,6 +763,26 @@ summary::-webkit-details-marker {
   outline: 0 !important;
 }
 
+.focus-offset:focus-visible {
+  outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
+  outline-offset: 1rem;
+  box-shadow: 0 0 0 1rem rgb(var(--color-background)),
+    0 0 0.2rem 1.2rem rgba(var(--color-foreground), 0.3);
+}
+
+.focus-offset.focused,
+.no-js .focus-offset:focus {
+  outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
+  outline-offset: 1rem;
+  box-shadow: 0 0 0 1rem rgb(var(--color-background)),
+    0 0 0.2rem 1.2rem rgba(var(--color-foreground), 0.3);
+}
+
+.no-js .focus-offset:focus:not(:focus-visible) {
+  outline: 0;
+  box-shadow: none;
+}
+
 /* component-title */
 .title,
 .title-wrapper-with-link {
@@ -751,6 +791,10 @@ summary::-webkit-details-marker {
 
 .title-wrapper-with-link .title {
   margin: 0;
+}
+
+.title .link {
+  font-size: inherit;
 }
 
 .title-wrapper {
@@ -1025,7 +1069,7 @@ summary::-webkit-details-marker {
   background-color: transparent;
 }
 
-.media > *:not(.zoom, .deferred-media__poster-button, .banner__image__text),
+.media > *:not(.zoom):not(.deferred-media__poster-button, .banner__image__text),
 .media model-viewer {
   display: block;
   max-width: 100%;
@@ -1095,7 +1139,7 @@ deferred-media {
   font: inherit;
   padding: 0.9rem 3rem 1.1rem;
   text-decoration: none;
-  border: 0;
+  border: 0.1rem solid transparent;
   border-radius: 0;
   background-color: rgba(var(--color-button), var(--alpha-button-background));
   box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border));
@@ -1121,6 +1165,12 @@ deferred-media {
 
 .button:focus:not(:focus-visible) {
   box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border));
+}
+
+.button::selection,
+.shopify-challenge__button::selection,
+.customer button::selection {
+  background-color: rgba(var(--color-button-text), 0.3);
 }
 
 .button,
@@ -1170,28 +1220,22 @@ deferred-media {
 
 .button.loading {
   color: transparent;
+  position: relative;
 }
 
-.button.loading:after {
-  animation: loading var(--duration-long) infinite linear;
-  border: 0.5rem solid rgba(var(--color-button-text), 0.4);
-  border-left: 0.5rem solid rgb(var(--color-button-text));
-  border-radius: 100%;
-  box-sizing: content-box;
-  content: '';
-  display: block;
-  height: 2rem;
+@media screen and (forced-colors: active) {
+  .button.loading {
+    color: rgb(var(--color-foreground));
+  }
+}
+
+.button.loading > .loading-overlay__spinner {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   position: absolute;
-  width: 2rem;
-}
-
-@keyframes loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  height: 100%;
+  display: flex;
 }
 
 /* Button - social share */
@@ -1199,6 +1243,36 @@ deferred-media {
 .share-button {
   display: block;
   position: relative;
+}
+
+.share-button details {
+  width: fit-content;
+}
+
+.share-button__button {
+  font-size: 1.4rem;
+  display: flex;
+  min-height: 2.4rem;
+  align-items: center;
+  color: rgb(var(--color-link));
+  margin-left: 0;
+  padding-left: 0;
+}
+
+details[open] > .share-button__fallback {
+  animation: animateMenuOpen var(--duration-default) ease;
+}
+
+.share-button__button:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.share-button__button,
+.share-button__fallback button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .share-button__button .icon-share {
@@ -1242,7 +1316,7 @@ deferred-media {
   -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
-  border: 0;
+  border: 0.1rem solid transparent;
   border-radius: 0;
   color: rgb(var(--color-foreground));
   font-size: 1.6rem;
@@ -1818,6 +1892,10 @@ input[type='checkbox'] {
   justify-content: center;
 }
 
+.header__icon {
+  color: rgb(var(--color-foreground));
+}
+
 .header__icon span {
   height: 100%;
 }
@@ -1980,6 +2058,7 @@ details[open] > .header__icon--menu .icon-hamburger {
   opacity: 1;
   transform: translateY(0);
   animation: animateMenuOpen var(--duration-default) ease;
+  z-index: 1;
 }
 
 /* Header menu */
@@ -2144,4 +2223,21 @@ details-disclosure > details {
   border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
   color: rgb(var(--color-foreground));
   word-break: break-word;
+}
+
+.gradient {
+  background: var(--color-background);
+  background: var(--gradient-background);
+  background-attachment: fixed;
+}
+
+@media screen and (forced-colors: active) {
+  .icon {
+    color: CanvasText;
+    fill: CanvasText !important;
+  }
+
+  .icon-close-small path {
+    stroke: CanvasText;
+  }
 }

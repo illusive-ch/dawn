@@ -374,7 +374,7 @@
           "options__3": {
             "label": "Square"
           },
-          "info": "For å legge til bilder, må du [redigere samlingene dine](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
+          "info": "Legg til bilder ved å redigere samlingene dine. [Finn ut mer](https://help.shopify.com/en/manual/products/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -592,7 +592,7 @@
         },
         "header__1": {
           "content": "E-postregistrering",
-          "info": "Abonnenter legges til din «aksepterer markedsføring»-[kundeliste.](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers)"
+          "info": "Abonnenter legges automatisk til i «aksepterer markedsføring»-kundelisten. [Finn ut mer](https://help.shopify.com/en/manual/customers/manage-customers)"
         },
         "header__2": {
           "content": "Ikoner for sosiale medier",
@@ -880,7 +880,10 @@
               "content": "Hvis du inkluderer en kobling i innlegg på sosiale medier, vil sidens fremhevede bilde vises som forhåndsvisningsbilde. [Finn ut mer](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "En butikktittel og -beskrivelse inkluderes med forhåndsvisningsbildet. [Finn ut mer](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "En butikktittel og -beskrivelse inkluderes med forhåndsvisningsbildet. [Finn ut mer](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+            },
+            "text": {
+              "label": "Tekst"
             }
           }
         }
@@ -897,7 +900,7 @@
           "info": "Bruk et bilde med størrelsesforhold 2:3 for best resultat."
         },
         "paragraph": {
-          "content": "For å endre utdrag, må du redigere [blogginnleggene.](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Endre utdrag ved å redigere blogginnlegg. [Finn ut mer](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "show_date": {
           "label": "Vis dato"
@@ -954,7 +957,7 @@
       "name": "Samlingsbanner",
       "settings": {
         "paragraph": {
-          "content": "For å endre samlingsbeskrivelser eller samlingsbilder, må du [redigere samlingene.](\/admin\/collections)"
+          "content": "Legg til en beskrivelse eller et bilde ved å redigere samlingen. [Finn ut mer](https://help.shopify.com/en/manual/products/collections/collection-layout)"
         },
         "show_collection_description": {
           "label": "Vis samlingsbeskrivelse"
@@ -973,7 +976,7 @@
         },
         "enable_filtering": {
           "label": "Aktiver filtrering",
-          "info": "[Tilpass filtre](\/admin\/menus)"
+          "info": "Tilpass [filtre](/admin/menus)"
         },
         "enable_sorting": {
           "label": "Aktiver sortering"
@@ -1058,7 +1061,7 @@
           "options__3": {
             "label": "Square"
           },
-          "info": "For å legge til bilder, må du [redigere samlingene dine](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
+          "info": "Legg til bilder ved å redigere samlingene dine. [Finn ut mer](https://help.shopify.com/en/manual/products/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -1206,7 +1209,10 @@
               "content": "Hvis du inkluderer en kobling i innlegg på sosiale medier, vil sidens fremhevede bilde vises som forhåndsvisningsbilde. [Finn ut mer](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "En butikktittel og -beskrivelse inkluderes med forhåndsvisningsbildet. [Finn ut mer](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "En butikktittel og -beskrivelse inkluderes med forhåndsvisningsbildet. [Finn ut mer](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+            },
+            "text": {
+              "label": "Tekst"
             }
           }
         },
@@ -1323,7 +1329,7 @@
       "settings": {
         "header": {
           "content": "Medier",
-          "info": "Finn ut mer om [medietyper](https:\/\/help.shopify.com\/manual\/products\/product-media)"
+          "info": "Finn ut mer om [medietyper.](https://help.shopify.com/manual/products/product-media)"
         },
         "enable_video_looping": {
           "label": "Aktiver løkkeavspilling av video"
@@ -1484,7 +1490,7 @@
           "label": "Gjør seksjonen til full bredde"
         },
         "paragraph": {
-          "content": "Når kunder abonnerer på e-post, opprettes kundekontoer. [Finn ut mer](https:\/\/help.shopify.com\/en\/manual\/customers)"
+          "content": "Hvert e-postabonnement oppretter en kundekonto. [Finn ut mer](https://help.shopify.com/en/manual/customers)"
         }
       },
       "blocks": {
