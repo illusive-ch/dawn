@@ -72,9 +72,7 @@ class CartItems extends HTMLElement {
       .then((state) => {
         const parsedState = JSON.parse(state);
         this.classList.toggle('is-empty', parsedState.item_count === 0);
-        const cartFooter = document.getElementById('main-cart-footer');
-
-        if (cartFooter) cartFooter.classList.toggle('is-empty', parsedState.item_count === 0);
+        document.getElementById('main-cart-footer')?.classList.toggle('is-empty', parsedState.item_count === 0);
 
         this.getSectionsToRender().forEach((section => {
           const elementToReplace =
@@ -124,7 +122,7 @@ class CartItems extends HTMLElement {
 
   enableLoading(line) {
     document.getElementById('main-cart-items').classList.add('cart__items--disabled');
-    this.querySelectorAll(`#CartItem-${line} .loading-overlay`).forEach((overlay) => overlay.classList.remove('hidden'));
+    this.querySelectorAll('.loading-overlay')[line - 1].classList.remove('hidden');
     document.activeElement.blur();
     this.lineItemStatusElement.setAttribute('aria-hidden', false);
   }

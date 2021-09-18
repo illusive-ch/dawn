@@ -47,9 +47,11 @@
       "copy_to_clipboard": "Kopier kobling",
       "share": "Del",
       "share_url": "Kobling",
-      "success_message": "Koblingen er kopiert til utklippstavlen",
-      "close": "Lukk deling"
+      "success_message": "Koblingen er kopiert til utklippstavlen!"
     }
+  },
+  "date_formats": {
+    "month_year": "%B %Y"
   },
   "newsletter": {
     "label": "E-post",
@@ -71,9 +73,7 @@
     "previous_slide": "Bla til venstre",
     "loading": "Laster inn …",
     "of": "av",
-    "skip_to_product_info": "Hopp til produktinformasjon",
-    "total_reviews": "totale omtaler",
-    "star_reviews_info": "{{ rating_value }} av {{ rating_max }} stjerner"
+    "skip_to_product_info": "Hopp til produktinformasjon"
   },
   "blogs": {
     "article": {

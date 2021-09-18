@@ -47,12 +47,14 @@
       "copy_to_clipboard": "Hivatkozás másolása",
       "share": "Megosztás",
       "share_url": "Hivatkozás",
-      "success_message": "A vágólapra másoltuk a hivatkozást.",
-      "close": "Megosztás befejezése"
+      "success_message": "A vágólapra másoltuk a hivatkozást."
     }
   },
+  "date_formats": {
+    "month_year": "%Y. %B"
+  },
   "newsletter": {
-    "label": "E-mail-cím",
+    "label": "Írd be az e-mail-címedet",
     "success": "Köszönjük a feliratkozást",
     "button_label": "Feliratkozás"
   },

@@ -47,12 +47,14 @@
       "copy_to_clipboard": "Копировать ссылку",
       "share": "Поделиться",
       "share_url": "Ссылка",
-      "success_message": "Ссылка скопирована в буфер обмена.",
-      "close": "Свернуть функцию \"Поделиться\""
+      "success_message": "Ссылка скопирована в буфер обмена."
     }
   },
+  "date_formats": {
+    "month_year": "%B, %Y"
+  },
   "newsletter": {
-    "label": "Адрес электронной почты",
+    "label": "Ваш адрес электронной почты",
     "success": "Спасибо, что подписались!",
     "button_label": "Подписаться"
   },
@@ -71,9 +73,7 @@
       "external": "Открывает внешний сайт."
     },
     "of": "из",
-    "skip_to_product_info": "Перейти к информации о продукте",
-    "total_reviews": "всего отзывов",
-    "star_reviews_info": "{{ rating_value }} из {{ rating_max }} звезд"
+    "skip_to_product_info": "Перейти к информации о продукте"
   },
   "blogs": {
     "article": {

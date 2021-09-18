@@ -47,12 +47,14 @@
       "copy_to_clipboard": "Копиране на връзката",
       "share": "Споделяне",
       "share_url": "Връзка",
-      "success_message": "Връзката е копирана в клипборда",
-      "close": "Затваряне на споделянето"
+      "success_message": "Връзката е копирана в клипборда."
     }
   },
+  "date_formats": {
+    "month_year": "%B %Y"
+  },
   "newsletter": {
-    "label": "Имейл",
+    "label": "Вашият имейл адрес",
     "success": "Благодарим, че се абонирахте",
     "button_label": "Абониране"
   },
@@ -71,9 +73,7 @@
     "previous_slide": "Плъзгане наляво",
     "loading": "Зареждане...",
     "of": "от",
-    "skip_to_product_info": "Прескочи към информацията за продукта",
-    "total_reviews": "общ брой мнения",
-    "star_reviews_info": "{{ rating_value }} от {{ rating_max }} звезди"
+    "skip_to_product_info": "Прескочи към информацията за продукта"
   },
   "blogs": {
     "article": {

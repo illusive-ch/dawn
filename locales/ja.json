@@ -47,12 +47,14 @@
       "copy_to_clipboard": "リンクをコピー",
       "share": "シェア",
       "share_url": "リンク",
-      "success_message": "リンクがクリップボードにコピーされました",
-      "close": "共有を閉じる"
+      "success_message": "リンクがクリップボードにコピーされました。"
     }
   },
+  "date_formats": {
+    "month_year": "%Y年%-m月%"
+  },
   "newsletter": {
-    "label": "メール",
+    "label": "メールアドレス",
     "success": "ご登録ありがとうございます",
     "button_label": "登録"
   },

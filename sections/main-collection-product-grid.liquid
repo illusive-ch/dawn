@@ -31,7 +31,13 @@
       </div>
     {%- else -%}
       <div class="collection page-width">
-        <div class="loading-overlay gradient"></div>
+        <div class="loading-overlay">
+          <div class="loading-overlay__spinner">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+            </svg>
+          </div>
+        </div>
 
         <ul id="product-grid" data-id="{{ section.id }}" class="
           grid grid--2-col negative-margin product-grid
@@ -40,15 +46,7 @@
           {% endif %}">
           {%- for product in collection.products -%}
             <li class="grid__item">
-              {% render 'product-card',
-                product_card_product: product,
-                media_size: section.settings.image_ratio,
-                show_secondary_image: section.settings.show_secondary_image,
-                add_image_padding: section.settings.add_image_padding,
-                show_vendor: section.settings.show_vendor,
-                show_image_outline: section.settings.show_image_outline,
-                show_rating: section.settings.show_rating
-              %}
+              {% render 'product-card', product_card_product: product, media_size: section.settings.image_ratio, show_secondary_image: section.settings.show_secondary_image, add_image_padding: section.settings.add_image_padding, show_vendor: section.settings.show_vendor, show_image_outline: section.settings.show_image_outline %}
             </li>
           {%- endfor -%}
         </ul>
@@ -122,13 +120,6 @@
       "id": "show_vendor",
       "default": false,
       "label": "t:sections.main-collection-product-grid.settings.show_vendor.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_rating",
-      "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.show_rating.label",
-      "info": "t:sections.main-collection-product-grid.settings.show_rating.info"
     },
     {
       "type": "header",

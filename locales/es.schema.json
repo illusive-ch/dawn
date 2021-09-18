@@ -80,7 +80,7 @@
           "options__3": {
             "label": "Acento 2"
           },
-          "label": "Esquema de color de distintivo de oferta"
+          "label": "Esquema de color de emblema de oferta"
         },
         "sold_out_badge_color_scheme": {
           "options__1": {
@@ -205,25 +205,6 @@
           }
         }
       }
-    },
-    "search_input": {
-      "name": "Buscar entrada",
-      "settings": {
-        "header": {
-          "content": "Sugerencias de productos"
-        },
-        "predictive_search_enabled": {
-          "label": "Activar sugerencias de productos"
-        },
-        "predictive_search_show_vendor": {
-          "label": "Mostrar proveedor",
-          "info": "Visible cuando las sugerencias de productos están activadas."
-        },
-        "predictive_search_show_price": {
-          "label": "Mostrar precio",
-          "info": "Visible cuando las sugerencias de productos están activadas."
-        }
-      }
     }
   },
   "sections": {
@@ -295,7 +276,7 @@
             },
             "image_padding": {
               "label": "Agregar relleno de imagen",
-              "info": "Selecciona relleno de imagen si no deseas que se corte tu imagen."
+              "info": "Selecciona relleno de imagen si no deseas que se corten tus imágenes."
             },
             "color_scheme": {
               "options__1": {
@@ -344,7 +325,7 @@
             },
             "image_padding": {
               "label": "Agregar relleno de imagen",
-              "info": "Selecciona relleno de imagen si no deseas que se corte tu imagen."
+              "info": "Selecciona relleno de imagen si no deseas que se corten tus imágenes."
             },
             "color_scheme": {
               "options__1": {
@@ -373,17 +354,13 @@
               "label": "Imagen de portada"
             },
             "video_url": {
-              "label": "URL",
-              "info": "El video se reproduce en una ventana emergente si la sección contiene otros bloques.",
-              "placeholder": "Utiliza una URL de YouTube o Vimeo"
+              "label": "Enlace",
+              "info": "Los videos se reproducen en una ventana emergente si la sección contiene otros bloques.",
+              "placeholder": "Utilizar un enlace de YouTube o Vimeo"
             },
             "image_padding": {
               "label": "Agregar relleno de imagen",
-              "info": "Selecciona relleno de imagen si no deseas que se corte tu imagen de portada."
-            },
-            "description": {
-              "label": "Texto alternativo del video",
-              "info": "Describe el video para hacerlo accesible a los clientes que utilizan lectores de pantalla."
+              "info": "Selecciona relleno de imagen si no deseas que se corten tus imágenes."
             }
           }
         }
@@ -463,8 +440,7 @@
       "name": "Liquid personalizado",
       "settings": {
         "custom_liquid": {
-          "label": "Liquid personalizado",
-          "info": "Agrega fragmentos u otros códigos de Liquid para crear personalizaciones avanzadas."
+          "label": "Liquid personalizado"
         }
       },
       "presets": {
@@ -560,7 +536,7 @@
           "label": "Mostrar segunda imagen al pasar el cursor"
         },
         "add_image_padding": {
-          "label": "Agregar relleno de imagen"
+          "label": "Agregar relleno"
         },
         "show_vendor": {
           "label": "Mostrar proveedor"
@@ -589,7 +565,7 @@
             },
             "menu": {
               "label": "Menú",
-              "info": "Muestra solo los elementos del menú de nivel superior."
+              "info": "Muestra solo los elementos de menú de nivel superior."
             }
           }
         },
@@ -678,7 +654,7 @@
           "label": "Ancho del logo personalizado"
         },
         "logo_position": {
-          "label": "Posición de logo en pantallas grandes",
+          "label": "Posición de logo en pantalla grande",
           "options__1": {
             "label": "Centrado a la izquierda"
           },
@@ -698,24 +674,6 @@
         "enable_sticky_header": {
           "label": "Activar encabezado fijo",
           "info": "El encabezado se muestra en la pantalla mientras los clientes se desplazan hacia arriba."
-        },
-        "color_scheme": {
-          "options__1": {
-            "label": "Resaltado 1"
-          },
-          "options__2": {
-            "label": "Resaltado 2"
-          },
-          "options__3": {
-            "label": "Fondo 1"
-          },
-          "options__4": {
-            "label": "Fondo 2"
-          },
-          "options__5": {
-            "label": "Invertir"
-          },
-          "label": "Esquema de colores"
         }
       }
     },
@@ -756,26 +714,13 @@
           "options__5": {
             "label": "Invertir"
           },
-          "label": "Esquema de colores",
-          "info": "Visible cuando se muestre el cuadro de texto"
+          "label": "Esquema de colores"
         },
         "stack_images_on_mobile": {
           "label": "Apilar imágenes en móviles"
         },
         "adapt_height_first_image": {
           "label": "Adaptar altura de sección a tamaño de primera imagen"
-        },
-        "show_text_box": {
-          "label": "Mostrar el cuadro de texto en el escritorio"
-        },
-        "image_overlay_opacity": {
-          "label": "Opacidad de la sobreposición de imagen"
-        },
-        "header": {
-          "content": "Diseño para móviles"
-        },
-        "show_text_below": {
-          "label": "Mostrar el texto debajo de las imágenes"
         }
       },
       "blocks": {
@@ -784,15 +729,6 @@
           "settings": {
             "heading": {
               "label": "Título"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "Medio"
-              },
-              "options__2": {
-                "label": "Grande"
-              },
-              "label": "Tamaño de fuente de título"
             }
           }
         },
@@ -1093,7 +1029,7 @@
           "content": "Tarjeta de producto"
         },
         "show_image_outline": {
-          "label": "Mostrar borde de imagen"
+          "label": "Mostrar contorno de la imagen"
         },
         "enable_sort": {
           "label": "Habilitar ordenado"
@@ -1410,8 +1346,7 @@
           "name": "Liquid personalizado",
           "settings": {
             "custom_liquid": {
-              "label": "Liquid personalizado",
-              "info": "Agrega fragmentos u otros códigos de Liquid para crear personalizaciones avanzadas."
+              "label": "Liquid personalizado"
             }
           }
         },
@@ -1434,9 +1369,6 @@
         },
         "enable_sticky_info": {
           "label": "Activar información de producto fija en pantallas grandes"
-        },
-        "hide_variants": {
-          "label": "Ocultar los elementos multimedia de las demás variantes tras seleccionar una de ellas"
         }
       }
     },

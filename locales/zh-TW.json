@@ -47,9 +47,11 @@
       "copy_to_clipboard": "複製連結",
       "share": "分享",
       "share_url": "連結",
-      "success_message": "連結已複製到剪貼簿",
-      "close": "關閉分享"
+      "success_message": "連結已複製到剪貼簿！"
     }
+  },
+  "date_formats": {
+    "month_year": "%B %Y"
   },
   "newsletter": {
     "label": "電子郵件",
@@ -71,9 +73,7 @@
     "previous_slide": "投影片左側",
     "loading": "載入中......",
     "of": "的",
-    "skip_to_product_info": "略過產品資訊",
-    "total_reviews": "評論總次數",
-    "star_reviews_info": "{{ rating_value }} 顆星 (最高 {{ rating_max }} 顆星)"
+    "skip_to_product_info": "略過產品資訊"
   },
   "blogs": {
     "article": {

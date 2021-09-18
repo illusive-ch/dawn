@@ -47,12 +47,14 @@
       "copy_to_clipboard": "Kopiraj poveznicu",
       "share": "Podijeli",
       "share_url": "Poveznica",
-      "success_message": "Poveznica je kopirana u međuspremnik",
-      "close": "Zatvori dijeljenje"
+      "success_message": "Poveznica je kopirana u međuspremnik!"
     }
   },
+  "date_formats": {
+    "month_year": "%B %Y"
+  },
   "newsletter": {
-    "label": "Adresa e-pošte",
+    "label": "Vaša adresa e-pošte",
     "success": "Hvala što ste se pretplatili",
     "button_label": "Pretplatite se"
   },
@@ -71,9 +73,7 @@
       "external": "Otvara vanjsko web-mjesto."
     },
     "of": "od",
-    "skip_to_product_info": "Preskoči do informacija o proizvodu",
-    "total_reviews": "ukupan broj pregleda",
-    "star_reviews_info": "{{ rating_value }} od sljedećeg broja zvjezdica: {{ rating_max }}"
+    "skip_to_product_info": "Preskoči do informacija o proizvodu"
   },
   "blogs": {
     "article": {

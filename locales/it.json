@@ -47,12 +47,14 @@
       "copy_to_clipboard": "Copia link",
       "share": "Condividi",
       "share_url": "Link",
-      "success_message": "Link copiato negli appunti",
-      "close": "Chiudi condivisione"
+      "success_message": "Link copiato negli appunti!"
     }
   },
+  "date_formats": {
+    "month_year": "%B %Y"
+  },
   "newsletter": {
-    "label": "Indirizzo email",
+    "label": "Il tuo indirizzo email",
     "success": "Grazie per l'iscrizione",
     "button_label": "Iscriviti"
   },
@@ -71,9 +73,7 @@
     "previous_slide": "Scorri verso sinistra",
     "loading": "Caricamento in corso...",
     "of": "di",
-    "skip_to_product_info": "Passa alle informazioni sul prodotto",
-    "total_reviews": "recensioni totali",
-    "star_reviews_info": "{{ rating_value }} stelle su {{ rating_max }}"
+    "skip_to_product_info": "Passa alle informazioni sul prodotto"
   },
   "blogs": {
     "article": {

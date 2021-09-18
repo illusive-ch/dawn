@@ -47,9 +47,11 @@
       "copy_to_clipboard": "Kopiraj povezavo",
       "share": "Deli",
       "share_url": "Povezava",
-      "success_message": "Povezava je kopirana v odložišče",
-      "close": "Zapri skupno rabo"
+      "success_message": "Povezava je kopirana v odložišče."
     }
+  },
+  "date_formats": {
+    "month_year": "%B %Y"
   },
   "newsletter": {
     "label": "E-poštni naslov",
@@ -71,9 +73,7 @@
       "external": "Odpre zunanje spletno mesto."
     },
     "of": "od",
-    "skip_to_product_info": "Preskoči na informacije o izdelku",
-    "total_reviews": "skupno število pregledov",
-    "star_reviews_info": "{{ rating_value }} od {{ rating_max }} zvezdic"
+    "skip_to_product_info": "Preskoči na informacije o izdelku"
   },
   "blogs": {
     "article": {

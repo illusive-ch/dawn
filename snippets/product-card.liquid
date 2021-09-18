@@ -8,13 +8,10 @@
     - add_image_padding: {Boolean} Enables padding on the image to space out the grid
     - show_vendor: {Boolean} Show the product vendor. Default: false
     - show_image_outline: {Boolean} Show card outline. Default: true (optional)
-    - show_rating: {Boolean} Show the product rating. Default: false
 
     Usage:
     {% render 'product-card', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
-
-{{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
 <div class="card-wrapper">
   <div class="card-information">

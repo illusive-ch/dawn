@@ -193,25 +193,6 @@
           }
         }
       }
-    },
-    "search_input": {
-      "name": "Søk i inndata",
-      "settings": {
-        "header": {
-          "content": "Produktforslag"
-        },
-        "predictive_search_enabled": {
-          "label": "Aktiver produktforslag"
-        },
-        "predictive_search_show_vendor": {
-          "label": "Vis selger",
-          "info": "Synlig når produktforslag er aktivert."
-        },
-        "predictive_search_show_price": {
-          "label": "Vis pris",
-          "info": "Synlig når produktforslag er aktivert."
-        }
-      }
     }
   },
   "sections": {
@@ -361,17 +342,13 @@
               "label": "Forsidebilde"
             },
             "video_url": {
-              "label": "URL-adresse",
+              "label": "Kobling",
               "info": "Videoer spilles i et popup-vindu hvis seksjonen inneholder andre blokker.",
-              "placeholder": "Bruk en YouTube- eller Vimeo-URL-adresse"
+              "placeholder": "Bruk en YouTube- eller Vimeo-kobling"
             },
             "image_padding": {
               "label": "Legg til bildemarg",
-              "info": "Velg bildemarg hvis du ikke ønsker at toppbildet skal beskjæres."
-            },
-            "description": {
-              "label": "Alt. tekst for video",
-              "info": "Beskriv videoen for å gjøre den tilgjengelig for kunder som bruker skjermlesere."
+              "info": "Velg bildemarg hvis du ikke ønsker at bildene skal beskjæres."
             }
           }
         }
@@ -451,8 +428,7 @@
       "name": "Egendefinert Liquid",
       "settings": {
         "custom_liquid": {
-          "label": "Egendefinert Liquid",
-          "info": "Legg til kodeutdrag fra apper eller annen Liquid-kode for å opprette avanserte tilpasninger."
+          "label": "Egendefinert Liquid"
         }
       },
       "presets": {
@@ -476,7 +452,7 @@
         },
         "show_image": {
           "label": "Vis fremhevet bilde",
-          "info": "Bruk et bilde med størrelsesforhold 2:3 for best resultat. [Finn ut mer](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          "info": "Bruk et bilde med størrelsesforhold 2:3 for best resultat."
         },
         "soft_background": {
           "label": "Vis sekundærbakgrunn"
@@ -548,17 +524,13 @@
           "label": "Vis sekundærbilde når musepekeren beveges over"
         },
         "add_image_padding": {
-          "label": "Legg til bildemarg"
+          "label": "Legg til marg"
         },
         "show_vendor": {
           "label": "Vis selger"
         },
         "show_image_outline": {
-          "label": "Vis kantlinje for bilde"
-        },
-        "show_rating": {
-          "label": "Vis produktvurdering",
-          "info": "Legg til en produktvurderingsapp for å vise en vurdering. [Finn ut mer](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/sections#featured-collection-show-product-rating)"
+          "label": "Vis bildeomriss"
         }
       },
       "presets": {
@@ -573,7 +545,7 @@
           "settings": {
             "heading": {
               "label": "Overskrift",
-              "info": "Overskrift kreves for å vise menyen."
+              "info": "En overskrift kreves for å vise menyen."
             },
             "menu": {
               "label": "Meny",
@@ -666,7 +638,7 @@
           "label": "Egendefinert logobredde"
         },
         "logo_position": {
-          "label": "Logoplassering på store skjermer",
+          "label": "Logoplassering på stor skjerm",
           "options__1": {
             "label": "Midt til venstre"
           },
@@ -686,24 +658,6 @@
         "enable_sticky_header": {
           "label": "Aktiver festet overskrift",
           "info": "Overskriften vises på skjermen når kunden blar opp."
-        },
-        "color_scheme": {
-          "options__1": {
-            "label": "Aksent 1"
-          },
-          "options__2": {
-            "label": "Aksent 2"
-          },
-          "options__3": {
-            "label": "Bakgrunn 1"
-          },
-          "options__4": {
-            "label": "Bakgrunn 2"
-          },
-          "options__5": {
-            "label": "Omvendt"
-          },
-          "label": "Fargepalett"
         }
       }
     },
@@ -744,26 +698,13 @@
           "options__5": {
             "label": "Omvendt"
           },
-          "label": "Fargepalett",
-          "info": "Synlig når tekstboksen vises"
+          "label": "Fargepalett"
         },
         "stack_images_on_mobile": {
           "label": "Stable bilder på mobil"
         },
         "adapt_height_first_image": {
           "label": "Tilpass seksjonshøyden til den første bildestørrelsen"
-        },
-        "show_text_box": {
-          "label": "Vis tekstboks på datamaskiner"
-        },
-        "image_overlay_opacity": {
-          "label": "Gjennomsiktighet for bildeoverlegg"
-        },
-        "header": {
-          "content": "Mobillayout"
-        },
-        "show_text_below": {
-          "label": "Vis tekst under bilder"
         }
       },
       "blocks": {
@@ -772,15 +713,6 @@
           "settings": {
             "heading": {
               "label": "Overskrift"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "Middels"
-              },
-              "options__2": {
-                "label": "Stor"
-              },
-              "label": "Skriftstørrelse for overskrift"
             }
           }
         },
@@ -920,7 +852,7 @@
               "options__3": {
                 "label": "Stor"
               },
-              "info": "Bruk et bilde med størrelsesforhold 16:9 for best resultat. [Finn ut mer](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+              "info": "Bruk et bilde med størrelsesforhold 16:9 for best resultat."
             }
           }
         },
@@ -965,7 +897,7 @@
         },
         "show_image": {
           "label": "Vis fremhevet bilde",
-          "info": "Bruk et bilde med størrelsesforhold 2:3 for best resultat. [Finn ut mer](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          "info": "Bruk et bilde med størrelsesforhold 2:3 for best resultat."
         },
         "paragraph": {
           "content": "Endre utdrag ved å redigere blogginnlegg. [Finn ut mer](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
@@ -1032,7 +964,7 @@
         },
         "show_collection_image": {
           "label": "Vis samlingsbilde",
-          "info": "Bruk et bilde med størrelsesforhold 16:9 for best resultat. [Finn ut mer](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          "info": "Bruk et bilde med størrelsesforhold 16:9 for best resultat."
         }
       }
     },
@@ -1081,17 +1013,13 @@
           "info": "[Tilpass filtre](\/admin\/menus)"
         },
         "show_image_outline": {
-          "label": "Vis kantlinje for bilde"
+          "label": "Vis bildeomriss"
         },
         "enable_sort": {
           "label": "Aktiver sortering"
         },
         "collapse_on_larger_devices": {
           "label": "Lukk på større skjermer"
-        },
-        "show_rating": {
-          "label": "Vis produktvurdering",
-          "info": "Legg til en produktvurderingsapp for å vise en vurdering. [Finn ut mer](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/page-types#product-grid-show-product-rating)"
         }
       }
     },
@@ -1393,16 +1321,7 @@
           "name": "Egendefinert liquid",
           "settings": {
             "custom_liquid": {
-              "label": "Egendefinert liquid",
-              "info": "Legg til kodeutdrag fra apper eller annen Liquid-kode for å opprette avanserte tilpasninger."
-            }
-          }
-        },
-        "rating": {
-          "name": "Produktvurdering",
-          "settings": {
-            "paragraph": {
-              "content": "Legg til en produktvurderingsapp for å vise en vurdering. [Finn ut mer](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/page-types#product-rating-block)"
+              "label": "Egendefinert liquid"
             }
           }
         }
@@ -1417,9 +1336,6 @@
         },
         "enable_sticky_info": {
           "label": "Aktiver festet produktinformasjon på store skjermer"
-        },
-        "hide_variants": {
-          "label": "Skjul andre varianters medier etter å ha valgt en variant"
         }
       },
       "name": "Produktinformasjon"
@@ -1461,11 +1377,7 @@
           "label": "Vis forfatter"
         },
         "show_image_outline": {
-          "label": "Vis kantlinje for bilde"
-        },
-        "show_rating": {
-          "label": "Vis produktvurdering",
-          "info": "Legg til en produktvurderingsapp for å vise en vurdering. [Finn ut mer](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/page-types#search-results-show-product-rating)"
+          "label": "Vis bildeomriss"
         }
       }
     },
@@ -1654,11 +1566,7 @@
           "content": "Dynamiske anbefalinger bruker bestillings- og produktinformasjon til å endres og forbedres over tid. [Finn ut mer](https:\/\/help.shopify.com\/en\/themes\/development\/recommended-products)"
         },
         "show_image_outline": {
-          "label": "Vis kantlinje for bilde"
-        },
-        "show_rating": {
-          "label": "Vis produktvurdering",
-          "info": "Legg til en produktvurderingsapp for å vise en vurdering. [Finn ut mer](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/page-types#product-recommendations-show-product-rating)"
+          "label": "Vis bildeomriss"
         }
       }
     },
@@ -1774,117 +1682,6 @@
       },
       "presets": {
         "name": "Video"
-      }
-    },
-    "featured-product": {
-      "name": "Utvalgt produkt",
-      "blocks": {
-        "text": {
-          "name": "Tekst",
-          "settings": {
-            "text": {
-              "label": "Tekst"
-            },
-            "text_style": {
-              "label": "Tekststil",
-              "options__1": {
-                "label": "Brødtekst"
-              },
-              "options__2": {
-                "label": "Undertekst"
-              },
-              "options__3": {
-                "label": "Store bokstaver"
-              }
-            }
-          }
-        },
-        "title": {
-          "name": "Tittel"
-        },
-        "price": {
-          "name": "Pris"
-        },
-        "quantity_selector": {
-          "name": "Mengdevelger"
-        },
-        "variant_picker": {
-          "name": "Variantvelger",
-          "settings": {
-            "picker_type": {
-              "label": "Type",
-              "options__1": {
-                "label": "Rullegardin"
-              },
-              "options__2": {
-                "label": "Knapp"
-              }
-            }
-          }
-        },
-        "buy_buttons": {
-          "name": "Kjøp-knapper",
-          "settings": {
-            "show_dynamic_checkout": {
-              "label": "Vis dynamiske knapper for å gå til kassen",
-              "info": "Kundene vil se sitt foretrukne alternativ, som PayPal eller Apple Pay, av betalingsmåtene som er tilgjengelig i butikken. [Finn ut mer](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
-            }
-          }
-        },
-        "description": {
-          "name": "Beskrivelse"
-        },
-        "share": {
-          "name": "Del",
-          "settings": {
-            "featured_image_info": {
-              "content": "Hvis du inkluderer en kobling i innlegg på sosiale medier, vil sidens fremhevede bilde vises som forhåndsvisningsbilde. [Finn ut mer](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)"
-            },
-            "title_info": {
-              "content": "En butikktittel og -beskrivelse inkluderes med forhåndsvisningsbildet. [Finn ut mer](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)"
-            },
-            "text": {
-              "label": "Tekst"
-            }
-          }
-        },
-        "custom_liquid": {
-          "name": "Egendefinert liquid",
-          "settings": {
-            "custom_liquid": {
-              "label": "Egendefinert liquid"
-            }
-          }
-        },
-        "rating": {
-          "name": "Produktvurdering",
-          "settings": {
-            "paragraph": {
-              "content": "Legg til en produktvurderingsapp for å vise en vurdering. [Finn ut mer](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/sections#featured-product-rating)"
-            }
-          }
-        }
-      },
-      "settings": {
-        "product": {
-          "label": "Produkt"
-        },
-        "secondary_background": {
-          "label": "Vis sekundærbakgrunn"
-        },
-        "header": {
-          "content": "Medier",
-          "info": "Finn ut mer om [medietyper](https://help.shopify.com/manual/products/product-media)"
-        },
-        "enable_video_looping": {
-          "label": "Aktiver løkkeavspilling av video"
-        },
-        "hide_variants": {
-          "label": "Skjul uvalgte varianters medier på datamaskiner"
-        }
-      },
-      "presets": {
-        "name": "Utvalgt produkt"
       }
     }
   }

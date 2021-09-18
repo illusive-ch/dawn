@@ -205,25 +205,6 @@
           }
         }
       }
-    },
-    "search_input": {
-      "name": "Sucheingabe",
-      "settings": {
-        "header": {
-          "content": "Produktvorschläge"
-        },
-        "predictive_search_enabled": {
-          "label": "Produktvorschläge aktivieren"
-        },
-        "predictive_search_show_vendor": {
-          "label": "Anbieter anzeigen",
-          "info": "Sichtbar, wenn Produktvorschläge aktiviert sind."
-        },
-        "predictive_search_show_price": {
-          "label": "Preis anzeigen",
-          "info": "Sichtbar, wenn Produktvorschläge aktiviert sind."
-        }
-      }
     }
   },
   "sections": {
@@ -295,7 +276,7 @@
             },
             "image_padding": {
               "label": "Bild-Padding hinzufügen",
-              "info": "Wähle Bild-Padding aus, wenn du nicht möchtest, dass dein Bild abgeschnitten wird."
+              "info": "Wähle Bild-Padding aus, wenn du nicht möchtest, dass deine Bilder abgeschnitten werden."
             },
             "color_scheme": {
               "options__1": {
@@ -344,7 +325,7 @@
             },
             "image_padding": {
               "label": "Bild-Padding hinzufügen",
-              "info": "Wähle Bild-Padding aus, wenn du nicht möchtest, dass dein Bild abgeschnitten wird."
+              "info": "Wähle Bild-Padding aus, wenn du nicht möchtest, dass deine Bilder abgeschnitten werden."
             },
             "color_scheme": {
               "options__1": {
@@ -373,17 +354,13 @@
               "label": "Titelbild"
             },
             "video_url": {
-              "label": "URL",
-              "info": "Video wird in einem Pop-up abgespielt, wenn der Abschnitt andere Blöcke enthält.",
-              "placeholder": "YouTube- oder Vimeo-URL verwenden"
+              "label": "Link",
+              "info": "Videos werden in einem Pop-up abgespielt, wenn der Abschnitt andere Blöcke enthält.",
+              "placeholder": "YouTube- oder Vimeo-Link verwenden"
             },
             "image_padding": {
               "label": "Bild-Padding hinzufügen",
-              "info": "Wähle Bild-Padding aus, wenn du nicht möchtest, dass dein Titelbild abgeschnitten wird."
-            },
-            "description": {
-              "label": "Video-Alt-Text",
-              "info": "Beschreibe das Video, um Kunden mit Bildschirmlesegeräten den Zugriff zu ermöglichen."
+              "info": "Wähle Bild-Padding aus, wenn du nicht möchtest, dass deine Bilder abgeschnitten werden."
             }
           }
         }
@@ -463,8 +440,7 @@
       "name": "Benutzerdefiniertes Liquid",
       "settings": {
         "custom_liquid": {
-          "label": "Benutzerdefiniertes Liquid",
-          "info": "Füge App-Snippets oder anderen Liquid-Code hinzu, um fortgeschrittene Anpassungen vorzunehmen."
+          "label": "Benutzerdefiniertes Liquid"
         }
       },
       "presets": {
@@ -560,7 +536,7 @@
           "label": "Hover-Effekt mit zweitem Bild"
         },
         "add_image_padding": {
-          "label": "Bild-Padding hinzufügen"
+          "label": "Padding hinzufügen"
         },
         "show_vendor": {
           "label": "Anbieter anzeigen"
@@ -585,7 +561,7 @@
           "settings": {
             "heading": {
               "label": "Überschrift",
-              "info": "Überschrift ist erforderlich, um das Menü anzuzeigen."
+              "info": "Eine Überschrift ist erforderlich, um das Menü anzuzeigen."
             },
             "menu": {
               "label": "Menü",
@@ -678,7 +654,7 @@
           "label": "Breite des benutzerdefinierten Logos"
         },
         "logo_position": {
-          "label": "Logopositionierung auf großen Bildschirmen",
+          "label": "Logopositionierung auf großem Bildschirm",
           "options__1": {
             "label": "Mitte links"
           },
@@ -698,24 +674,6 @@
         "enable_sticky_header": {
           "label": "Fixierten Header aktivieren",
           "info": "Der Header wird auf dem Bildschirm angezeigt, wenn der Kunde nach oben scrollt."
-        },
-        "color_scheme": {
-          "options__1": {
-            "label": "Akzent 1"
-          },
-          "options__2": {
-            "label": "Akzent 2"
-          },
-          "options__3": {
-            "label": "Hintergrund 1"
-          },
-          "options__4": {
-            "label": "Hintergrund 2"
-          },
-          "options__5": {
-            "label": "Invertiert"
-          },
-          "label": "Farbschema"
         }
       }
     },
@@ -756,26 +714,13 @@
           "options__5": {
             "label": "Invertiert"
           },
-          "label": "Farbschema",
-          "info": "Sichtbar, wenn Textfeld angezeigt wird"
+          "label": "Farbschema"
         },
         "stack_images_on_mobile": {
           "label": "Gestapelte Bilder auf Mobilgeräten"
         },
         "adapt_height_first_image": {
           "label": "Abschnittshöhe an Größe des ersten Bildes anpassen"
-        },
-        "show_text_box": {
-          "label": "Textfeld auf dem Desktop anzeigen"
-        },
-        "image_overlay_opacity": {
-          "label": "Deckkraft der Bildüberlagerung"
-        },
-        "header": {
-          "content": "Mobiles Layout"
-        },
-        "show_text_below": {
-          "label": "Text unter Bildern anzeigen"
         }
       },
       "blocks": {
@@ -784,15 +729,6 @@
           "settings": {
             "heading": {
               "label": "Überschrift"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "Mittel"
-              },
-              "options__2": {
-                "label": "Groß"
-              },
-              "label": "Schriftgröße der Überschrift"
             }
           }
         },
@@ -1093,7 +1029,7 @@
           "info": "[Filter anpassen](\/admin\/menus)"
         },
         "show_image_outline": {
-          "label": "Bildrahmen anzeigen"
+          "label": "Bildumriss anzeigen"
         },
         "enable_sort": {
           "label": "Sortieren aktivieren"
@@ -1405,8 +1341,7 @@
           "name": "Benutzerdefiniertes Liquid",
           "settings": {
             "custom_liquid": {
-              "label": "Benutzerdefiniertes Liquid",
-              "info": "Füge App-Snippets oder anderen Liquid-Code hinzu, um fortgeschrittene Anpassungen vorzunehmen."
+              "label": "Benutzerdefiniertes Liquid"
             }
           }
         },
@@ -1429,9 +1364,6 @@
         },
         "enable_sticky_info": {
           "label": "Fixierte Produktinformationen auf großen Bildschirmen aktivieren"
-        },
-        "hide_variants": {
-          "label": "Medien anderer Varianten ausblenden, sobald eine Variante ausgewählt wurde"
         }
       },
       "name": "Produktinformationen"

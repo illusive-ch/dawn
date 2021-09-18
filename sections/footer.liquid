@@ -16,7 +16,7 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient">
+<footer class="footer color-{{ section.settings.color_scheme }}">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top page-width">
       {%- if section.blocks.size > 0 -%}
@@ -365,9 +365,8 @@
 
     onItemClick(event) {
       event.preventDefault();
-      const form = this.querySelector('form');
       this.elements.input.value = event.currentTarget.dataset.value;
-      if (form) form.submit();
+      this.querySelector('form')?.submit();
     }
 
     openSelector() {

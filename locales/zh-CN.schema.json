@@ -205,25 +205,6 @@
           }
         }
       }
-    },
-    "search_input": {
-      "name": "搜索输入",
-      "settings": {
-        "header": {
-          "content": "产品建议"
-        },
-        "predictive_search_enabled": {
-          "label": "启用产品建议"
-        },
-        "predictive_search_show_vendor": {
-          "label": "显示厂商",
-          "info": "在启用产品建议时可见。"
-        },
-        "predictive_search_show_price": {
-          "label": "显示价格",
-          "info": "在启用产品建议时可见。"
-        }
-      }
     }
   },
   "sections": {
@@ -372,17 +353,13 @@
               "label": "封面图片"
             },
             "video_url": {
-              "label": "URL",
+              "label": "链接",
               "info": "如果分区中包含其他块，则在弹出窗口中播放视频。",
-              "placeholder": "使用 YouTube 或 Vimeo URL"
+              "placeholder": "使用 YouTube 或 Vimeo 链接"
             },
             "image_padding": {
               "label": "添加图片填充",
-              "info": "如果您不希望裁剪封面图片，请选择图片填充。"
-            },
-            "description": {
-              "label": "视频替代文本",
-              "info": "为视频提供描述，以便使用屏幕阅读器的客户可访问该视频。"
+              "info": "如果您不希望裁剪图片，请选择图片填充。"
             }
           },
           "name": "视频"
@@ -466,8 +443,7 @@
       "name": "自定义 Liquid",
       "settings": {
         "custom_liquid": {
-          "label": "自定义 Liquid",
-          "info": "添加应用代码片段或其他 Liquid 代码以创建高级自定义。"
+          "label": "自定义 Liquid"
         }
       },
       "presets": {
@@ -565,7 +541,7 @@
           "label": "在悬停时显示第二张图片"
         },
         "add_image_padding": {
-          "label": "添加图片填充"
+          "label": "添加填充"
         },
         "show_vendor": {
           "label": "显示厂商"
@@ -704,24 +680,6 @@
         "enable_sticky_header": {
           "label": "启用粘性标头",
           "info": "在客户向上滑动时，屏幕上会显示标头。"
-        },
-        "color_scheme": {
-          "options__1": {
-            "label": "强调色 1"
-          },
-          "options__2": {
-            "label": "强调色 2"
-          },
-          "options__3": {
-            "label": "背景 1"
-          },
-          "options__4": {
-            "label": "背景 2"
-          },
-          "options__5": {
-            "label": "反转"
-          },
-          "label": "配色方案"
         }
       }
     },
@@ -762,26 +720,13 @@
           "options__5": {
             "label": "反转"
           },
-          "label": "配色方案",
-          "info": "在显示文本框时可见"
+          "label": "配色方案"
         },
         "stack_images_on_mobile": {
           "label": "在移动设备上堆叠图片"
         },
         "adapt_height_first_image": {
           "label": "使分区高度适应第一张图片大小"
-        },
-        "show_text_box": {
-          "label": "在桌面上显示文本框"
-        },
-        "image_overlay_opacity": {
-          "label": "图片叠加不透明度"
-        },
-        "header": {
-          "content": "移动布局"
-        },
-        "show_text_below": {
-          "label": "在图片下方显示文本"
         }
       },
       "blocks": {
@@ -789,15 +734,6 @@
           "settings": {
             "heading": {
               "label": "标题"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "中"
-              },
-              "options__2": {
-                "label": "大"
-              },
-              "label": "标题字体大小"
             }
           },
           "name": "标题"
@@ -1104,7 +1040,7 @@
           "content": "产品卡"
         },
         "show_image_outline": {
-          "label": "显示图片边框"
+          "label": "显示图片轮廓"
         },
         "enable_sort": {
           "label": "启用排序"
@@ -1421,8 +1357,7 @@
           "name": "自定义 liquid",
           "settings": {
             "custom_liquid": {
-              "label": "自定义 liquid",
-              "info": "添加应用代码片段或其他 Liquid 代码以创建高级自定义。"
+              "label": "自定义 liquid"
             }
           }
         },
@@ -1445,9 +1380,6 @@
         },
         "enable_sticky_info": {
           "label": "在较大屏幕上启用粘性产品信息"
-        },
-        "hide_variants": {
-          "label": "在选择多属性后隐藏其他多属性的媒体文件"
         }
       }
     },

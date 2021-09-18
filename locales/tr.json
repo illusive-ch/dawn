@@ -47,12 +47,14 @@
       "copy_to_clipboard": "Bağlantıyı kopyala",
       "share": "Paylaş",
       "share_url": "Bağlantı",
-      "success_message": "Bağlantı panoya kopyalandı",
-      "close": "Paylaşımı kapat"
+      "success_message": "Bağlantı panoya kopyalandı."
     }
   },
+  "date_formats": {
+    "month_year": "%B %Y"
+  },
   "newsletter": {
-    "label": "E-posta",
+    "label": "E-postanız",
     "success": "Abone olduğunuz için teşekkür ederiz",
     "button_label": "Abone ol"
   },

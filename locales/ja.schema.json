@@ -105,7 +105,7 @@
             "label": "アクセント2"
           },
           "options__3": {
-            "label": "アウトラインボタン"
+            "label": "オンラインボタン"
           },
           "options__4": {
             "label": "テキスト"
@@ -203,25 +203,6 @@
           "options__2": {
             "label": "1600ピクセル"
           }
-        }
-      }
-    },
-    "search_input": {
-      "name": "入力を検索",
-      "settings": {
-        "header": {
-          "content": "商品のおすすめ"
-        },
-        "predictive_search_enabled": {
-          "label": "商品のおすすめを有効にする"
-        },
-        "predictive_search_show_vendor": {
-          "label": "販売元を表示",
-          "info": "商品のおすすめが有効な場合に表示されます。"
-        },
-        "predictive_search_show_price": {
-          "label": "価格を表示",
-          "info": "商品のおすすめが有効な場合に表示されます。"
         }
       }
     }
@@ -372,17 +353,13 @@
               "label": "表紙画像"
             },
             "video_url": {
-              "label": "URL",
+              "label": "リンク",
               "info": "セクションに他のブロックが含まれている場合、動画はポップアップで再生されます。",
-              "placeholder": "YouTubeやVimeoのURLを使う"
+              "placeholder": "YouTubeやVimeoのリンクを使う"
             },
             "image_padding": {
               "label": "画像の余白を追加する",
-              "info": "表紙画像をトリミングしたくない場合は、画像の余白を選択します。"
-            },
-            "description": {
-              "label": "動画の代替テキスト",
-              "info": "スクリーンリーダーを使用するお客様がアクセスできるように、動画の説明をしてください。"
+              "info": "画像をトリミングしたくない場合は、画像の余白を選択します。"
             }
           },
           "name": "ビデオ"
@@ -466,8 +443,7 @@
       "name": "カスタマイズされたLiquid",
       "settings": {
         "custom_liquid": {
-          "label": "カスタマイズされたLiquid",
-          "info": "アプリのスニペットやその他のLiquidコードを追加して、高度なカスタマイズを作成します。"
+          "label": "カスタマイズされたLiquid"
         }
       },
       "presets": {
@@ -565,7 +541,7 @@
           "label": "マウスオーバー時に2番目の画像を表示する"
         },
         "add_image_padding": {
-          "label": "画像の余白を追加する"
+          "label": "余白を追加する"
         },
         "show_vendor": {
           "label": "販売元を表示する"
@@ -704,24 +680,6 @@
         "enable_sticky_header": {
           "label": "常時表示のヘッダーを有効にする",
           "info": "お客様が上にスクロールするとヘッダーが画面に表示されます。"
-        },
-        "color_scheme": {
-          "options__1": {
-            "label": "アクセント1"
-          },
-          "options__2": {
-            "label": "アクセント2"
-          },
-          "options__3": {
-            "label": "背景1"
-          },
-          "options__4": {
-            "label": "背景2"
-          },
-          "options__5": {
-            "label": "反転"
-          },
-          "label": "配色"
         }
       }
     },
@@ -762,26 +720,13 @@
           "options__5": {
             "label": "反転"
           },
-          "label": "配色",
-          "info": "テキストボックスが表示時に表示される"
+          "label": "配色"
         },
         "stack_images_on_mobile": {
           "label": "モバイルで画像を重ねる"
         },
         "adapt_height_first_image": {
           "label": "セクションの高さを最初の画像サイズに合わせる"
-        },
-        "show_text_box": {
-          "label": "デスクトップ上にテキストボックスを表示する"
-        },
-        "image_overlay_opacity": {
-          "label": "画像のオーバーレイ不透明率"
-        },
-        "header": {
-          "content": "モバイルのレイアウト"
-        },
-        "show_text_below": {
-          "label": "画像下にテキストを表示する"
         }
       },
       "blocks": {
@@ -789,15 +734,6 @@
           "settings": {
             "heading": {
               "label": "見出し"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "中"
-              },
-              "options__2": {
-                "label": "大"
-              },
-              "label": "見出しのフォントサイズ"
             }
           },
           "name": "見出し"
@@ -1104,7 +1040,7 @@
           "content": "商品カード"
         },
         "show_image_outline": {
-          "label": "画像の枠線を表示する"
+          "label": "画像のアウトラインを表示"
         },
         "enable_sort": {
           "label": "並べ替えを有効にする"
@@ -1421,8 +1357,7 @@
           "name": "カスタムLiquid",
           "settings": {
             "custom_liquid": {
-              "label": "カスタムLiquid",
-              "info": "アプリのスニペットやその他のLiquidコードを追加して、高度なカスタマイズを作成します。"
+              "label": "カスタムLiquid"
             }
           }
         },
@@ -1445,9 +1380,6 @@
         },
         "enable_sticky_info": {
           "label": "大画面で商品情報のスティッキー表示を有効にする"
-        },
-        "hide_variants": {
-          "label": "バリエーションを選択した後、他のバリエーションのメディアを非表示にする"
         }
       }
     },

@@ -47,12 +47,14 @@
       "copy_to_clipboard": "Kopijuoti nuorodą",
       "share": "Bendrinti",
       "share_url": "Nuoroda",
-      "success_message": "Nuoroda nukopijuota į iškarpinę",
-      "close": "Uždaryti bendrinimą"
+      "success_message": "Nuoroda nukopijuota į iškarpinę!"
     }
   },
+  "date_formats": {
+    "month_year": "%B %Y"
+  },
   "newsletter": {
-    "label": "El. pašto adresas",
+    "label": "Jūsų el. pašto adresas",
     "success": "Dėkojame, kad prenumeruojate",
     "button_label": "Prenumeruoti"
   },
@@ -71,9 +73,7 @@
       "external": "Atidaro išorinę svetainę."
     },
     "of": "iš",
-    "skip_to_product_info": "Pereiti prie informacijos apie gaminį",
-    "total_reviews": "iš viso apžvalgų",
-    "star_reviews_info": "{{ rating_value }} iš {{ rating_max }} žvaigždučių"
+    "skip_to_product_info": "Pereiti prie informacijos apie gaminį"
   },
   "blogs": {
     "article": {

@@ -205,25 +205,6 @@
           }
         }
       }
-    },
-    "search_input": {
-      "name": "Ricerca input",
-      "settings": {
-        "header": {
-          "content": "Suggerimenti sui prodotti"
-        },
-        "predictive_search_enabled": {
-          "label": "Abilita suggerimenti sui prodotti"
-        },
-        "predictive_search_show_vendor": {
-          "label": "Mostra fornitore",
-          "info": "Visibile quando i suggerimenti sui prodotti sono abilitati."
-        },
-        "predictive_search_show_price": {
-          "label": "Mostra prezzo",
-          "info": "Visibile quando i suggerimenti sui prodotti sono abilitati."
-        }
-      }
     }
   },
   "sections": {
@@ -295,7 +276,7 @@
             },
             "image_padding": {
               "label": "Aggiungi spaziatura immagine",
-              "info": "Se non desideri che l'immagini venga ritagliata, seleziona una spaziatura."
+              "info": "Se non desideri che le immagini vengano ritagliate, seleziona una spaziatura per l'immagine."
             },
             "color_scheme": {
               "options__1": {
@@ -344,7 +325,7 @@
             },
             "image_padding": {
               "label": "Aggiungi spaziatura immagine",
-              "info": "Se non desideri che l'immagini venga ritagliata, seleziona una spaziatura."
+              "info": "Se non desideri che le immagini vengano ritagliate, seleziona una spaziatura per l'immagine."
             },
             "color_scheme": {
               "options__1": {
@@ -373,17 +354,13 @@
               "label": "Immagine di copertina"
             },
             "video_url": {
-              "label": "URL",
-              "info": "Se la sezione contiene altri blocchi, il video viene riprodotto in un pop-up.",
-              "placeholder": "Utilizza un URL YouTube o Vimeo"
+              "label": "Link",
+              "info": "Se la sezione contiene altri blocchi, i video vengono riprodotti in un pop-up.",
+              "placeholder": "Utilizza un link YouTube o Vimeo"
             },
             "image_padding": {
               "label": "Aggiungi spaziatura immagine",
-              "info": "Se non desideri che l'immagine di copertina venga ritagliata, seleziona una spaziatura."
-            },
-            "description": {
-              "label": "Testo alternativo del video",
-              "info": "Descrivi il video per renderlo accessibile ai clienti che utilizzano i lettori di schermo."
+              "info": "Se non desideri che le immagini vengano ritagliate, seleziona una spaziatura per l'immagine."
             }
           }
         }
@@ -463,8 +440,7 @@
       "name": "Liquid personalizzato",
       "settings": {
         "custom_liquid": {
-          "label": "Liquid personalizzato",
-          "info": "Aggiungi snippet di app o altro codice Liquid per creare personalizzazioni avanzate."
+          "label": "Liquid personalizzato"
         }
       },
       "presets": {
@@ -560,7 +536,7 @@
           "label": "Mostra la seconda immagine al passaggio del mouse"
         },
         "add_image_padding": {
-          "label": "Aggiungi spaziatura immagine"
+          "label": "Aggiungi spaziatura"
         },
         "show_vendor": {
           "label": "Mostra fornitore"
@@ -693,29 +669,11 @@
           "label": "Menu"
         },
         "show_line_separator": {
-          "label": "Mostra linea di separazione"
+          "label": "Mostra linea separatore"
         },
         "enable_sticky_header": {
           "label": "Abilita header fisso",
           "info": "L'header viene mostrato sullo schermo quando i clienti scorrono verso l'alto."
-        },
-        "color_scheme": {
-          "options__1": {
-            "label": "Elemento in risalto 1"
-          },
-          "options__2": {
-            "label": "Elemento in risalto 2"
-          },
-          "options__3": {
-            "label": "Sfondo 1"
-          },
-          "options__4": {
-            "label": "Sfondo 2"
-          },
-          "options__5": {
-            "label": "Inverso"
-          },
-          "label": "Schema di colori"
         }
       }
     },
@@ -756,26 +714,13 @@
           "options__5": {
             "label": "Inverso"
           },
-          "label": "Schema di colori",
-          "info": "Visibile quando è visualizzata la casella di testo"
+          "label": "Schema di colori"
         },
         "stack_images_on_mobile": {
           "label": "Elenca immagini su dispositivo mobile"
         },
         "adapt_height_first_image": {
           "label": "Adatta l'altezza della sezione alle dimensioni della prima immagine"
-        },
-        "show_text_box": {
-          "label": "Mostra casella di testo sul desktop"
-        },
-        "image_overlay_opacity": {
-          "label": "Opacità della sovrapposizione immagine"
-        },
-        "header": {
-          "content": "Layout dispositivo mobile"
-        },
-        "show_text_below": {
-          "label": "Mostra testo sotto le immagini"
         }
       },
       "blocks": {
@@ -784,15 +729,6 @@
           "settings": {
             "heading": {
               "label": "Titolo"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "Medio"
-              },
-              "options__2": {
-                "label": "Grande"
-              },
-              "label": "Dimensione font titolo"
             }
           }
         },
@@ -1093,7 +1029,7 @@
           "content": "Scheda prodotto"
         },
         "show_image_outline": {
-          "label": "Mostra bordo immagine"
+          "label": "Mostra contorno dell'immagine"
         },
         "enable_sort": {
           "label": "Abilita ordinamento"
@@ -1116,16 +1052,16 @@
         "sort": {
           "label": "Ordina le collezioni per:",
           "options__1": {
-            "label": "In ordine alfabetico, A-Z"
+            "label": "In ordine alfabetico, A - Z"
           },
           "options__2": {
-            "label": "In ordine alfabetico, Z-A"
+            "label": "In ordine alfabetico, Z - A"
           },
           "options__3": {
-            "label": "Data, da più a meno recente"
+            "label": "Data, dal più recente al più vecchio"
           },
           "options__4": {
-            "label": "Data, da meno a più recente"
+            "label": "Data, dal più vecchio al più recente"
           },
           "options__5": {
             "label": "Conteggio prodotti decrescente"
@@ -1410,8 +1346,7 @@
           "name": "Liquid personalizzato",
           "settings": {
             "custom_liquid": {
-              "label": "Liquid personalizzato",
-              "info": "Aggiungi snippet di app o altro codice Liquid per creare personalizzazioni avanzate."
+              "label": "Liquid personalizzato"
             }
           }
         },
@@ -1434,9 +1369,6 @@
         },
         "enable_sticky_info": {
           "label": "Abilita le informazioni di prodotto fisse su schermi grandi"
-        },
-        "hide_variants": {
-          "label": "Nascondi i contenuti multimediali delle altre varianti dopo averne selezionata una"
         }
       }
     },

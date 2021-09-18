@@ -205,25 +205,6 @@
           }
         }
       }
-    },
-    "search_input": {
-      "name": "搜尋輸入",
-      "settings": {
-        "header": {
-          "content": "產品建議"
-        },
-        "predictive_search_enabled": {
-          "label": "啟用產品建議"
-        },
-        "predictive_search_show_vendor": {
-          "label": "顯示廠商",
-          "info": "啟用產品建議時顯示。"
-        },
-        "predictive_search_show_price": {
-          "label": "顯示價格",
-          "info": "啟用產品建議時顯示。"
-        }
-      }
     }
   },
   "sections": {
@@ -294,7 +275,7 @@
             },
             "image_padding": {
               "label": "新增圖片邊框間距",
-              "info": "若您不希望圖片遭到裁剪，請選取圖片邊框間距。"
+              "info": "若您不希望圖片受到裁減，請選取圖片邊框間距。"
             },
             "color_scheme": {
               "options__1": {
@@ -343,7 +324,7 @@
             },
             "image_padding": {
               "label": "新增圖片邊框間距",
-              "info": "若您不希望圖片遭到裁剪，請選取圖片邊框間距。"
+              "info": "若您不希望圖片受到裁減，請選取圖片邊框間距。"
             },
             "color_scheme": {
               "options__1": {
@@ -372,17 +353,13 @@
               "label": "封面圖片"
             },
             "video_url": {
-              "label": "網址",
+              "label": "連結",
               "info": "若區段包含其他區塊，則影片會在彈出式視窗中顯示。",
-              "placeholder": "使用 YouTube 或 Vimeo 網址"
+              "placeholder": "使用 YouTube 或 Vimeo 連結"
             },
             "image_padding": {
               "label": "新增圖片邊框間距",
-              "info": "若您不希望封面圖片遭到裁剪，請選取圖片邊框。"
-            },
-            "description": {
-              "label": "影片替代文字",
-              "info": "提供影片說明以便使用螢幕閱讀器的顧客瀏覽。"
+              "info": "若您不希望圖片受到裁減，請選取圖片邊框間距。"
             }
           },
           "name": "影片"
@@ -466,8 +443,7 @@
       "name": "自訂 Liquid",
       "settings": {
         "custom_liquid": {
-          "label": "自訂 Liquid",
-          "info": "新增應用程式程式碼片段或其他 Liquid 碼以建立進階自訂內容。"
+          "label": "自訂 Liquid"
         }
       },
       "presets": {
@@ -565,7 +541,7 @@
           "label": "游標暫留時顯示次要圖片"
         },
         "add_image_padding": {
-          "label": "新增圖片邊框間距"
+          "label": "新增邊框間距"
         },
         "show_vendor": {
           "label": "顯示廠商"
@@ -704,24 +680,6 @@
         "enable_sticky_header": {
           "label": "啟用固定式頁首",
           "info": "頁首會在顧客往上滑時顯示在螢幕上。"
-        },
-        "color_scheme": {
-          "options__1": {
-            "label": "色調 1"
-          },
-          "options__2": {
-            "label": "色調 2"
-          },
-          "options__3": {
-            "label": "背景 1"
-          },
-          "options__4": {
-            "label": "背景 2"
-          },
-          "options__5": {
-            "label": "反轉"
-          },
-          "label": "顏色配置"
         }
       }
     },
@@ -762,26 +720,13 @@
           "options__5": {
             "label": "倒轉"
           },
-          "label": "顏色配置",
-          "info": "顯示文字方塊時可見"
+          "label": "顏色配置"
         },
         "stack_images_on_mobile": {
           "label": "在行動裝置上堆疊圖片"
         },
         "adapt_height_first_image": {
           "label": "配合的一張圖片尺寸的區段高度"
-        },
-        "show_text_box": {
-          "label": "在桌面顯示文字方塊"
-        },
-        "image_overlay_opacity": {
-          "label": "圖片疊加層透明度"
-        },
-        "header": {
-          "content": "行動版版面配置"
-        },
-        "show_text_below": {
-          "label": "將文字置於圖片下方"
         }
       },
       "blocks": {
@@ -789,15 +734,6 @@
           "settings": {
             "heading": {
               "label": "標題"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "中等"
-              },
-              "options__2": {
-                "label": "大"
-              },
-              "label": "標題字型大小"
             }
           },
           "name": "標題"
@@ -1104,7 +1040,7 @@
           "content": "產品卡"
         },
         "show_image_outline": {
-          "label": "顯示圖片邊框"
+          "label": "顯示圖片外框"
         },
         "enable_sort": {
           "label": "啟用排序"
@@ -1421,8 +1357,7 @@
           "name": "自訂 Liquid",
           "settings": {
             "custom_liquid": {
-              "label": "自訂 Liquid",
-              "info": "新增應用程式程式碼片段或其他 Liquid 碼以建立進階自訂內容。"
+              "label": "自訂 Liquid"
             }
           }
         },
@@ -1445,9 +1380,6 @@
         },
         "enable_sticky_info": {
           "label": "在大螢幕上啟用固定產品資訊"
-        },
-        "hide_variants": {
-          "label": "在選取一個子類後，隱藏其他子類的多媒體檔案"
         }
       }
     },

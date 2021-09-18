@@ -1,6 +1,9 @@
 .rich-text {
   margin: auto;
+  max-width: 110rem;
   text-align: center;
+  /* 1.5rem margin on left & right */
+  width: calc(100% - 3rem);
 }
 
 .rich-text.rich-text--full-width {

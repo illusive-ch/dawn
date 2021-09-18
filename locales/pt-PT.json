@@ -47,9 +47,11 @@
       "copy_to_clipboard": "Copiar ligação",
       "share": "Partilhar",
       "share_url": "Ligação",
-      "success_message": "Ligação copiada para a área de transferência",
-      "close": "Fechar partilha"
+      "success_message": "Ligação copiada para a área de transferência!"
     }
+  },
+  "date_formats": {
+    "month_year": "%B %Y"
   },
   "newsletter": {
     "label": "E-mail",
@@ -71,9 +73,7 @@
     "previous_slide": "Deslizar para a esquerda",
     "loading": "A carregar...",
     "of": "de",
-    "skip_to_product_info": "Saltar para a informação do produto",
-    "total_reviews": "análises totais",
-    "star_reviews_info": "{{ rating_value }} de {{ rating_max }} estrelas"
+    "skip_to_product_info": "Saltar para a informação do produto"
   },
   "blogs": {
     "article": {

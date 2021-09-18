@@ -6,7 +6,7 @@
       "login_form_password_label": "Salasana",
       "login_form_password_placeholder": "Salasanasi",
       "login_form_error": "Väärä salasana!",
-      "login_form_submit": "Lähetä",
+      "login_form_submit": "Syötä",
       "modal": "Salasanaikkuna",
       "admin_link_html": "Oletko kaupan omistaja? <a href=\"\/admin\" class=\"link underlined-link\">Kirjaudu sisään tästä<\/a>",
       "powered_by_shopify_html": "Tämän kaupan alustana on {{ shopify }}"
@@ -47,12 +47,14 @@
       "copy_to_clipboard": "Kopioi linkki",
       "share": "Jaa",
       "share_url": "Linkki",
-      "success_message": "Linkki kopioitu leikepöydälle",
-      "close": "Sulje jako"
+      "success_message": "Linkki kopioitu leikepöydälle!"
     }
   },
+  "date_formats": {
+    "month_year": "%B %Y"
+  },
   "newsletter": {
-    "label": "Sähköposti",
+    "label": "Sähköpostiosoitteesi",
     "success": "Kiitos tilauksesta",
     "button_label": "Tilaa"
   },

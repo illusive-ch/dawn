@@ -47,12 +47,14 @@
       "copy_to_clipboard": "คัดลอกลิงก์",
       "share": "แชร์",
       "share_url": "ลิงก์",
-      "success_message": "คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว",
-      "close": "ปิดแชร์"
+      "success_message": "คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว!"
     }
   },
+  "date_formats": {
+    "month_year": "%B %Y"
+  },
   "newsletter": {
-    "label": "อีเมล",
+    "label": "อีเมลของคุณ",
     "success": "ขอขอบคุณที่สมัครรับข้อมูล",
     "button_label": "สมัครรับข้อมูล"
   },
@@ -71,9 +73,7 @@
     "previous_slide": "Slide left",
     "loading": "กำลังโหลด...",
     "of": "จาก",
-    "skip_to_product_info": "ข้ามไปยังข้อมูลสินค้า",
-    "total_reviews": "รีวิวทั้งหมด",
-    "star_reviews_info": "{{ rating_value }} จาก {{ rating_max }} ดาว"
+    "skip_to_product_info": "ข้ามไปยังข้อมูลสินค้า"
   },
   "blogs": {
     "article": {

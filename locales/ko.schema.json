@@ -205,25 +205,6 @@
           }
         }
       }
-    },
-    "search_input": {
-      "name": "입력 검색",
-      "settings": {
-        "header": {
-          "content": "제품 제안"
-        },
-        "predictive_search_enabled": {
-          "label": "제품 제안 활성화"
-        },
-        "predictive_search_show_vendor": {
-          "label": "공급업체 표시",
-          "info": "제품 제안이 활성화되면 표시됩니다."
-        },
-        "predictive_search_show_price": {
-          "label": "가격 표시",
-          "info": "제품 제안이 활성화되면 표시됩니다."
-        }
-      }
     }
   },
   "sections": {
@@ -372,17 +353,13 @@
               "label": "커버 이미지"
             },
             "video_url": {
-              "label": "URL",
+              "label": "링크",
               "info": "이 섹션에 다른 블록이 포함되면 동영상이 팝업 창에서 재생됩니다.",
-              "placeholder": "YouTube 또는 Vimeo URL 사용"
+              "placeholder": "YouTube 또는 Vimeo 링크 사용"
             },
             "image_padding": {
               "label": "이미지 패딩 추가",
               "info": "이미지가 잘리는 것을 방지하려면 이미지 패딩을 선택하십시오."
-            },
-            "description": {
-              "label": "동영상 대체 텍스트",
-              "info": "시각 장애인용 스크린리더를 사용하는 고객이 사용할 수 있도록 동영상에 대해 설명합니다."
             }
           },
           "name": "동영상"
@@ -466,8 +443,7 @@
       "name": "사용자 지정 Liquid",
       "settings": {
         "custom_liquid": {
-          "label": "사용자 지정 Liquid",
-          "info": "앱 코드 조각 또는 기타 Liquid 코드를 추가하여 고급 사용자 지정을 생성할 수 있습니다."
+          "label": "사용자 지정 Liquid"
         }
       },
       "presets": {
@@ -565,7 +541,7 @@
           "label": "마우스를 올리면 보조 배경 표시"
         },
         "add_image_padding": {
-          "label": "이미지 패딩 추가"
+          "label": "패딩 추가"
         },
         "show_vendor": {
           "label": "공급업체 표시"
@@ -590,7 +566,7 @@
           "settings": {
             "heading": {
               "label": "제목",
-              "info": "메뉴를 표시하려면 제목은 필수 사항입니다."
+              "info": "메뉴를 표시하려면 제목이 필수 항목입니다."
             },
             "menu": {
               "label": "메뉴",
@@ -704,24 +680,6 @@
         "enable_sticky_header": {
           "label": "고정 머리글 사용",
           "info": "고객이 위쪽으로 스크롤하면 화면에 표시되는 머리글입니다."
-        },
-        "color_scheme": {
-          "options__1": {
-            "label": "강조 1"
-          },
-          "options__2": {
-            "label": "강조 2"
-          },
-          "options__3": {
-            "label": "배경 1"
-          },
-          "options__4": {
-            "label": "배경 2"
-          },
-          "options__5": {
-            "label": "서로 바꾸기"
-          },
-          "label": "색상 배합"
         }
       }
     },
@@ -762,26 +720,13 @@
           "options__5": {
             "label": "서로 바꾸기"
           },
-          "label": "색상 배합",
-          "info": "텍스트 상자가 표시될 때 보이게 하기"
+          "label": "색상 배합"
         },
         "stack_images_on_mobile": {
           "label": "모바일 스택 이미지"
         },
         "adapt_height_first_image": {
           "label": "첫 번째 이미지에 섹션 높이 맞추기"
-        },
-        "show_text_box": {
-          "label": "바탕 화면에 텍스트 상자 표시"
-        },
-        "image_overlay_opacity": {
-          "label": "이미지 오버레이 투명도"
-        },
-        "header": {
-          "content": "모바일 레이아웃"
-        },
-        "show_text_below": {
-          "label": "텍스트를 이미지 아래에 표시"
         }
       },
       "blocks": {
@@ -789,15 +734,6 @@
           "settings": {
             "heading": {
               "label": "제목"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "보통"
-              },
-              "options__2": {
-                "label": "크게"
-              },
-              "label": "제목 글꼴 사이즈"
             }
           },
           "name": "제목"
@@ -1104,7 +1040,7 @@
           "content": "제품 카드"
         },
         "show_image_outline": {
-          "label": "이미지 테두리 표시"
+          "label": "이미지 윤곽 표시"
         },
         "enable_sort": {
           "label": "정렬 사용"
@@ -1421,8 +1357,7 @@
           "name": "사용자 지정 Liquid",
           "settings": {
             "custom_liquid": {
-              "label": "사용자 지정 Liquid",
-              "info": "앱 코드 조각 또는 기타 Liquid 코드를 추가하여 고급 사용자 지정을 생성할 수 있습니다."
+              "label": "사용자 지정 Liquid"
             }
           }
         },
@@ -1445,9 +1380,6 @@
         },
         "enable_sticky_info": {
           "label": "큰 화면에 제품 정보 스티커 사용"
-        },
-        "hide_variants": {
-          "label": "이형 상품을 선택한 후 다른 이형 상품의 미디어 숨기기"
         }
       }
     },
