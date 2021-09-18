@@ -110,3 +110,21 @@
   display: inline-block;
   margin: 0;
 }
+
+/*Cart Notification Testimonial addon*/
+.cart-notification__testimonial{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cart-notification__testimonial img{
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.cart-notification__testimonial p{
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  margin-left:10px
+}
+
