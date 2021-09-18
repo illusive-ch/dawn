@@ -73,7 +73,7 @@
     "of": "z",
     "skip_to_product_info": "Prejsť na informácie o produkte",
     "total_reviews": "celkový počet recenzií",
-    "star_reviews_info": "Počet hviezdičiek: {{ rating_value }}/{{ rating_max }}"
+    "star_reviews_info": "Počet hviezdičiek: {{ rating_value }}\/{{ rating_max }}"
   },
   "blogs": {
     "article": {
@@ -144,7 +144,7 @@
       },
       "view_full_details": "Zobraziť všetky podrobnosti",
       "include_taxes": "Vrátane dane.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Doprava</a> sa vypočíta pri platbe."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Doprava<\/a> sa vypočíta pri platbe."
     },
     "modal": {
       "label": "Galéria médií"
@@ -279,7 +279,7 @@
     "collection_template": {
       "title": "Kolekcia",
       "empty": "Nenašli sa žiadne produkty",
-      "use_fewer_filters_html": "Použiť menej filtrov alebo <a class=\"{{ class }}\" href=\"{{ link }}\">vymazať všetko</a>",
+      "use_fewer_filters_html": "Použiť menej filtrov alebo <a class=\"{{ class }}\" href=\"{{ link }}\">vymazať všetko<\/a>",
       "product_count": {
         "few": "Produkty {{ product_count }} z {{ count }}",
         "many": "Produkty {{ product_count }} z {{ count }}"

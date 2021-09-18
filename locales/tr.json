@@ -70,10 +70,10 @@
     "next_slide": "Sağa kaydır",
     "previous_slide": "Sola kaydır",
     "loading": "Yükleniyor...",
-    "of": "/",
+    "of": "\/",
     "skip_to_product_info": "Ürün bilgisine atla",
     "total_reviews": "toplam değerlendirme",
-    "star_reviews_info": "{{ rating_value }}/{{ rating_max }} yıldız"
+    "star_reviews_info": "{{ rating_value }}\/{{ rating_max }} yıldız"
   },
   "blogs": {
     "article": {
@@ -142,7 +142,7 @@
       },
       "view_full_details": "Tüm ayrıntıları görüntüle",
       "include_taxes": "Vergi dahildir.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Kargo</a>, ödeme sayfasında hesaplanır."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Kargo<\/a>, ödeme sayfasında hesaplanır."
     },
     "modal": {
       "label": "Medya galerisi"
@@ -161,8 +161,8 @@
       },
       "max_price": "En yüksek fiyat: {{ price }}",
       "product_count": {
-        "one": "{{ count }}/{{ product_count }} ürün",
-        "other": "{{ count }}/{{ product_count }} ürün"
+        "one": "{{ count }}\/{{ product_count }} ürün",
+        "other": "{{ count }}\/{{ product_count }} ürün"
       },
       "product_count_simple": {
         "one": "{{ count }} ürün",
@@ -265,7 +265,7 @@
     "collection_template": {
       "title": "Koleksiyon",
       "empty": "Ürün bulunamadı",
-      "use_fewer_filters_html": "Daha az filtre kullan veya <a class=\"{{ class }}\" href=\"{{ link }}\">tümünü temizle</a>"
+      "use_fewer_filters_html": "Daha az filtre kullan veya <a class=\"{{ class }}\" href=\"{{ link }}\">tümünü temizle<\/a>"
     },
     "video": {
       "load_video": "Videoyu yükle: {{ description }}"

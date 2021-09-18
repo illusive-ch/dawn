@@ -143,7 +143,7 @@
       },
       "view_full_details": "Vedeți detaliile complete",
       "include_taxes": "Taxe incluse.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Taxele de expediere</a> sunt calculate la finalizarea comenzii."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Taxele de expediere<\/a> sunt calculate la finalizarea comenzii."
     },
     "modal": {
       "label": "Galerie media"
@@ -272,7 +272,7 @@
     "collection_template": {
       "title": "Colecție",
       "empty": "Nu s-au găsit produse",
-      "use_fewer_filters_html": "Utilizați mai puține filtre sau <a class=\"{{ class }}\" href=\"{{ link }}\">goliți tot</a>",
+      "use_fewer_filters_html": "Utilizați mai puține filtre sau <a class=\"{{ class }}\" href=\"{{ link }}\">goliți tot<\/a>",
       "product_count": {
         "few": "{{ product_count }} din {{ count }} produse"
       },

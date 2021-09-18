@@ -70,10 +70,10 @@
     "next_slide": "Következő dia",
     "previous_slide": "Előző dia",
     "loading": "Betöltés folyamatban…",
-    "of": "/",
+    "of": "\/",
     "skip_to_product_info": "Kihagyás, és ugrás a termékadatokra",
     "total_reviews": "összes értékelés",
-    "star_reviews_info": "{{ rating_max }}/{{ rating_value }} csillag"
+    "star_reviews_info": "{{ rating_max }}\/{{ rating_value }} csillag"
   },
   "blogs": {
     "article": {
@@ -142,7 +142,7 @@
       },
       "view_full_details": "Minden részlet megtekintése",
       "include_taxes": "Tartalmazza az adót.",
-      "shipping_policy_html": "A <a href=\"{{ link }}\">szállítási költséget</a> a megrendeléskor számítjuk ki."
+      "shipping_policy_html": "A <a href=\"{{ link }}\">szállítási költséget<\/a> a megrendeléskor számítjuk ki."
     },
     "modal": {
       "label": "Médiatár"
@@ -161,8 +161,8 @@
       },
       "max_price": "A legmagasabb ár {{ price }}",
       "product_count": {
-        "one": "{{ count }}/{{ product_count }} termék",
-        "other": "{{ count }}/{{ product_count }} termék"
+        "one": "{{ count }}\/{{ product_count }} termék",
+        "other": "{{ count }}\/{{ product_count }} termék"
       },
       "product_count_simple": {
         "one": "{{ count }} termék",
@@ -265,7 +265,7 @@
     "collection_template": {
       "title": "Kollekció",
       "empty": "Nincs találat",
-      "use_fewer_filters_html": "Használj kevesebb szűrőt, vagy <a class=\"{{ class }}\" href=\"{{ link }}\">töröld az összeset</a>."
+      "use_fewer_filters_html": "Használj kevesebb szűrőt, vagy <a class=\"{{ class }}\" href=\"{{ link }}\">töröld az összeset<\/a>."
     },
     "video": {
       "load_video": "Videó betöltése: {{ description }}"

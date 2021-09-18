@@ -143,7 +143,7 @@
       },
       "view_full_details": "Prikaži sve pojedinosti",
       "include_taxes": "Porez je uključen.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Poštarina </a> se obračunava prilikom završetka kupnje."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Poštarina <\/a> se obračunava prilikom završetka kupnje."
     },
     "modal": {
       "label": "Galerija medijskih zapisa"
@@ -272,7 +272,7 @@
     "collection_template": {
       "title": "Kolekcija",
       "empty": "Nije pronađen nijedan proizvod",
-      "use_fewer_filters_html": "Upotrijebite manje filtara ili <a class=\"{{ class }}\" href=\"{{ link }}\">očistite sve</a>",
+      "use_fewer_filters_html": "Upotrijebite manje filtara ili <a class=\"{{ class }}\" href=\"{{ link }}\">očistite sve<\/a>",
       "product_count": {
         "few": "{{ product_count }} od {{ count }} proizvoda"
       },

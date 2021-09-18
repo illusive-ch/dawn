@@ -142,7 +142,7 @@
       },
       "view_full_details": "ดูรายละเอียดทั้งหมด",
       "include_taxes": "รวมภาษี",
-      "shipping_policy_html": "<a href=\"{{ link }}\">ค่าจัดส่ง</a>ที่คำนวณในขั้นตอนการชำระเงิน"
+      "shipping_policy_html": "<a href=\"{{ link }}\">ค่าจัดส่ง<\/a>ที่คำนวณในขั้นตอนการชำระเงิน"
     },
     "modal": {
       "label": "แกลเลอรีสื่อ"
@@ -265,7 +265,7 @@
     "collection_template": {
       "title": "คอลเลกชัน",
       "empty": "ไม่พบสินค้า",
-      "use_fewer_filters_html": "ใช้ตัวกรองให้น้อยลง หรือ<a class=\"{{ class }}\" href=\"{{ link }}\">ล้างทั้งหมด</a>"
+      "use_fewer_filters_html": "ใช้ตัวกรองให้น้อยลง หรือ<a class=\"{{ class }}\" href=\"{{ link }}\">ล้างทั้งหมด<\/a>"
     },
     "video": {
       "load_video": "โหลดวิดีโอ: {{ description }}"

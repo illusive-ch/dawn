@@ -410,7 +410,7 @@
           "options__3": {
             "label": "正方形"
           },
-          "info": "編輯您的商品系列以新增圖片。[瞭解詳情](https://help.shopify.com/en/manual/products/collections)"
+          "info": "編輯您的商品系列以新增圖片。[瞭解詳情](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -492,7 +492,7 @@
         },
         "show_image": {
           "label": "顯示精選圖片",
-          "info": "若想要獲得最佳結果，請使用寬高比為 2:3 的圖片。[瞭解詳情](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          "info": "若想要獲得最佳結果，請使用寬高比為 2:3 的圖片。[瞭解詳情](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "soft_background": {
           "label": "顯示次要背景"
@@ -575,7 +575,7 @@
         },
         "show_rating": {
           "label": "顯示產品評等",
-          "info": "新增產品評等應用程式，即可顯示評等。[瞭解詳情](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/sections#featured-collection-show-product-rating)"
+          "info": "新增產品評等應用程式，即可顯示評等。[瞭解詳情](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-collection-show-product-rating)"
         }
       },
       "presets": {
@@ -637,7 +637,7 @@
           "label": "標題"
         },
         "header__1": {
-          "info": "訂閱者已自動新增至您的「接受行銷」顧客名單。[瞭解詳情](https://help.shopify.com/en/manual/customers/manage-customers)",
+          "info": "訂閱者已自動新增至您的「接受行銷」顧客名單。[瞭解詳情](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers)",
           "content": "電子郵件訂閱"
         },
         "header__2": {
@@ -939,7 +939,7 @@
               "options__3": {
                 "label": "大"
               },
-              "info": "若想要獲得最佳結果，請使用寬高比為 16:9 的圖片。[瞭解詳情](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+              "info": "若想要獲得最佳結果，請使用寬高比為 16:9 的圖片。[瞭解詳情](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
             }
           },
           "name": "主要圖片"
@@ -968,7 +968,7 @@
               "content": "若您在社群媒體貼文加入連結，則此頁面的主要圖片會顯示為預覽圖片。[瞭解詳情](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)。"
             },
             "title_info": {
-              "content": "商店名稱和說明包含在預覽圖片中。[瞭解詳情](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)"
+              "content": "商店名稱和說明包含在預覽圖片中。[瞭解詳情](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
             },
             "text": {
               "label": "文字"
@@ -985,10 +985,10 @@
         },
         "show_image": {
           "label": "顯示精選圖片",
-          "info": "若想要獲得最佳結果，請使用寬高比為 2:3 的圖片。[瞭解詳情](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          "info": "若想要獲得最佳結果，請使用寬高比為 2:3 的圖片。[瞭解詳情](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "paragraph": {
-          "content": "編輯您的網誌文章以變更摘要。[瞭解詳情](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "編輯您的網誌文章以變更摘要。[瞭解詳情](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "show_date": {
           "label": "顯示日期"
@@ -1045,14 +1045,14 @@
       "name": "商品系列橫幅",
       "settings": {
         "paragraph": {
-          "content": "編輯您的商品系列以新增說明或圖片。[瞭解詳情](https://help.shopify.com/en/manual/products/collections/collection-layout)"
+          "content": "編輯您的商品系列以新增說明或圖片。[瞭解詳情](https:\/\/help.shopify.com\/en\/manual\/products\/collections\/collection-layout)"
         },
         "show_collection_description": {
           "label": "顯示商品系列說明"
         },
         "show_collection_image": {
           "label": "顯示商品系列圖片",
-          "info": "若想要獲得最佳結果，請使用寬高比為 16:9 的圖片。[瞭解詳情](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          "info": "若想要獲得最佳結果，請使用寬高比為 16:9 的圖片。[瞭解詳情](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         }
       }
     },
@@ -1095,7 +1095,7 @@
         },
         "enable_filtering": {
           "label": "啟用篩選",
-          "info": "自訂 [篩選條件](/admin/menus)"
+          "info": "自訂 [篩選條件](\/admin\/menus)"
         },
         "enable_sorting": {
           "label": "啟用排序"
@@ -1114,7 +1114,7 @@
         },
         "show_rating": {
           "label": "顯示產品評等",
-          "info": "新增產品評等應用程式，即可顯示評等。[瞭解詳情](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/page-types#product-grid-show-product-rating)"
+          "info": "新增產品評等應用程式，即可顯示評等。[瞭解詳情](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-grid-show-product-rating)"
         }
       }
     },
@@ -1156,7 +1156,7 @@
           "options__3": {
             "label": "正方形"
           },
-          "info": "編輯您的商品系列以新增圖片。[瞭解詳情](https://help.shopify.com/en/manual/products/collections)"
+          "info": "編輯您的商品系列以新增圖片。[瞭解詳情](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -1293,7 +1293,7 @@
               "content": "若您在社群媒體貼文加入連結，則此頁面的主要圖片會顯示為預覽圖片。[瞭解詳情](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)。"
             },
             "title_info": {
-              "content": "商店名稱和說明包含在預覽圖片中。[瞭解詳情](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)"
+              "content": "商店名稱和說明包含在預覽圖片中。[瞭解詳情](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
             },
             "text": {
               "label": "文字"
@@ -1430,7 +1430,7 @@
           "name": "產品評等",
           "settings": {
             "paragraph": {
-              "content": "新增產品評等應用程式，即可顯示評等。[瞭解詳情](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/page-types#product-rating-block)"
+              "content": "新增產品評等應用程式，即可顯示評等。[瞭解詳情](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-rating-block)"
             }
           }
         }
@@ -1438,7 +1438,7 @@
       "settings": {
         "header": {
           "content": "多媒體檔案",
-          "info": "深入瞭解 [多媒體檔案類型。](https://help.shopify.com/manual/products/product-media)"
+          "info": "深入瞭解 [多媒體檔案類型。](https:\/\/help.shopify.com\/manual\/products\/product-media)"
         },
         "enable_video_looping": {
           "label": "啟用影片循環播放功能"
@@ -1492,7 +1492,7 @@
         },
         "show_rating": {
           "label": "顯示產品評等",
-          "info": "新增產品評等應用程式，即可顯示評等。[瞭解詳情](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/page-types#search-results-show-product-rating)"
+          "info": "新增產品評等應用程式，即可顯示評等。[瞭解詳情](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#search-results-show-product-rating)"
         }
       }
     },
@@ -1606,7 +1606,7 @@
           "label": "讓區段呈現全寬度"
         },
         "paragraph": {
-          "content": "每筆電子郵件訂閱都會建立顧客帳號。[瞭解詳情](https://help.shopify.com/en/manual/customers)"
+          "content": "每筆電子郵件訂閱都會建立顧客帳號。[瞭解詳情](https:\/\/help.shopify.com\/en\/manual\/customers)"
         }
       },
       "blocks": {
@@ -1692,7 +1692,7 @@
         },
         "show_rating": {
           "label": "顯示產品評等",
-          "info": "新增產品評等應用程式，即可顯示評等。[瞭解詳情](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/page-types#product-recommendations-show-product-rating)"
+          "info": "新增產品評等應用程式，即可顯示評等。[瞭解詳情](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-recommendations-show-product-rating)"
         }
       }
     },
@@ -1862,7 +1862,7 @@
           "settings": {
             "show_dynamic_checkout": {
               "label": "顯示動態結帳按鈕",
-              "info": "顧客可透過您商店的可用付款方式，看到其偏好選項 (如 PayPal 或 Apple Pay)。[瞭解詳情](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+              "info": "顧客可透過您商店的可用付款方式，看到其偏好選項 (如 PayPal 或 Apple Pay)。[瞭解詳情](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
             }
           }
         },
@@ -1873,10 +1873,10 @@
           "name": "分享",
           "settings": {
             "featured_image_info": {
-              "content": "若您在社群媒體貼文中加入連結，則此頁面的主要圖片會顯示為預覽圖片。[瞭解詳情](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)"
+              "content": "若您在社群媒體貼文中加入連結，則此頁面的主要圖片會顯示為預覽圖片。[瞭解詳情](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)"
             },
             "title_info": {
-              "content": "商店名稱和說明包含在預覽圖片中。[瞭解詳情](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)"
+              "content": "商店名稱和說明包含在預覽圖片中。[瞭解詳情](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
             },
             "text": {
               "label": "文字"
@@ -1895,7 +1895,7 @@
           "name": "產品評等",
           "settings": {
             "paragraph": {
-              "content": "新增產品評等應用程式，即可顯示評等。[瞭解詳情](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/sections#featured-product-rating)"
+              "content": "新增產品評等應用程式，即可顯示評等。[瞭解詳情](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-product-rating)"
             }
           }
         }
@@ -1909,7 +1909,7 @@
         },
         "header": {
           "content": "多媒體檔案",
-          "info": "深入瞭解 [多媒體檔案類型](https://help.shopify.com/manual/products/product-media)"
+          "info": "深入瞭解 [多媒體檔案類型](https:\/\/help.shopify.com\/manual\/products\/product-media)"
         },
         "enable_video_looping": {
           "label": "啟用影片循環播放功能"

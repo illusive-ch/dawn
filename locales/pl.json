@@ -144,7 +144,7 @@
       },
       "view_full_details": "Pokaż kompletne dane",
       "include_taxes": "Z wliczonym podatkiem.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Koszt wysyłki</a> obliczony przy realizacji zakupu."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Koszt wysyłki<\/a> obliczony przy realizacji zakupu."
     },
     "modal": {
       "label": "Galeria multimediów"
@@ -279,7 +279,7 @@
     "collection_template": {
       "title": "Kolekcja",
       "empty": "Nie znaleziono produktów",
-      "use_fewer_filters_html": "Użyj mniejszej ilości filtrów lub <a class=\"{{ class }}\" href=\"{{ link }}\">Wyczyść wszystko</a>",
+      "use_fewer_filters_html": "Użyj mniejszej ilości filtrów lub <a class=\"{{ class }}\" href=\"{{ link }}\">Wyczyść wszystko<\/a>",
       "product_count": {
         "few": "{{ product_count }} z {{ count }} produktów",
         "many": "{{ product_count }} z {{ count }} produktów"

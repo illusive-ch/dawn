@@ -142,7 +142,7 @@
       },
       "view_full_details": "Lihat detail lengkap",
       "include_taxes": "Termasuk pajak.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Biaya pengiriman</a> dihitung saat checkout."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Biaya pengiriman<\/a> dihitung saat checkout."
     },
     "modal": {
       "label": "Galeri media"
@@ -265,7 +265,7 @@
     "collection_template": {
       "title": "Koleksi",
       "empty": "Tidak ada produk yang ditemukan",
-      "use_fewer_filters_html": "Gunakan lebih sedikit filter atau <a class=\"{{ class }}\" href=\"{{ link }}\">hapus semua</a>"
+      "use_fewer_filters_html": "Gunakan lebih sedikit filter atau <a class=\"{{ class }}\" href=\"{{ link }}\">hapus semua<\/a>"
     },
     "video": {
       "load_video": "Muat video: {{ description }}"
