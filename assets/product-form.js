@@ -1,16 +1,17 @@
-class ProductForm extends HTMLElement {
-  constructor() {
-    super();   
+if (!customElements.get('product-form')) {
+  customElements.define('product-form', class ProductForm extends HTMLElement {
+    constructor() {
+      super();
 
-    this.form = this.querySelector('form');
-    this.form.addEventListener('submit', this.onSubmitHandler.bind(this));
-    this.cartNotification = document.querySelector('cart-notification');
-  }
+      this.form = this.querySelector('form');
+      this.form.addEventListener('submit', this.onSubmitHandler.bind(this));
+      this.cartNotification = document.querySelector('cart-notification');
+    }
 
     onSubmitHandler(evt) {
       evt.preventDefault();
       const submitButton = this.querySelector('[type="submit"]');
-      if (submitButton.classList.contains('loading')) return; 
+      if (submitButton.classList.contains('loading')) return;
 
       this.handleErrorMessage();
       this.cartNotification.setActiveElement(document.activeElement);
@@ -28,23 +29,23 @@ class ProductForm extends HTMLElement {
       });
 
       fetch(`${routes.cart_add_url}`, config)
-        .then((response) => response.json())
-        .then((response) => {
-          if (response.status) {
-            this.handleErrorMessage(response.description);
-            return;
-          }
+          .then((response) => response.json())
+          .then((response) => {
+            if (response.status) {
+              this.handleErrorMessage(response.description);
+              return;
+            }
 
-          this.cartNotification.renderContents(response);
-        })
-        .catch((e) => {
-          console.error(e);
-        })
-        .finally(() => {
-          submitButton.classList.remove('loading');
-          submitButton.removeAttribute('aria-disabled');
-          this.querySelector('.loading-overlay__spinner').classList.add('hidden');
-        });
+            this.cartNotification.renderContents(response);
+          })
+          .catch((e) => {
+            console.error(e);
+          })
+          .finally(() => {
+            submitButton.classList.remove('loading');
+            submitButton.removeAttribute('aria-disabled');
+            this.querySelector('.loading-overlay__spinner').classList.add('hidden');
+          });
     }
 
     handleErrorMessage(errorMessage = false) {
@@ -59,5 +60,3 @@ class ProductForm extends HTMLElement {
     }
   });
 }
-
-customElements.define('product-form', ProductForm);
