@@ -73,7 +73,7 @@
     "of": "trên",
     "skip_to_product_info": "Chuyển đến thông tin sản phẩm",
     "total_reviews": "tổng số lượt đánh giá",
-    "star_reviews_info": "{{ rating_value }}/{{ rating_max }} sao"
+    "star_reviews_info": "{{ rating_value }}\/{{ rating_max }} sao"
   },
   "blogs": {
     "article": {
@@ -142,7 +142,7 @@
       },
       "view_full_details": "Xem toàn bộ chi tiết",
       "include_taxes": "Đã bao gồm thuế.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Phí vận chuyển</a> được tính khi thanh toán."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Phí vận chuyển<\/a> được tính khi thanh toán."
     },
     "modal": {
       "label": "Thư viện phương tiện"
@@ -161,8 +161,8 @@
       },
       "max_price": "Giá cao nhất là {{ price }}",
       "product_count": {
-        "one": "{{ product_count }}/{{ count }} sản phẩm",
-        "other": "{{ product_count }}/{{ count }} sản phẩm"
+        "one": "{{ product_count }}\/{{ count }} sản phẩm",
+        "other": "{{ product_count }}\/{{ count }} sản phẩm"
       },
       "product_count_simple": {
         "one": "{{ count }} sản phẩm",
@@ -265,7 +265,7 @@
     "collection_template": {
       "title": "Bộ sưu tập",
       "empty": "Không tìm thấy sản phẩm",
-      "use_fewer_filters_html": "Sử dụng ít bộ lọc hơn hoặc <a class=\"{{ class }}\" href=\"{{ link }}\">xóa tất cả</a>"
+      "use_fewer_filters_html": "Sử dụng ít bộ lọc hơn hoặc <a class=\"{{ class }}\" href=\"{{ link }}\">xóa tất cả<\/a>"
     },
     "video": {
       "load_video": "Tải video: {{ description }}"

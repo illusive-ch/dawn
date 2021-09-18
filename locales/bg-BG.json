@@ -142,7 +142,7 @@
       },
       "view_full_details": "Покажи пълните подробности",
       "include_taxes": "С включени данъци.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Доставката</a> се изчислява при плащане."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Доставката<\/a> се изчислява при плащане."
     },
     "modal": {
       "label": "Мултимедийна галерия"
@@ -265,7 +265,7 @@
     "collection_template": {
       "title": "Колекция",
       "empty": "Не са открити продукти",
-      "use_fewer_filters_html": "Използвайте по-малко филтри или <a class=\"{{ class }}\" href=\"{{ link }}\">изчистете всички</a>"
+      "use_fewer_filters_html": "Използвайте по-малко филтри или <a class=\"{{ class }}\" href=\"{{ link }}\">изчистете всички<\/a>"
     },
     "video": {
       "load_video": "Зареждане на видео: {{ description }}"

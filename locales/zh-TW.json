@@ -142,7 +142,7 @@
       },
       "view_full_details": "查看完整資訊",
       "include_taxes": "內含稅金。",
-      "shipping_policy_html": "結帳時計算<a href=\"{{ link }}\">運費</a>。"
+      "shipping_policy_html": "結帳時計算<a href=\"{{ link }}\">運費<\/a>。"
     },
     "modal": {
       "label": "媒體庫"
@@ -265,7 +265,7 @@
     "collection_template": {
       "title": "商品系列",
       "empty": "找不到任何產品",
-      "use_fewer_filters_html": "使用較少篩選條件或<a class=\"{{ class }}\" href=\"{{ link }}\">清除全部</a>"
+      "use_fewer_filters_html": "使用較少篩選條件或<a class=\"{{ class }}\" href=\"{{ link }}\">清除全部<\/a>"
     },
     "video": {
       "load_video": "載入影片：{{ description }}"

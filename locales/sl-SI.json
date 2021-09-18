@@ -144,7 +144,7 @@
       },
       "view_full_details": "Prikaži vse podrobnosti",
       "include_taxes": "Vključno z davkom.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Dostava</a> se obračuna ob zaključku nakupa."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Dostava<\/a> se obračuna ob zaključku nakupa."
     },
     "modal": {
       "label": "Galerija predstavnostnih vsebin"
@@ -283,7 +283,7 @@
         "two": "{{ product_count }} od toliko izdelkov: {{ count }}"
       },
       "empty": "Ni najdenih izdelkov",
-      "use_fewer_filters_html": "Uporabite manj filtrov ali <a class=\"{{ class }}\" href=\"{{ link }}\">počistite vse</a>",
+      "use_fewer_filters_html": "Uporabite manj filtrov ali <a class=\"{{ class }}\" href=\"{{ link }}\">počistite vse<\/a>",
       "filters_selected": {
         "few": "Št. izbranih: {{ count }}",
         "two": "Št. izbranih: {{ count }}"
