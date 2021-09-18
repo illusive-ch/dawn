@@ -317,6 +317,26 @@
     ]
   },
   {
+    "name": "Cart Testimonial",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "cart_testimonial_image",
+        "label": "Image for testimonial review"
+      },
+      {
+        "type": "text",
+        "id": "cart_testimonial_review",
+        "label": "Review for cart"
+      },
+      {
+        "type": "text",
+        "id": "cart_testimonial_reviewer",
+        "label": "Name of person who left the review"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.currency_format.name",
     "settings": [
       {

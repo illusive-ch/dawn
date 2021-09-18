@@ -25,6 +25,12 @@
         </form>
         <button type="button" class="link button-label">{{ 'general.continue_shopping' | t }}</button>
       </div>
+      {%- if settings.cart_testimonial_review != blank -%}
+      <div class="cart-notification__testimonial">
+        <img src="{{ settings.cart_testimonial_image | img_url: '80x80' }}"alt="{{ settings.cart_testimonial_reviewer }}"/>
+        <p>"{{ settings.cart_testimonial_review }}" - {{ settings.cart_testimonial_reviewer }}</p>
+      </div>
+      {%- endif -%}
     </div>
   </div>
 </cart-notification>
