@@ -424,7 +424,10 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
     position: relative;
     margin-left: -50vw;
     left: 50%;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
+
 .strike {
     text-decoration: line-through;
 }
@@ -480,6 +483,7 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 }
 .welcome__body__more_description{
     margin-right: 1rem;
+    cursor: pointer;
 }
 .welcome__cta {
     grid-area: cta;
@@ -487,7 +491,7 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 .welcome__ctainfo {
     grid-area: ctainfo;
     background-color: rgba(var(--color-button), 0.3);
-    padding: 1rem;
+    /*padding: 1rem;*/
     text-align: center;
 }
 .welcome__ctainfo__body {

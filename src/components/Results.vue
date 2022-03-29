@@ -239,7 +239,7 @@
               <span class="product__body__button__title"
                 >TRY MY SYSTEM FREE</span
               >
-              <span class="product__body__button__price">Offer Ends: </span>
+              <span class="product__body__button__price">Offer Ends: <timer :endDate="expirationDate"></timer> </span>
             </button>
           </div>
           <span class="welcome_ctainfo__disclaimer muted center"
@@ -685,6 +685,7 @@ import animation from "../mixins/animation";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 import Concern from "./Quiz/Concern";
+import Timer from "./Quiz/Timer"
 import { GoogleMap, Marker } from "vue3-google-map";
 import CarouselBreakpoints from "../mixins/CarouselBreakpoints";
 
@@ -701,6 +702,7 @@ export default {
     Concern,
     GoogleMap,
     Marker,
+    Timer
   },
   data() {
     return {
@@ -710,6 +712,11 @@ export default {
     };
   },
   computed: {
+    expirationDate(){
+      const minutes = 10
+      var date = new Date()
+      return new Date(date.getTime() + minutes*60000)
+    },
     listLifeStyle() {
       if (!this.results || !this.results.lifestyle) {
         return [];
