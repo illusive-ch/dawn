@@ -428,7 +428,6 @@ export default {
       )
         .then((rs) => rs.json())
         .then((result) => {
-          console.log('fb');
           fbq('track', 'Lead');
            this.loadingProcess = false;
           this.$router.push("/result");

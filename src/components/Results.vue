@@ -752,9 +752,7 @@ export default {
     this.localQuiz = localStorage.getItem("quiz");
 
     if (!this.localQuiz || email) {
-      console.log("here");
       if (email) {
-        console.log("here2");
         fetch(`${this.base_url}/api/customer/${email}`, {
           method: "GET",
           headers: {
@@ -763,7 +761,6 @@ export default {
           },
         })
           .then((response) => {
-            console.log(response.status);
             if (response.status === 404) {
               window.location.href = "/pages/quiz";
               return;
