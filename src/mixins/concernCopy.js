@@ -1,0 +1,96 @@
+export default {
+    data: function () {
+        return {
+            finelinesorwrinkles: {
+                'title':"Fine lines and wrinkles",
+                'display':true,
+                'clinical_percent': 84,
+                'clinical_text':"Reduced fine lines and wrinkles, and experienced brighter skin",
+                'description':"In an independent clinical study, 84% of people reported reduced fine lines and wrinkles, and experienced brighter skin with Evyana's regime",
+                'img_after':"http://d201v9s59ezpea.cloudfront.net/finelines2.jpg",
+                'img_before':"http://d201v9s59ezpea.cloudfront.net/finelines1.jpg",
+            },
+            acne: {
+                'title':"Acne",
+                'display':true,
+                'clinical_percent': 90,
+                'clinical_text':"With this routine, my skin is rid of all impurities",
+                'description':"In an independent clinical study, 90% of people reported that their skin is rid of all impurities with Evyana's regime",
+                'img_after':"http://d201v9s59ezpea.cloudfront.net/acne2.jpg",
+                'img_before':"http://d201v9s59ezpea.cloudfront.net/acne1.jpg",
+            },
+            lossoffirmnessorelasticity: {
+                'title': 'Firmness and elasticity loss',
+                'display':true,
+                'clinical_percent': 81,
+                'clinical_text':"The routine provides a bright, radiant complexion",
+                'description':"In an independent clinical study, 77% of people reported that their skin was firmer, more radiant and luminous with Evyana's regime",
+                'img_after':"http://d201v9s59ezpea.cloudfront.net/skintight2.jpg",
+                'img_before':"http://d201v9s59ezpea.cloudfront.net/skintight1.jpg",
+            },
+            redness: {
+                'title': 'Redness',
+                'display':true,
+                'clinical_percent': 81,
+                'clinical_text':"The routine provides a bright, radiant complexion",
+                'description':"In an independent 3rd-party clinical study, 81% of people reported a bright, radiant complexion with their Evyana's system",
+                'img_after':"http://d201v9s59ezpea.cloudfront.net/redness2.jpg",
+                'img_before':"http://d201v9s59ezpea.cloudfront.net/redness1.jpg",
+            },
+            sensitivity: {
+                'title': 'Sensitivity',
+                'display':true,
+                'clinical_percent': 81,
+                'clinical_text':"The routine provides a bright, radiant complexion",
+                'description':"In an independent clinical study, 81% of people reported a bright, radiant complexion with Evyana's regime",
+                'img_after':"http://d201v9s59ezpea.cloudfront.net/sensitivity2.jpg",
+                'img_before':"http://d201v9s59ezpea.cloudfront.net/sensitivity1.jpg"
+            },
+            hyperpigmentation: {
+                'display':true,
+                'clinical_percent': 81,
+                'clinical_text':"The routine provides a bright, radiant complexion",
+                'description':"In an independent clinical study, 81% of people reported a brighter and more uniform complexion with their Evyana's system.",
+                'img_after':"http://d201v9s59ezpea.cloudfront.net/hyperpigmentation2.jpg",
+                'img_before':"http://d201v9s59ezpea.cloudfront.net/hyperpigmentation1.jpg",
+                'title': 'Hyperpigmentation'
+            },
+            seborrhoeicdermatitis: {
+                'title':"Seborrhoeic Dermatitis",
+                'display':false,
+                'clinical_percent': 81,
+                'clinical_text':"The routine provides a bright, radiant complexion",
+                'description':"In an independent clinical study, 81% of people reported a bright, radiant complexion with Evyana's regime",
+                'img_after':false,
+                'img_before':false,
+            },
+            facialpsoriasis: {
+                'title':"Facial Psoriasis",
+                'display':false,
+                'clinical_percent': 81,
+                'clinical_text':"The routine provides a bright, radiant complexion",
+                'description':"In an independent clinical study, 81% of people reported a bright, radiant complexion with Evyana's regime",
+                'img_after':false,
+                'img_before':false,
+            },
+            eczemaatopicdermatitis: {
+                'title':"Eczema/Atopic Dermatitis",
+                'display':false,
+                'clinical_percent': 81,
+                'clinical_text':"The routine provides a bright, radiant complexion",
+                'description':"In an independent clinical study, 81% of people reported a bright, radiant complexion with Evyana's regime",
+                'img_after':false,
+                'img_before':false,
+            },
+            rosacea: {
+                'title': 'Rosacea',
+                'display':true,
+                'clinical_percent': 77,
+                'clinical_text':"The routine provides a bright, radiant complexion",
+                'description':"In an independent clinical study, 77% of people reported a brighter and more uniform complexion with Evyana's regime.*",
+                'img_after':"http://d201v9s59ezpea.cloudfront.net/rosacea2.jpg",
+                'img_before':"http://d201v9s59ezpea.cloudfront.net/rosacea1.jpg",
+            },
+        }
+    }
+};

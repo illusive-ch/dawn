@@ -1,0 +1,44 @@
+{
+  "name": "evyana",
+  "version": "1.0.0",
+  "description": "[![Build status](https://github.com/shopify/dawn/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Shopify/dawn/actions/workflows/ci.yml?query=branch%3Amain) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?color=informational)](/.github/CONTRIBUTING.md)",
+  "main": "vue.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/illusive-ch/dawn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/illusive-ch/dawn/issues"
+  },
+  "homepage": "https://github.com/illusive-ch/dawn#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.43",
+    "vue-loader": "^16.8.3",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "@vueform/multiselect": "^2.3.3",
+    "postcss": "^8.4.7",
+    "vue": "^3.2.31",
+    "vue-flickity": "^1.2.1",
+    "vue-intersection-observer": "^0.1.8",
+    "vue-router": "^4.0.13",
+    "vue-slick-carousel": "^1.0.6",
+    "vue2-animate": "^2.1.4",
+    "vue3-carousel": "^0.1.36",
+    "vue3-google-map": "^0.8.3",
+    "vuelidate": "^0.7.7"
+  }
+}

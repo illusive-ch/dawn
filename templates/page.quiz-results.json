@@ -2,7 +2,7 @@
   "layout": "theme.blank",
   "sections": {
     "main": {
-      "type": "main-quiz"
+      "type": "main-quiz-results"
     }
   },
   "order": [

@@ -6,7 +6,7 @@
 <noscript>{{ 'app.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div id="vueapp" class="quiz-container">
-  <router-view :email="{% if customer %}'{{ customer[email]}}'{% else %}false{% endif %}"></router-view>
+  <results email="{% if customer %}'{{ customer[email]}}'{% else %}lowe.estell@zemlak.com{% endif %}"></results>
 </div>
 
 <script src="{{ 'app.js' | asset_url }}"></script>
