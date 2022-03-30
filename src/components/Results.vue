@@ -387,7 +387,10 @@
                   >
                     <li
                       class="item-life"
-                      v-for="(inte, i) in lifestyle.ingredients"
+                      v-for="(inte, i) in lifestyle.ingredients.filter(
+                        (value, index, self) =>
+                          index === self.findIndex((t) => t.id === value.id)
+                      )"
                       :key="i"
                     >
                       <p>
