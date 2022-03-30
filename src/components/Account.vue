@@ -14,7 +14,7 @@
         :loading="loadingProcess"
       >
         <template v-for="(item, index) in quiz" :key="index + 'tab'">
-          <tab-content :selected="index === questionIndex ? true : false">
+          <tab-content :selected="index === questionIndex ? true : false" :name="index+'account-tab'">
             <div class="question-header">
               <!--                <div style="width: 30px" ></div>-->
               <div v-if="item.svg" class="icon" v-html="item.svg"></div>

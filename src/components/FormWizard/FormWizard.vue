@@ -65,7 +65,7 @@
           >
             <template v-for="(item, key) in listIngredients"
                       :key="key + '1'">
-              <li v-if="item.image"
+              <li v-if="item.image" :key="key + '1'"
                   style="animation-duration: 0.3s"
               >
                 <img class="image" :src="item.image" />

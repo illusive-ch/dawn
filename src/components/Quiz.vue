@@ -270,6 +270,9 @@ export default {
           (e) => e !== parseInt($event.target.value)
         );
       } else {
+        if(!this.currentAnwser || typeof (this.currentAnwser) !== 'Array'){
+          this.currentAnwser = [];
+        }
         this.currentAnwser.push(parseInt($event.target.value));
       }
       if (!this.isShowNext) {
