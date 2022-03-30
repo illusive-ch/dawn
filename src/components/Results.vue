@@ -818,7 +818,7 @@ export default {
           selling_plan: 506331179,
         }),
       });
-      window.location.href = "/checkout";
+      window.location.href = "/checkout?discount=TRYBEFOREBUY";
       this.isAdding = false;
     },
     async initData() {
@@ -837,7 +837,7 @@ export default {
       });
     },
     onImgLoad() {
-      const timeout = this.debug ? 1 : 22130;
+      const timeout = this.debug ? 1 : 21130;
       setTimeout(() => {
         this.isReady = true;
         this.$nextTick(() => {
