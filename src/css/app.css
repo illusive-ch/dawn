@@ -525,7 +525,7 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 
 .result {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 50% [col-start]);
     grid-template-areas:
             "before"
             "targets"
@@ -1017,7 +1017,7 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
         align-items: center;
     }
     .result{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 50% [col-start]);
         grid-template-areas:
             "targets before"
             "ingridients before"

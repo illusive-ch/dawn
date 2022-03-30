@@ -192,6 +192,9 @@ export default {
     }
   },
   async mounted() {
+    if(this.isShowResult){
+      return;
+    }
     const response = await fetch(`${this.base_url}/api/quiz/1`, {
       method: "GET",
       headers: {
