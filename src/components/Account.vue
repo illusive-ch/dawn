@@ -456,9 +456,8 @@ export default {
         .then((rs) => rs.json())
         .then((result) => {
           this.loadingProcess = false;
-          this.$router.push("/result");
           window.location.href =
-              "/pages/your-quiz-results";
+              "/pages/your-quiz-results?email=" + this.email;
           fbq("track", "Lead");
         })
         .catch((e) => {
