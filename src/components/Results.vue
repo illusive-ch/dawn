@@ -772,27 +772,27 @@ export default {
 
     if(email){
       try {
-      let response = await fetch(`${this.base_url}/api/customer?` + new URLSearchParams({
-          email: email
-        }), {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: "Bearer " + this.authToken,
-        },
-      })
+        let customer = await fetch(`${this.base_url}/api/customer?` + new URLSearchParams({
+            email: email
+          }), {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: "Bearer " + this.authToken,
+          },
+        })
       } catch (err) {
         console.log(err)
       }
-      console.log(response)
-      if (response.status === 404) {
+      console.log(customer)
+      if (customer.status === 404) {
         console.log('customer not found')
         window.location.href = "/pages/quiz"
         return
       }
-      if (response.data.id) {
+      if (customer.data.id) {
         console.log('found id')
-        this.localQuiz = response.data;
+        this.localQuiz = customer.data;
         this.initData();
         return
       }

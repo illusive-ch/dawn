@@ -18958,7 +18958,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     var _this = this;
 
     return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
-      var email, urlParams, emailParam, _response;
+      var email, urlParams, emailParam, _customer;
 
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
         while (1) {
@@ -19007,7 +19007,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               });
 
             case 15:
-              _response = _context.sent;
+              _customer = _context.sent;
               _context.next = 21;
               break;
 
@@ -19017,9 +19017,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               console.log(_context.t0);
 
             case 21:
-              console.log(response);
+              console.log(customer);
 
-              if (!(response.status === 404)) {
+              if (!(customer.status === 404)) {
                 _context.next = 26;
                 break;
               }
@@ -19029,13 +19029,13 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               return _context.abrupt("return");
 
             case 26:
-              if (!response.data.id) {
+              if (!customer.data.id) {
                 _context.next = 31;
                 break;
               }
 
               console.log('found id');
-              _this.localQuiz = response.data;
+              _this.localQuiz = customer.data;
 
               _this.initData();
 
