@@ -46,8 +46,9 @@
           "type": "column",
           "settings": {
             "icon": "checkmark",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/Snapshot_78.png",
+            "title": "Melissa S.",
+            "text": "<p>It may have taken me a couple decades of trying skin care products, but I have found something that actually works!<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -56,8 +57,9 @@
           "type": "column",
           "settings": {
             "icon": "checkmark",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/Snapshot_45.png",
+            "title": "Lisa T.",
+            "text": "<p>All I can say is that this 4 step routine makes your skin feel great, I can visibly see those laugh lines fading away<\/p>",
             "link_label": "",
             "link": ""
           }
