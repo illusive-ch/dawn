@@ -18978,21 +18978,21 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               console.log(email);
               _this.localQuiz = localStorage.getItem("quiz");
 
-              if (!(!_this.localQuiz || email)) {
-                _context.next = 26;
-                break;
-              }
-
-              if (email) {
+              if (!(!_this.localQuiz && !email)) {
                 _context.next = 11;
                 break;
               }
 
+              console.log('logging in');
               window.location.href = "/account/login?checkout_url=/pages/your-quiz-results";
               return _context.abrupt("return");
 
             case 11:
-              console.log('ems: ' + email);
+              if (!email) {
+                _context.next = 25;
+                break;
+              }
+
               _context.next = 14;
               return fetch("".concat(_this.base_url, "/api/customer?email=").concat(email), {
                 method: "GET",
@@ -19023,18 +19023,17 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
               console.log('found id');
               _this.localQuiz = response.data;
-              _context.next = 25;
-              return _this.initData();
 
-            case 25:
+              _this.initData();
+
               return _context.abrupt("return");
 
-            case 26:
+            case 25:
               _this.localQuiz = JSON.parse(_this.localQuiz);
 
               _this.initData();
 
-            case 28:
+            case 27:
             case "end":
               return _context.stop();
           }

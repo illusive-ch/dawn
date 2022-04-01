@@ -764,12 +764,13 @@ export default {
 
     this.localQuiz = localStorage.getItem("quiz");
 
-    if (!this.localQuiz || email) {
-      if (!email) {
-        window.location.href = "/account/login?checkout_url=/pages/your-quiz-results";
-        return;
-      }
-      console.log('ems: ' + email)
+    if(!this.localQuiz && !email){
+      console.log('logging in')
+      window.location.href = "/account/login?checkout_url=/pages/your-quiz-results";
+      return;
+    }
+
+    if(email){
       let response = await fetch(`${this.base_url}/api/customer?email=${email}`, {
         method: "GET",
         headers: {
@@ -780,16 +781,17 @@ export default {
       console.log(response)
       if (response.status === 404) {
         console.log('customer not found')
-        window.location.href = "/pages/quiz";
-        return;
+        window.location.href = "/pages/quiz"
+        return
       }
       if (response.data.id) {
         console.log('found id')
         this.localQuiz = response.data;
-        await this.initData();
+        this.initData();
+        return
       }
-      return;
     }
+
     this.localQuiz = JSON.parse(this.localQuiz);
     this.initData();
   },
