@@ -750,7 +750,6 @@ export default {
     },
   },
   async mounted() {
-    debugger
     let email = this.email;
     const urlParams = new URLSearchParams(window.location.search);
     const emailParam = urlParams.get("email");
