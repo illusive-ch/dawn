@@ -33,7 +33,7 @@
                 <div class="field">
                   <input
                     class="field__input"
-                    :type="item.category === 'email' ? 'text' : 'password'"
+                    :type="item.category === 'email' ? 'email' : 'password'"
                     v-model="currentAnwser"
                     :name="item.category === 'email' ? 'email' : 'password'"
                     :autocomplete="
