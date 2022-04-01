@@ -304,7 +304,11 @@ ul.ks-cboxtags {
     list-style: none;
     padding:0;
     margin:0;
-    /*padding: 20px;*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 ul.ks-cboxtags li {
     min-width: 20rem;
@@ -347,11 +351,20 @@ ul.ks-cboxtags li input[type="checkbox"]:checked+label::before {
     transform: rotate(-360deg);
     transition: transform .3s ease-in-out;
 }
-ul.ks-cboxtags li input[type="checkbox"]:checked+label, ul.ks-cboxtags li input[type="checkbox"]:hover+label {
+ul.ks-cboxtags li input[type="checkbox"]:checked+label {
     border: 1px solid #1bdbf8;
     background-color: #12bbd4;
     color: #fff;
     transition: all .2s;
+}
+
+@media only screen and (min-width: 992px) {
+     ul.ks-cboxtags li input[type="checkbox"]:hover+label {
+        border: 1px solid #1bdbf8;
+        background-color: #12bbd4;
+        color: #fff;
+        transition: all .2s;
+    }
 }
 ul.ks-cboxtags li input[type="checkbox"] {
     display: absolute;
@@ -359,6 +372,15 @@ ul.ks-cboxtags li input[type="checkbox"] {
 ul.ks-cboxtags li input[type="checkbox"] {
     position: absolute;
     opacity: 0;
+    width:0;
+    margin: 0;
+    height: 0;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; 
 }
 ul.ks-cboxtags li input[type="checkbox"]:focus+label {
     border: 2px solid #e9a1ff;

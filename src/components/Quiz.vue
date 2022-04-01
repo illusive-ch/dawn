@@ -186,7 +186,7 @@ export default {
 
     const urlParams = new URLSearchParams(window.location.search);
     const emailParam = urlParams.get('email');
-
+  debugger
     if (this.$route.query.email || emailParam) {
       this.isShowResult = true;
     }

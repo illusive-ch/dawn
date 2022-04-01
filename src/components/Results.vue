@@ -750,6 +750,7 @@ export default {
     },
   },
   async mounted() {
+    debugger
     let email = this.email;
     const urlParams = new URLSearchParams(window.location.search);
     const emailParam = urlParams.get("email");
@@ -765,6 +766,7 @@ export default {
 
     if (!this.localQuiz || email) {
       if (email) {
+        debugger
         fetch(`${this.base_url}/api/customer/${email}`, {
           method: "GET",
           headers: {
