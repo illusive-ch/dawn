@@ -760,6 +760,7 @@ export default {
     if (emailParam) {
       email = emailParam;
     }
+    console.log(email)
 
     this.localQuiz = localStorage.getItem("quiz");
 
