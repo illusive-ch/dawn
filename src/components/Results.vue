@@ -776,6 +776,7 @@ export default {
           email: email
         })
         console.log(url)
+        debugger
         let customer = await fetch(url, {
           method: "GET",
           headers: {
