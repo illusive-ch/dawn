@@ -18989,15 +18989,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               }
 
               console.log('em: ' + email);
-              fetch("".concat(_this.base_url, "/api/customer"), {
+              fetch("".concat(_this.base_url, "/api/customer?email=").concat(email), {
                 method: "GET",
                 headers: {
                   "Content-Type": "application/json",
                   Authorization: "Bearer " + _this.authToken
-                },
-                body: JSON.stringify({
-                  email: email
-                })
+                }
               }).then(function (response) {
                 console.log(response.status);
 

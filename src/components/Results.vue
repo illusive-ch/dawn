@@ -767,15 +767,12 @@ export default {
     if (!this.localQuiz || email) {
       if (email) {
         console.log('em: ' + email)
-        fetch(`${this.base_url}/api/customer`, {
+        fetch(`${this.base_url}/api/customer?email=${email}`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
             Authorization: "Bearer " + this.authToken,
           },
-          body: JSON.stringify({
-            email: email,
-          }),
         })
           .then((response) => {
             console.log(response.status)
