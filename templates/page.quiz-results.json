@@ -82,10 +82,72 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "16488352047874debf": {
+      "type": "multicolumn-testimonials",
+      "blocks": {
+        "1648835203f2ea4fe6-0": {
+          "type": "column",
+          "settings": {
+            "icon": "star",
+            "title": "Macy F.",
+            "text": "<p>\" I couldn't believe what I've been missing using all this other nonsense on my face all these years! After the first use, I could feel such a huge difference in my skin. It immediately felt softer and just smooth. I am in love with the Evyana System! \"<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1648835203f2ea4fe6-1": {
+          "type": "column",
+          "settings": {
+            "icon": "star",
+            "title": "Kamryn M.",
+            "text": "<p>\" Evyana's products are easy and fast! I’m out the door in no time and I feel confident in how I look. I’d recommend it to others!! \"<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1648835203f2ea4fe6-2": {
+          "type": "column",
+          "settings": {
+            "icon": "checkmark",
+            "title": "Elianna K.",
+            "text": "<p>\" I wanted to give Evyana's regime a try and I'm so glad I did! My skin has never been clearer, smoother and softer! There were a few days where I had to wear a mask for 8 hours and I feared I would break out, but my skin looks fricken amazing, clear, and smooth. I have NEVER seen these results with any kind of system before, not even medicated. \"<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "6624bd92-0a50-4c46-bcb1-71d6b63c9b23": {
+          "type": "column",
+          "settings": {
+            "icon": "star",
+            "title": "Alana R.",
+            "text": "<p>\" At almost 50 years of age, I wanted to feel not real and not \"fake\" like some other girls that do a lot those painful surgeries. Evyana's easy-to-use 4 step system makes me feel 20 years younger! I tend to have dark circles under the eyes and laugh lines but now they are barely even visible. I have been using it now for 3 weeks but so far I’m loving it! \"<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1648835203f2ea4fe6-0",
+        "1648835203f2ea4fe6-1",
+        "1648835203f2ea4fe6-2",
+        "6624bd92-0a50-4c46-bcb1-71d6b63c9b23"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "secondary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
     "main",
-    "1648835018169a20a8"
+    "1648835018169a20a8",
+    "16488352047874debf"
   ]
 }
