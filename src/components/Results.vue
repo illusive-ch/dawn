@@ -781,21 +781,23 @@ export default {
             Authorization: "Bearer " + this.authToken,
           },
         })
+        console.log(customer)
+        if (customer.status === 404) {
+          console.log('customer not found')
+          window.location.href = "/pages/quiz"
+          return
+        }
+        if (customer.data.id) {
+          console.log('found id')
+          this.localQuiz = customer.data;
+          this.initData();
+          return
+        }
       } catch (err) {
+        console.log('error')
         console.log(err)
       }
-      console.log(customer)
-      if (customer.status === 404) {
-        console.log('customer not found')
-        window.location.href = "/pages/quiz"
-        return
-      }
-      if (customer.data.id) {
-        console.log('found id')
-        this.localQuiz = customer.data;
-        this.initData();
-        return
-      }
+
     }
 
     this.localQuiz = JSON.parse(this.localQuiz);

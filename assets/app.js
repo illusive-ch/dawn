@@ -18958,8 +18958,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     var _this = this;
 
     return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
-      var email, urlParams, emailParam, _customer;
-
+      var email, urlParams, emailParam, customer;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
@@ -18990,7 +18989,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
             case 11:
               if (!email) {
-                _context.next = 31;
+                _context.next = 32;
                 break;
               }
 
@@ -19007,20 +19006,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               });
 
             case 15:
-              _customer = _context.sent;
-              _context.next = 21;
-              break;
-
-            case 18:
-              _context.prev = 18;
-              _context.t0 = _context["catch"](12);
-              console.log(_context.t0);
-
-            case 21:
+              customer = _context.sent;
               console.log(customer);
 
               if (!(customer.status === 404)) {
-                _context.next = 26;
+                _context.next = 21;
                 break;
               }
 
@@ -19028,9 +19018,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               window.location.href = "/pages/quiz";
               return _context.abrupt("return");
 
-            case 26:
+            case 21:
               if (!customer.data.id) {
-                _context.next = 31;
+                _context.next = 26;
                 break;
               }
 
@@ -19041,17 +19031,27 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
               return _context.abrupt("return");
 
-            case 31:
+            case 26:
+              _context.next = 32;
+              break;
+
+            case 28:
+              _context.prev = 28;
+              _context.t0 = _context["catch"](12);
+              console.log('error');
+              console.log(_context.t0);
+
+            case 32:
               _this.localQuiz = JSON.parse(_this.localQuiz);
 
               _this.initData();
 
-            case 33:
+            case 34:
             case "end":
               return _context.stop();
           }
         }
-      }, _callee, null, [[12, 18]]);
+      }, _callee, null, [[12, 28]]);
     }))();
   },
   methods: {
