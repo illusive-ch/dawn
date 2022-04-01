@@ -457,6 +457,8 @@ export default {
         .then((result) => {
           this.loadingProcess = false;
           this.$router.push("/result");
+          window.location.href =
+              "/pages/your-quiz-results";
           fbq("track", "Lead");
         })
         .catch((e) => {
