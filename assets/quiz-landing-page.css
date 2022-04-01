@@ -65,9 +65,10 @@
 }
 .analyze__ingredients__list ul li img, .every-ingredient__image__list__item img{
     margin-bottom: 1rem;
-    height: 8rem;
+    height: 5rem;
     /*width: 8rem;*/
 }
+
 .analyze__body__content{
     flex-shrink: 0;
 }
@@ -225,6 +226,11 @@
     }
     .analyze__ingredients{
         grid-area: ingredients;
+    }
+    .analyze__ingredients__list ul li img, .every-ingredient__image__list__item img{
+        margin-bottom: 1rem;
+        height: 8rem;
+        /*width: 8rem;*/
     }
     .how__container{
         grid-template-columns: 1fr 1fr;
