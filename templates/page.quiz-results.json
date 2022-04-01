@@ -35,8 +35,9 @@
           "type": "column",
           "settings": {
             "icon": "checkmark",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/Snapshot_70.png",
+            "title": "Courtney D.",
+            "text": "<p>The quality of this skin care line is seriously unmatched<\/p>",
             "link_label": "",
             "link": ""
           }
