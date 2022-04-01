@@ -765,30 +765,28 @@ export default {
     this.localQuiz = localStorage.getItem("quiz");
 
     if (!this.localQuiz || email) {
-      if (email) {
-        console.log('ems: ' + email)
-        let response = await fetch(`${this.base_url}/api/customer?email=${email}`, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: "Bearer " + this.authToken,
-          },
-        })
-        if (response.status === 404) {
-          console.log('customer not found')
-          window.location.href = "/pages/quiz";
-          return;
-        }
-        if (response.data.id) {
-          console.log('found id')
-          this.localQuiz = response.data;
-          await this.initData();
-        }
-      } else {
-        // this.$router.push("/");
-        window.location.href =
-          "/account/login?checkout_url=/pages/your-quiz-results";
+      if (!email) {
+        window.location.href = "/account/login?checkout_url=/pages/your-quiz-results";
         return;
+      }
+      console.log('ems: ' + email)
+      let response = await fetch(`${this.base_url}/api/customer?email=${email}`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Bearer " + this.authToken,
+        },
+      })
+      console.log(response)
+      if (response.status === 404) {
+        console.log('customer not found')
+        window.location.href = "/pages/quiz";
+        return;
+      }
+      if (response.data.id) {
+        console.log('found id')
+        this.localQuiz = response.data;
+        await this.initData();
       }
       return;
     }

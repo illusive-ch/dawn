@@ -18979,17 +18979,21 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               _this.localQuiz = localStorage.getItem("quiz");
 
               if (!(!_this.localQuiz || email)) {
-                _context.next = 27;
+                _context.next = 26;
                 break;
               }
 
-              if (!email) {
-                _context.next = 24;
+              if (email) {
+                _context.next = 11;
                 break;
               }
 
+              window.location.href = "/account/login?checkout_url=/pages/your-quiz-results";
+              return _context.abrupt("return");
+
+            case 11:
               console.log('ems: ' + email);
-              _context.next = 12;
+              _context.next = 14;
               return fetch("".concat(_this.base_url, "/api/customer?email=").concat(email), {
                 method: "GET",
                 headers: {
@@ -18998,11 +19002,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 }
               });
 
-            case 12:
+            case 14:
               response = _context.sent;
+              console.log(response);
 
               if (!(response.status === 404)) {
-                _context.next = 17;
+                _context.next = 20;
                 break;
               }
 
@@ -19010,35 +19015,26 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               window.location.href = "/pages/quiz";
               return _context.abrupt("return");
 
-            case 17:
+            case 20:
               if (!response.data.id) {
-                _context.next = 22;
+                _context.next = 25;
                 break;
               }
 
               console.log('found id');
               _this.localQuiz = response.data;
-              _context.next = 22;
+              _context.next = 25;
               return _this.initData();
 
-            case 22:
-              _context.next = 26;
-              break;
-
-            case 24:
-              // this.$router.push("/");
-              window.location.href = "/account/login?checkout_url=/pages/your-quiz-results";
+            case 25:
               return _context.abrupt("return");
 
             case 26:
-              return _context.abrupt("return");
-
-            case 27:
               _this.localQuiz = JSON.parse(_this.localQuiz);
 
               _this.initData();
 
-            case 29:
+            case 28:
             case "end":
               return _context.stop();
           }
