@@ -18996,6 +18996,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   Authorization: "Bearer " + _this.authToken
                 }
               }).then(function (response) {
+                console.log('response');
+                console.log(response);
                 console.log(response.status);
 
                 if (response.status === 404) {
@@ -19009,13 +19011,16 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       while (1) {
                         switch (_context.prev = _context.next) {
                           case 0:
+                            console.log('rs');
+                            console.log(rs);
+
                             if (rs.data.id) {
                               _this.localQuiz = rs.data;
 
                               _this.initData();
                             }
 
-                          case 1:
+                          case 3:
                           case "end":
                             return _context.stop();
                         }

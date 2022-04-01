@@ -775,12 +775,16 @@ export default {
           },
         })
           .then((response) => {
+            console.log('response')
+            console.log(response)
             console.log(response.status)
             if (response.status === 404) {
               window.location.href = "/pages/quiz";
               return;
             }
             response.json().then(async (rs) => {
+              console.log('rs')
+              console.log(rs)
               if (rs.data.id) {
                 this.localQuiz = rs.data;
                 this.initData();
