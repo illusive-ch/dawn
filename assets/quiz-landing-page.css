@@ -20,6 +20,9 @@
     margin-right: auto;
     gap: 2rem;
 }
+.quizhero__image img{
+    max-width: 100%;
+}
 .analyze{
     display: grid;
     grid-template-columns: 1fr;
