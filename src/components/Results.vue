@@ -767,6 +767,7 @@ export default {
     if (!this.localQuiz || email) {
       if (email) {
         console.log('em: ' + email)
+        console.log(`${this.base_url}/api/customer/${email}`)
         fetch(`${this.base_url}/api/customer/${email}`, {
           method: "GET",
           headers: {
@@ -787,7 +788,7 @@ export default {
               }
             });
           })
-          .catch((e) => {});
+          .catch((e) => {console.log(e)});
 
         //check for email here pull lead id if email is passed and query api for lead ID from customer
         //if there is no lead id for this redirect to quiz

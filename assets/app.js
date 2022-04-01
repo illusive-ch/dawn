@@ -18979,16 +18979,17 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               _this.localQuiz = localStorage.getItem("quiz");
 
               if (!(!_this.localQuiz || email)) {
-                _context2.next = 16;
+                _context2.next = 17;
                 break;
               }
 
               if (!email) {
-                _context2.next = 13;
+                _context2.next = 14;
                 break;
               }
 
               console.log('em: ' + email);
+              console.log("".concat(_this.base_url, "/api/customer/").concat(email));
               fetch("".concat(_this.base_url, "/api/customer/").concat(email), {
                 method: "GET",
                 headers: {
@@ -19027,27 +19028,29 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                     return _ref.apply(this, arguments);
                   };
                 }());
-              })["catch"](function (e) {}); //check for email here pull lead id if email is passed and query api for lead ID from customer
+              })["catch"](function (e) {
+                console.log(e);
+              }); //check for email here pull lead id if email is passed and query api for lead ID from customer
               //if there is no lead id for this redirect to quiz
               //if there is no email redirect to login and add checkout_url=/pages/your-quiz-results
 
-              _context2.next = 15;
+              _context2.next = 16;
               break;
 
-            case 13:
+            case 14:
               // this.$router.push("/");
               window.location.href = "/account/login?checkout_url=/pages/your-quiz-results";
               return _context2.abrupt("return");
 
-            case 15:
+            case 16:
               return _context2.abrupt("return");
 
-            case 16:
+            case 17:
               _this.localQuiz = JSON.parse(_this.localQuiz);
 
               _this.initData();
 
-            case 18:
+            case 19:
             case "end":
               return _context2.stop();
           }
