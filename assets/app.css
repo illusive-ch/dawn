@@ -1,3 +1,10 @@
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select,
+    textarea,
+    input {
+        font-size: 16px;
+    }
+}
 .loading-evyana {
     background-color: rgba(var(--color-button), 0.15);
     min-width: 100vw;
@@ -26,7 +33,6 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    padding: 0;
     margin: 0;
     list-style: none;
     transition: .5s all;
@@ -47,6 +53,7 @@
     height: 100%;
 }
 
+
 .nav-menu .nav-item a{
     color: #9b9b9b;
     text-decoration: none;
@@ -61,7 +68,12 @@
 
 .nav-item.last-button{
     width: 30px;
-    display: none
+    display: none;
+}
+
+.nav-item.last-button button{
+    margin: 0;
+    height: 100%;
 }
 
 .nav-item .button {
@@ -254,17 +266,19 @@
 .field__input {
     border-radius: 0.4rem;
     box-shadow: 0 0 0 0.1rem rgba(var(--color-button), 0.45);
-    font-size: 1rem;
+    font-size: 16px;
     padding: 1.5rem;
     background: #FFF;
 }
 .field__input:focus {
     box-shadow: 0 0 0 0.1rem rgba(var(--color-button), 0.7);
     padding: 1.5rem;
+    font-size: 16px;
 }
 .field__input:hover {
     box-shadow: 0 0 0 0.1rem rgba(var(--color-button), 0.6);
     padding: 1.5rem;
+    font-size: 16px;
 }
 .error {
     color: red;
@@ -509,6 +523,7 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 .welcome__cta {
     grid-area: cta;
 }
+
 .welcome__ctainfo {
     grid-area: ctainfo;
     background-color: rgba(var(--color-button), 0.3);

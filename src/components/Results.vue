@@ -761,44 +761,48 @@ export default {
     if (emailParam) {
       email = emailParam;
     }
+    console.log(email)
 
     this.localQuiz = localStorage.getItem("quiz");
 
-    if (!this.localQuiz || email) {
-      if (email) {
-        debugger
-        fetch(`${this.base_url}/api/customer/${email}`, {
+    if(!this.localQuiz && !email){
+      console.log('logging in')
+      window.location.href = "/account/login?checkout_url=/pages/your-quiz-results";
+      return;
+    }
+
+    if(email){
+      try {
+        let url = `${this.base_url}/api/customer?` + new URLSearchParams({
+          email: email
+        })
+        console.log(url)
+        let customer = await fetch(url, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
             Authorization: "Bearer " + this.authToken,
           },
         })
-          .then((response) => {
-            if (response.status === 404) {
-              window.location.href = "/pages/quiz";
-              return;
-            }
-            response.json().then(async (rs) => {
-              if (rs.data.id) {
-                this.localQuiz = rs.data;
-                this.initData();
-              }
-            });
-          })
-          .catch((e) => {});
-
-        //check for email here pull lead id if email is passed and query api for lead ID from customer
-        //if there is no lead id for this redirect to quiz
-        //if there is no email redirect to login and add checkout_url=/pages/your-quiz-results
-      } else {
-        // this.$router.push("/");
-        window.location.href =
-          "/account/login?checkout_url=/pages/your-quiz-results";
-        return;
+        console.log(customer)
+        if (customer.status === 404) {
+          console.log('customer not found')
+          window.location.href = "/pages/quiz"
+          return
+        }
+        if (customer.data.id) {
+          console.log('found id')
+          this.localQuiz = customer.data;
+          this.initData();
+          return
+        }
+      } catch (err) {
+        console.log('error')
+        console.log(err)
+        return
       }
-      return;
     }
+
     this.localQuiz = JSON.parse(this.localQuiz);
     this.initData();
   },
@@ -820,10 +824,11 @@ export default {
           selling_plan: 506331179,
         }),
       });
-      window.location.href = "/checkout";
+      window.location.href = "/checkout?discount=TRYBEFOREBUY";
       this.isAdding = false;
     },
     async initData() {
+      console.log('initdata')
       const response = await fetch(
         `${this.base_url}/api/quiz/1/lead/${this.localQuiz.id}/results`,
         {
@@ -839,7 +844,7 @@ export default {
       });
     },
     onImgLoad() {
-      const timeout = this.debug ? 1 : 22130;
+      const timeout = this.debug ? 1 : 21130;
       setTimeout(() => {
         this.isReady = true;
         this.$nextTick(() => {

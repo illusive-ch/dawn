@@ -2,7 +2,7 @@ export default {
     data: function () {
         return {
             renewingcleanser: {
-                'title':"Your Personalized Renewing Cleanser",
+                'title':"Your Renewing Cleanser",
                 'subtitle': "Cleanser, toner and exfoliator in one",
                 'type' : 'Cleanser',
                 'price': "31",
@@ -11,7 +11,7 @@ export default {
                 'class' :'green'
             },
             refreshingmist:{
-                'title':"Your Personalized Refreshing Mist",
+                'title':"Your Refreshing Mist",
                 'subtitle': "PH Balance & Resurfacing",
                 'type' : 'Refreshed',
                 'price': "40",
@@ -20,7 +20,7 @@ export default {
                 'class':'pink'
             },
             restoringserum:{
-                'title':"Your Personalized Restoring Serum",
+                'title':"Your Restoring Serum",
                 'subtitle': "Dark Spots, Wrinkles, Increase Sebum Production",
                 'type' : 'Serum',
                 'price': "50",
@@ -30,7 +30,7 @@ export default {
                 'class': 'purple'
             },
             radiatingcream:{
-                'title':"Your Personalized Moisturizer",
+                'title':"Your Moisturizer",
                 'subtitle': "Daily Moisturizer + Full Hydration",
                 'type' : 'Moisturizer',
                 'price': "55",

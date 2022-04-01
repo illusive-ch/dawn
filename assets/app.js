@@ -18101,9 +18101,8 @@ var checked = function checked(value) {
   beforeMount: function beforeMount() {
     var urlParams = new URLSearchParams(window.location.search);
     var emailParam = urlParams.get('email');
-    debugger;
 
-    if (this.$route.query.email || emailParam) {
+    if (this.$route.query.email || emailParam || window.location.pathname === '/pages/your-quiz-results') {
       this.isShowResult = true;
     }
   },
@@ -18959,11 +18958,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   mounted: function mounted() {
     var _this = this;
 
-    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2() {
-      var email, urlParams, emailParam;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
+    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+      var email, urlParams, emailParam, url, customer;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
         while (1) {
-          switch (_context2.prev = _context2.next) {
+          switch (_context.prev = _context.next) {
             case 0:
               debugger;
               email = _this.email;
@@ -18978,101 +18977,106 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 email = emailParam;
               }
 
+              console.log(email);
               _this.localQuiz = localStorage.getItem("quiz");
 
-              if (!(!_this.localQuiz || email)) {
-                _context2.next = 16;
+              if (!(!_this.localQuiz && !email)) {
+                _context.next = 12;
                 break;
               }
 
+              console.log('logging in');
+              window.location.href = "/account/login?checkout_url=/pages/your-quiz-results";
+              return _context.abrupt("return");
+
+            case 12:
               if (!email) {
-                _context2.next = 13;
+                _context.next = 36;
                 break;
               }
 
-              debugger;
-              fetch("".concat(_this.base_url, "/api/customer/").concat(email), {
+              _context.prev = 13;
+              url = "".concat(_this.base_url, "/api/customer?") + new URLSearchParams({
+                email: email
+              });
+              console.log(url);
+              _context.next = 18;
+              return fetch(url, {
                 method: "GET",
                 headers: {
                   "Content-Type": "application/json",
                   Authorization: "Bearer " + _this.authToken
                 }
-              }).then(function (response) {
-                if (response.status === 404) {
-                  window.location.href = "/pages/quiz";
-                  return;
-                }
+              });
 
-                response.json().then( /*#__PURE__*/function () {
-                  var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee(rs) {
-                    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
-                      while (1) {
-                        switch (_context.prev = _context.next) {
-                          case 0:
-                            if (rs.data.id) {
-                              _this.localQuiz = rs.data;
+            case 18:
+              customer = _context.sent;
+              console.log(customer);
 
-                              _this.initData();
-                            }
+              if (!(customer.status === 404)) {
+                _context.next = 24;
+                break;
+              }
 
-                          case 1:
-                          case "end":
-                            return _context.stop();
-                        }
-                      }
-                    }, _callee);
-                  }));
+              console.log('customer not found');
+              window.location.href = "/pages/quiz";
+              return _context.abrupt("return");
 
-                  return function (_x) {
-                    return _ref.apply(this, arguments);
-                  };
-                }());
-              })["catch"](function (e) {}); //check for email here pull lead id if email is passed and query api for lead ID from customer
-              //if there is no lead id for this redirect to quiz
-              //if there is no email redirect to login and add checkout_url=/pages/your-quiz-results
+            case 24:
+              if (!customer.data.id) {
+                _context.next = 29;
+                break;
+              }
 
-              _context2.next = 15;
+              console.log('found id');
+              _this.localQuiz = customer.data;
+
+              _this.initData();
+
+              return _context.abrupt("return");
+
+            case 29:
+              _context.next = 36;
               break;
 
-            case 13:
-              // this.$router.push("/");
-              window.location.href = "/account/login?checkout_url=/pages/your-quiz-results";
-              return _context2.abrupt("return");
+            case 31:
+              _context.prev = 31;
+              _context.t0 = _context["catch"](13);
+              console.log('error');
+              console.log(_context.t0);
+              return _context.abrupt("return");
 
-            case 15:
-              return _context2.abrupt("return");
-
-            case 16:
+            case 36:
               _this.localQuiz = JSON.parse(_this.localQuiz);
 
               _this.initData();
 
-            case 18:
+            case 38:
             case "end":
-              return _context2.stop();
+              return _context.stop();
           }
         }
-      }, _callee2);
+      }, _callee, null, [[13, 31]]);
     }))();
   },
   methods: {
     addToCart: function addToCart() {
       var _this2 = this;
 
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee3() {
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2() {
         var result;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee3$(_context3) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
           while (1) {
-            switch (_context3.prev = _context3.next) {
+            switch (_context2.prev = _context2.next) {
               case 0:
                 _this2.isAdding = true;
-                _context3.next = 3;
+                _context2.next = 3;
                 return fetch("/cart/clear.js", {
                   method: "POST"
                 });
 
               case 3:
-                _context3.next = 5;
+                _context2.next = 5;
                 return fetch("/cart/add.json", {
                   method: "POST",
                   headers: {
@@ -19087,28 +19091,29 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 });
 
               case 5:
-                result = _context3.sent;
-                window.location.href = "/checkout";
+                result = _context2.sent;
+                window.location.href = "/checkout?discount=TRYBEFOREBUY";
                 _this2.isAdding = false;
 
               case 8:
               case "end":
-                return _context3.stop();
+                return _context2.stop();
             }
           }
-        }, _callee3);
+        }, _callee2);
       }))();
     },
     initData: function initData() {
       var _this3 = this;
 
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee5() {
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee4() {
         var response;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee5$(_context5) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee4$(_context4) {
           while (1) {
-            switch (_context5.prev = _context5.next) {
+            switch (_context4.prev = _context4.next) {
               case 0:
-                _context5.next = 2;
+                console.log('initdata');
+                _context4.next = 3;
                 return fetch("".concat(_this3.base_url, "/api/quiz/1/lead/").concat(_this3.localQuiz.id, "/results"), {
                   method: "GET",
                   headers: {
@@ -19117,41 +19122,41 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 });
 
-              case 2:
-                response = _context5.sent;
+              case 3:
+                response = _context4.sent;
                 response.json().then( /*#__PURE__*/function () {
-                  var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee4(rs) {
-                    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee4$(_context4) {
+                  var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee3(rs) {
+                    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee3$(_context3) {
                       while (1) {
-                        switch (_context4.prev = _context4.next) {
+                        switch (_context3.prev = _context3.next) {
                           case 0:
                             _this3.results = rs.data;
 
                           case 1:
                           case "end":
-                            return _context4.stop();
+                            return _context3.stop();
                         }
                       }
-                    }, _callee4);
+                    }, _callee3);
                   }));
 
-                  return function (_x2) {
-                    return _ref2.apply(this, arguments);
+                  return function (_x) {
+                    return _ref.apply(this, arguments);
                   };
                 }());
 
-              case 4:
+              case 5:
               case "end":
-                return _context5.stop();
+                return _context4.stop();
             }
           }
-        }, _callee5);
+        }, _callee4);
       }))();
     },
     onImgLoad: function onImgLoad() {
       var _this4 = this;
 
-      var timeout = this.debug ? 1 : 22130;
+      var timeout = this.debug ? 1 : 21130;
       setTimeout(function () {
         _this4.isReady = true;
 
@@ -21163,7 +21168,7 @@ var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_7__.createRouter)({
 
 });
 router.beforeEach(function (to, from, next) {
-  if (to.path === '/' && window.location.pathname !== '/pages/quiz' && window.location.search.indexOf('email=') === -1) {
+  if (to.path === '/' && window.location.pathname !== '/pages/quiz' && window.location.pathname !== '/pages/your-quiz-results' && window.location.search.indexOf('email=') === -1) {
     window.location.href = '/pages/quiz';
   } else {
     next();
@@ -21546,7 +21551,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
     return {
       renewingcleanser: {
-        'title': "Your Personalized Renewing Cleanser",
+        'title': "Your Renewing Cleanser",
         'subtitle': "Cleanser, toner and exfoliator in one",
         'type': 'Cleanser',
         'price': "31",
@@ -21555,7 +21560,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         'class': 'green'
       },
       refreshingmist: {
-        'title': "Your Personalized Refreshing Mist",
+        'title': "Your Refreshing Mist",
         'subtitle': "PH Balance & Resurfacing",
         'type': 'Refreshed',
         'price': "40",
@@ -21564,14 +21569,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         'class': 'pink'
       },
       restoringserum: (_restoringserum = {
-        'title': "Your Personalized Restoring Serum",
+        'title': "Your Restoring Serum",
         'subtitle': "Dark Spots, Wrinkles, Increase Sebum Production",
         'type': 'Serum',
         'price': "50",
         'description': "The routine provides a bright, radiant complexion.*"
       }, _defineProperty(_restoringserum, "description", "This serum will deliver dramatic results in just a couple of treatments. This serum helps reduce the look of dark spots (signs of hyperpigmentation), while our blend of ingredients we dubbed the ‘recharger’ tones and firms your skin throughout the day."), _defineProperty(_restoringserum, 'image', "http://d201v9s59ezpea.cloudfront.net/serum.png"), _defineProperty(_restoringserum, 'class', 'purple'), _restoringserum),
       radiatingcream: {
-        'title': "Your Personalized Moisturizer",
+        'title': "Your Moisturizer",
         'subtitle': "Daily Moisturizer + Full Hydration",
         'type': 'Moisturizer',
         'price': "55",

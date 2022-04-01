@@ -186,8 +186,8 @@ export default {
 
     const urlParams = new URLSearchParams(window.location.search);
     const emailParam = urlParams.get('email');
-  debugger
-    if (this.$route.query.email || emailParam) {
+  
+    if (this.$route.query.email || emailParam || window.location.pathname === '/pages/your-quiz-results')  {
       this.isShowResult = true;
     }
   },
