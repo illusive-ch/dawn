@@ -18988,7 +18988,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 break;
               }
 
-              console.log('em: ' + email);
+              console.log('ems: ' + email);
               fetch("".concat(_this.base_url, "/api/customer?email=").concat(email), {
                 method: "GET",
                 headers: {

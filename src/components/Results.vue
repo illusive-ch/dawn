@@ -766,7 +766,7 @@ export default {
 
     if (!this.localQuiz || email) {
       if (email) {
-        console.log('em: ' + email)
+        console.log('ems: ' + email)
         fetch(`${this.base_url}/api/customer?email=${email}`, {
           method: "GET",
           headers: {
