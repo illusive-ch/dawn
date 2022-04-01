@@ -798,8 +798,8 @@ export default {
       } catch (err) {
         console.log('error')
         console.log(err)
+        return
       }
-
     }
 
     this.localQuiz = JSON.parse(this.localQuiz);
