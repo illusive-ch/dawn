@@ -6,10 +6,10 @@
       "settings": {
       }
     },
-    "1648835018169a20a8": {
-      "type": "multicolumn-testimonials",
+    "1648835393381a843b": {
+      "type": "multicolumn",
       "blocks": {
-        "164883501841f755e9-0": {
+        "16488353921738fd22-0": {
           "type": "column",
           "settings": {
             "icon": "",
@@ -20,7 +20,7 @@
             "link": ""
           }
         },
-        "164883501841f755e9-1": {
+        "16488353921738fd22-1": {
           "type": "column",
           "settings": {
             "icon": "",
@@ -31,10 +31,10 @@
             "link": ""
           }
         },
-        "164883501841f755e9-2": {
+        "16488353921738fd22-2": {
           "type": "column",
           "settings": {
-            "icon": "checkmark",
+            "icon": "",
             "image": "shopify:\/\/shop_images\/Snapshot_70.png",
             "title": "Courtney D.",
             "text": "<p>The quality of this skin care line is seriously unmatched<\/p>",
@@ -42,10 +42,10 @@
             "link": ""
           }
         },
-        "442c0bb3-03e4-4f78-9196-941361f6c960": {
+        "73795db4-733d-4f8d-9e61-c56677e5ba30": {
           "type": "column",
           "settings": {
-            "icon": "checkmark",
+            "icon": "",
             "image": "shopify:\/\/shop_images\/Snapshot_78.png",
             "title": "Melissa S.",
             "text": "<p>It may have taken me a couple decades of trying skin care products, but I have found something that actually works!<\/p>",
@@ -53,10 +53,10 @@
             "link": ""
           }
         },
-        "0e7c2375-50b5-48e9-b6e4-6f5d9eb6b9d8": {
+        "b16c7113-0426-4665-908d-1b5470988195": {
           "type": "column",
           "settings": {
-            "icon": "checkmark",
+            "icon": "",
             "image": "shopify:\/\/shop_images\/Snapshot_45.png",
             "title": "Lisa T.",
             "text": "<p>All I can say is that this 4 step routine makes your skin feel great, I can visibly see those laugh lines fading away<\/p>",
@@ -66,11 +66,11 @@
         }
       },
       "block_order": [
-        "164883501841f755e9-0",
-        "164883501841f755e9-1",
-        "164883501841f755e9-2",
-        "442c0bb3-03e4-4f78-9196-941361f6c960",
-        "0e7c2375-50b5-48e9-b6e4-6f5d9eb6b9d8"
+        "16488353921738fd22-0",
+        "16488353921738fd22-1",
+        "16488353921738fd22-2",
+        "73795db4-733d-4f8d-9e61-c56677e5ba30",
+        "b16c7113-0426-4665-908d-1b5470988195"
       ],
       "settings": {
         "title": "Don't Take Our Word For It",
@@ -109,7 +109,7 @@
         "1648835203f2ea4fe6-2": {
           "type": "column",
           "settings": {
-            "icon": "checkmark",
+            "icon": "star",
             "title": "Elianna K.",
             "text": "<p>\" I wanted to give Evyana's regime a try and I'm so glad I did! My skin has never been clearer, smoother and softer! There were a few days where I had to wear a mask for 8 hours and I feared I would break out, but my skin looks fricken amazing, clear, and smooth. I have NEVER seen these results with any kind of system before, not even medicated. \"<\/p>",
             "link_label": "",
@@ -134,11 +134,11 @@
         "6624bd92-0a50-4c46-bcb1-71d6b63c9b23"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "What are people saying about the 4 Step Routine",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
-        "background_style": "secondary",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false
@@ -147,7 +147,7 @@
   },
   "order": [
     "main",
-    "1648835018169a20a8",
+    "1648835393381a843b",
     "16488352047874debf"
   ]
 }
