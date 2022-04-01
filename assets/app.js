@@ -18958,7 +18958,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     var _this = this;
 
     return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
-      var email, urlParams, emailParam, response;
+      var email, urlParams, emailParam, url, params, response;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
@@ -18989,12 +18989,19 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
             case 11:
               if (!email) {
-                _context.next = 25;
+                _context.next = 28;
                 break;
               }
 
-              _context.next = 14;
-              return fetch("".concat(_this.base_url, "/api/customer?email=").concat(email), {
+              url = "".concat(_this.base_url, "/api/customer");
+              params = {
+                email: email
+              };
+              Object.keys(params).forEach(function (key) {
+                return url.searchParams.append(key, params[key]);
+              });
+              _context.next = 17;
+              return fetch(url, {
                 method: "GET",
                 headers: {
                   "Content-Type": "application/json",
@@ -19002,12 +19009,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 }
               });
 
-            case 14:
+            case 17:
               response = _context.sent;
               console.log(response);
 
               if (!(response.status === 404)) {
-                _context.next = 20;
+                _context.next = 23;
                 break;
               }
 
@@ -19015,9 +19022,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               window.location.href = "/pages/quiz";
               return _context.abrupt("return");
 
-            case 20:
+            case 23:
               if (!response.data.id) {
-                _context.next = 25;
+                _context.next = 28;
                 break;
               }
 
@@ -19028,12 +19035,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
               return _context.abrupt("return");
 
-            case 25:
+            case 28:
               _this.localQuiz = JSON.parse(_this.localQuiz);
 
               _this.initData();
 
-            case 27:
+            case 30:
             case "end":
               return _context.stop();
           }
