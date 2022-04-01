@@ -783,7 +783,7 @@ export default {
             Authorization: "Bearer " + this.authToken,
           },
         })
-        console.log(customer)
+        console.log(customer.data)
         if (customer.status === 404) {
           console.log('customer not found')
           window.location.href = "/pages/quiz"
