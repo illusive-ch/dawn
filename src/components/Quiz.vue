@@ -72,7 +72,7 @@
                         <input
                           class="field__input"
                           :type="item.category === 'zip' ? 'number' : 'text'"
-                          :pattern="getPatten(item)"
+                          :pattern="getPattern(item)"
                           :autocomplete="getAutoComplete(item)"
                           :name="item.slug"
                           @keyup="onFormChange(item, $event)"
