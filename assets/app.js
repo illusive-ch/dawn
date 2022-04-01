@@ -18979,25 +18979,27 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               _this.localQuiz = localStorage.getItem("quiz");
 
               if (!(!_this.localQuiz || email)) {
-                _context2.next = 17;
+                _context2.next = 16;
                 break;
               }
 
               if (!email) {
-                _context2.next = 14;
+                _context2.next = 13;
                 break;
               }
 
               console.log('em: ' + email);
-              console.log("".concat(_this.base_url, "/api/customer/").concat(email));
-              fetch("".concat(_this.base_url, "/api/customer?email=").concat(email), {
+              fetch("".concat(_this.base_url, "/api/customer"), {
                 method: "GET",
                 headers: {
                   "Content-Type": "application/json",
                   Authorization: "Bearer " + _this.authToken
-                }
+                },
+                body: JSON.stringify({
+                  email: email
+                })
               }).then(function (response) {
-                console.log(response);
+                console.log(response.status);
 
                 if (response.status === 404) {
                   window.location.href = "/pages/quiz";
@@ -19034,23 +19036,23 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               //if there is no lead id for this redirect to quiz
               //if there is no email redirect to login and add checkout_url=/pages/your-quiz-results
 
-              _context2.next = 16;
+              _context2.next = 15;
               break;
 
-            case 14:
+            case 13:
               // this.$router.push("/");
               window.location.href = "/account/login?checkout_url=/pages/your-quiz-results";
               return _context2.abrupt("return");
 
-            case 16:
+            case 15:
               return _context2.abrupt("return");
 
-            case 17:
+            case 16:
               _this.localQuiz = JSON.parse(_this.localQuiz);
 
               _this.initData();
 
-            case 19:
+            case 18:
             case "end":
               return _context2.stop();
           }
