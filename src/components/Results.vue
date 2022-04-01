@@ -771,10 +771,9 @@ export default {
     }
 
     if(email){
-      const url = `${this.base_url}/api/customer`;
-      const params = {email: email};
-      Object.keys(params).forEach(key => url.searchParams.append(key, params[key]))
-      let response = await fetch(url, {
+      let response = await fetch(`${this.base_url}/api/customer?` + new URLSearchParams({
+          email: email
+        }), {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
