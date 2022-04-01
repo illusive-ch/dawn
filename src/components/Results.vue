@@ -772,9 +772,11 @@ export default {
 
     if(email){
       try {
-        let customer = await fetch(`${this.base_url}/api/customer?` + new URLSearchParams({
-            email: email
-          }), {
+        let url = `${this.base_url}/api/customer?` + new URLSearchParams({
+          email: email
+        })
+        console.log(url)
+        let customer = await fetch(url, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
