@@ -71,7 +71,8 @@
                       <div class="field">
                         <input
                           class="field__input"
-                          type="text"
+                          :type="item.category === 'zip' ? 'number' : 'text'"
+                          :pattern="getPattern(item)"
                           :autocomplete="getAutoComplete(item)"
                           :name="item.slug"
                           @keyup="onFormChange(item, $event)"
@@ -279,6 +280,12 @@ export default {
         this.$refs.formwizard.nextTab();
       }
       this.$forceUpdate();
+    },
+    getPattern(item){
+      if(item.category === 'zip'){
+        return '[0-9]*'
+      }
+      return ''
     },
     getAutoComplete(item) {
       if (item.category === "name") {

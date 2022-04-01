@@ -33,7 +33,7 @@
                 <div class="field">
                   <input
                     class="field__input"
-                    :type="item.category === 'email' ? 'text' : 'password'"
+                    :type="item.category === 'email' ? 'email' : 'password'"
                     v-model="currentAnwser"
                     :name="item.category === 'email' ? 'email' : 'password'"
                     :autocomplete="
@@ -456,8 +456,10 @@ export default {
         .then((rs) => rs.json())
         .then((result) => {
           this.loadingProcess = false;
-          this.$router.push("/result");
           fbq("track", "Lead");
+          window.location.href =
+              "/pages/your-quiz-results?email=" + this.emailValue;
+
         })
         .catch((e) => {
           this.loadingProcess = false;
