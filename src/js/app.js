@@ -41,7 +41,7 @@ const createVueApp = () => {
     "9kC7tJXBOSBZH5sCYoqbEYozve68clBZyE6p1xKA";
   app.config.globalProperties.base_url =
     "https://api.evyana.com";
-  app.config.globalProperties.debug = false;
+  app.config.globalProperties.debug = true;
 
   /**
    * vue components
