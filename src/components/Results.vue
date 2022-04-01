@@ -767,35 +767,23 @@ export default {
     if (!this.localQuiz || email) {
       if (email) {
         console.log('ems: ' + email)
-        fetch(`${this.base_url}/api/customer?email=${email}`, {
+        let response = await fetch(`${this.base_url}/api/customer?email=${email}`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
             Authorization: "Bearer " + this.authToken,
           },
         })
-          .then((response) => {
-            console.log('response')
-            console.log(response)
-            console.log(response.status)
-            if (response.status === 404) {
-              window.location.href = "/pages/quiz";
-              return;
-            }
-            response.json().then(async (rs) => {
-              console.log('rs')
-              console.log(rs)
-              if (rs.data.id) {
-                this.localQuiz = rs.data;
-                this.initData();
-              }
-            });
-          })
-          .catch((e) => {console.log(e)});
-
-        //check for email here pull lead id if email is passed and query api for lead ID from customer
-        //if there is no lead id for this redirect to quiz
-        //if there is no email redirect to login and add checkout_url=/pages/your-quiz-results
+        if (response.status === 404) {
+          console.log('customer not found')
+          window.location.href = "/pages/quiz";
+          return;
+        }
+        if (response.data.id) {
+          console.log('found id')
+          this.localQuiz = response.data;
+          await this.initData();
+        }
       } else {
         // this.$router.push("/");
         window.location.href =

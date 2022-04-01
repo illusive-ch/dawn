@@ -18957,11 +18957,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   mounted: function mounted() {
     var _this = this;
 
-    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2() {
-      var email, urlParams, emailParam;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
+    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+      var email, urlParams, emailParam, response;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
         while (1) {
-          switch (_context2.prev = _context2.next) {
+          switch (_context.prev = _context.next) {
             case 0:
               email = _this.email;
               urlParams = new URLSearchParams(window.location.search);
@@ -18979,107 +18979,91 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               _this.localQuiz = localStorage.getItem("quiz");
 
               if (!(!_this.localQuiz || email)) {
-                _context2.next = 16;
+                _context.next = 27;
                 break;
               }
 
               if (!email) {
-                _context2.next = 13;
+                _context.next = 24;
                 break;
               }
 
               console.log('ems: ' + email);
-              fetch("".concat(_this.base_url, "/api/customer?email=").concat(email), {
+              _context.next = 12;
+              return fetch("".concat(_this.base_url, "/api/customer?email=").concat(email), {
                 method: "GET",
                 headers: {
                   "Content-Type": "application/json",
                   Authorization: "Bearer " + _this.authToken
                 }
-              }).then(function (response) {
-                console.log('response');
-                console.log(response);
-                console.log(response.status);
+              });
 
-                if (response.status === 404) {
-                  window.location.href = "/pages/quiz";
-                  return;
-                }
+            case 12:
+              response = _context.sent;
 
-                response.json().then( /*#__PURE__*/function () {
-                  var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee(rs) {
-                    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
-                      while (1) {
-                        switch (_context.prev = _context.next) {
-                          case 0:
-                            console.log('rs');
-                            console.log(rs);
+              if (!(response.status === 404)) {
+                _context.next = 17;
+                break;
+              }
 
-                            if (rs.data.id) {
-                              _this.localQuiz = rs.data;
+              console.log('customer not found');
+              window.location.href = "/pages/quiz";
+              return _context.abrupt("return");
 
-                              _this.initData();
-                            }
+            case 17:
+              if (!response.data.id) {
+                _context.next = 22;
+                break;
+              }
 
-                          case 3:
-                          case "end":
-                            return _context.stop();
-                        }
-                      }
-                    }, _callee);
-                  }));
+              console.log('found id');
+              _this.localQuiz = response.data;
+              _context.next = 22;
+              return _this.initData();
 
-                  return function (_x) {
-                    return _ref.apply(this, arguments);
-                  };
-                }());
-              })["catch"](function (e) {
-                console.log(e);
-              }); //check for email here pull lead id if email is passed and query api for lead ID from customer
-              //if there is no lead id for this redirect to quiz
-              //if there is no email redirect to login and add checkout_url=/pages/your-quiz-results
-
-              _context2.next = 15;
+            case 22:
+              _context.next = 26;
               break;
 
-            case 13:
+            case 24:
               // this.$router.push("/");
               window.location.href = "/account/login?checkout_url=/pages/your-quiz-results";
-              return _context2.abrupt("return");
+              return _context.abrupt("return");
 
-            case 15:
-              return _context2.abrupt("return");
+            case 26:
+              return _context.abrupt("return");
 
-            case 16:
+            case 27:
               _this.localQuiz = JSON.parse(_this.localQuiz);
 
               _this.initData();
 
-            case 18:
+            case 29:
             case "end":
-              return _context2.stop();
+              return _context.stop();
           }
         }
-      }, _callee2);
+      }, _callee);
     }))();
   },
   methods: {
     addToCart: function addToCart() {
       var _this2 = this;
 
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee3() {
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2() {
         var result;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee3$(_context3) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
           while (1) {
-            switch (_context3.prev = _context3.next) {
+            switch (_context2.prev = _context2.next) {
               case 0:
                 _this2.isAdding = true;
-                _context3.next = 3;
+                _context2.next = 3;
                 return fetch("/cart/clear.js", {
                   method: "POST"
                 });
 
               case 3:
-                _context3.next = 5;
+                _context2.next = 5;
                 return fetch("/cart/add.json", {
                   method: "POST",
                   headers: {
@@ -19094,29 +19078,29 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 });
 
               case 5:
-                result = _context3.sent;
+                result = _context2.sent;
                 window.location.href = "/checkout?discount=TRYBEFOREBUY";
                 _this2.isAdding = false;
 
               case 8:
               case "end":
-                return _context3.stop();
+                return _context2.stop();
             }
           }
-        }, _callee3);
+        }, _callee2);
       }))();
     },
     initData: function initData() {
       var _this3 = this;
 
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee5() {
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee4() {
         var response;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee5$(_context5) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee4$(_context4) {
           while (1) {
-            switch (_context5.prev = _context5.next) {
+            switch (_context4.prev = _context4.next) {
               case 0:
                 console.log('initdata');
-                _context5.next = 3;
+                _context4.next = 3;
                 return fetch("".concat(_this3.base_url, "/api/quiz/1/lead/").concat(_this3.localQuiz.id, "/results"), {
                   method: "GET",
                   headers: {
@@ -19126,34 +19110,34 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 });
 
               case 3:
-                response = _context5.sent;
+                response = _context4.sent;
                 response.json().then( /*#__PURE__*/function () {
-                  var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee4(rs) {
-                    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee4$(_context4) {
+                  var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee3(rs) {
+                    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee3$(_context3) {
                       while (1) {
-                        switch (_context4.prev = _context4.next) {
+                        switch (_context3.prev = _context3.next) {
                           case 0:
                             _this3.results = rs.data;
 
                           case 1:
                           case "end":
-                            return _context4.stop();
+                            return _context3.stop();
                         }
                       }
-                    }, _callee4);
+                    }, _callee3);
                   }));
 
-                  return function (_x2) {
-                    return _ref2.apply(this, arguments);
+                  return function (_x) {
+                    return _ref.apply(this, arguments);
                   };
                 }());
 
               case 5:
               case "end":
-                return _context5.stop();
+                return _context4.stop();
             }
           }
-        }, _callee5);
+        }, _callee4);
       }))();
     },
     onImgLoad: function onImgLoad() {
