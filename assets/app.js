@@ -18964,7 +18964,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         while (1) {
           switch (_context2.prev = _context2.next) {
             case 0:
-              debugger;
               email = _this.email;
               urlParams = new URLSearchParams(window.location.search);
               emailParam = urlParams.get("email");
@@ -18981,7 +18980,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               _this.localQuiz = localStorage.getItem("quiz");
 
               if (!(!_this.localQuiz && !email)) {
-                _context2.next = 12;
+                _context2.next = 11;
                 break;
               }
 
@@ -18989,18 +18988,18 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               window.location.href = "/account/login?checkout_url=/pages/your-quiz-results";
               return _context2.abrupt("return");
 
-            case 12:
+            case 11:
               if (!email) {
-                _context2.next = 31;
+                _context2.next = 30;
                 break;
               }
 
-              _context2.prev = 13;
+              _context2.prev = 12;
               url = "".concat(_this.base_url, "/api/customer?") + new URLSearchParams({
                 email: email
               });
               console.log(url);
-              _context2.next = 18;
+              _context2.next = 17;
               return fetch(url, {
                 method: "GET",
                 headers: {
@@ -19009,11 +19008,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 }
               });
 
-            case 18:
+            case 17:
               customer = _context2.sent;
 
               if (!(customer.status === 404)) {
-                _context2.next = 23;
+                _context2.next = 22;
                 break;
               }
 
@@ -19021,7 +19020,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               window.location.href = "/pages/quiz";
               return _context2.abrupt("return");
 
-            case 23:
+            case 22:
               customer.json().then( /*#__PURE__*/function () {
                 var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee(rs) {
                   return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
@@ -19054,27 +19053,27 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   return _ref.apply(this, arguments);
                 };
               }());
-              _context2.next = 31;
+              _context2.next = 30;
               break;
 
-            case 26:
-              _context2.prev = 26;
-              _context2.t0 = _context2["catch"](13);
+            case 25:
+              _context2.prev = 25;
+              _context2.t0 = _context2["catch"](12);
               console.log("error");
               console.log(_context2.t0);
               return _context2.abrupt("return");
 
-            case 31:
+            case 30:
               _this.localQuiz = JSON.parse(_this.localQuiz);
 
               _this.initData();
 
-            case 33:
+            case 32:
             case "end":
               return _context2.stop();
           }
         }
-      }, _callee2, null, [[13, 26]]);
+      }, _callee2, null, [[12, 25]]);
     }))();
   },
   methods: {
