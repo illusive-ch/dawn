@@ -18989,7 +18989,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
             case 11:
               if (!email) {
-                _context.next = 34;
+                _context.next = 36;
                 break;
               }
 
@@ -18998,7 +18998,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 email: email
               });
               console.log(url);
-              _context.next = 17;
+              debugger;
+              _context.next = 18;
               return fetch(url, {
                 method: "GET",
                 headers: {
@@ -19007,12 +19008,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 }
               });
 
-            case 17:
+            case 18:
               customer = _context.sent;
               console.log(customer);
 
               if (!(customer.status === 404)) {
-                _context.next = 23;
+                _context.next = 24;
                 break;
               }
 
@@ -19020,9 +19021,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               window.location.href = "/pages/quiz";
               return _context.abrupt("return");
 
-            case 23:
+            case 24:
               if (!customer.data.id) {
-                _context.next = 28;
+                _context.next = 29;
                 break;
               }
 
@@ -19033,27 +19034,28 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
               return _context.abrupt("return");
 
-            case 28:
-              _context.next = 34;
+            case 29:
+              _context.next = 36;
               break;
 
-            case 30:
-              _context.prev = 30;
+            case 31:
+              _context.prev = 31;
               _context.t0 = _context["catch"](12);
               console.log('error');
               console.log(_context.t0);
+              return _context.abrupt("return");
 
-            case 34:
+            case 36:
               _this.localQuiz = JSON.parse(_this.localQuiz);
 
               _this.initData();
 
-            case 36:
+            case 38:
             case "end":
               return _context.stop();
           }
         }
-      }, _callee, null, [[12, 30]]);
+      }, _callee, null, [[12, 31]]);
     }))();
   },
   methods: {
