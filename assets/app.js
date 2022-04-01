@@ -18996,6 +18996,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   Authorization: "Bearer " + _this.authToken
                 }
               }).then(function (response) {
+                console.log(response);
+
                 if (response.status === 404) {
                   window.location.href = "/pages/quiz";
                   return;

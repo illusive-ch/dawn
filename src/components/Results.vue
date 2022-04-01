@@ -775,6 +775,7 @@ export default {
           },
         })
           .then((response) => {
+            console.log(response)
             if (response.status === 404) {
               window.location.href = "/pages/quiz";
               return;
