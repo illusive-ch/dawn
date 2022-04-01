@@ -18990,7 +18990,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
               console.log('em: ' + email);
               console.log("".concat(_this.base_url, "/api/customer/").concat(email));
-              fetch("".concat(_this.base_url, "/api/customer/").concat(email), {
+              fetch("".concat(_this.base_url, "/api/customer?email=").concat(email), {
                 method: "GET",
                 headers: {
                   "Content-Type": "application/json",
