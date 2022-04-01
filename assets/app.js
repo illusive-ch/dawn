@@ -18958,11 +18958,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   mounted: function mounted() {
     var _this = this;
 
-    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2() {
       var email, urlParams, emailParam, url, customer;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
         while (1) {
-          switch (_context.prev = _context.next) {
+          switch (_context2.prev = _context2.next) {
             case 0:
               debugger;
               email = _this.email;
@@ -18981,26 +18981,26 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               _this.localQuiz = localStorage.getItem("quiz");
 
               if (!(!_this.localQuiz && !email)) {
-                _context.next = 12;
+                _context2.next = 12;
                 break;
               }
 
-              console.log('logging in');
+              console.log("logging in");
               window.location.href = "/account/login?checkout_url=/pages/your-quiz-results";
-              return _context.abrupt("return");
+              return _context2.abrupt("return");
 
             case 12:
               if (!email) {
-                _context.next = 36;
+                _context2.next = 31;
                 break;
               }
 
-              _context.prev = 13;
+              _context2.prev = 13;
               url = "".concat(_this.base_url, "/api/customer?") + new URLSearchParams({
                 email: email
               });
               console.log(url);
-              _context.next = 18;
+              _context2.next = 18;
               return fetch(url, {
                 method: "GET",
                 headers: {
@@ -19010,73 +19010,91 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               });
 
             case 18:
-              customer = _context.sent;
-              console.log(customer);
+              customer = _context2.sent;
 
               if (!(customer.status === 404)) {
-                _context.next = 24;
+                _context2.next = 23;
                 break;
               }
 
-              console.log('customer not found');
+              console.log("customer not found");
               window.location.href = "/pages/quiz";
-              return _context.abrupt("return");
+              return _context2.abrupt("return");
 
-            case 24:
-              if (!customer.data.id) {
-                _context.next = 29;
-                break;
-              }
+            case 23:
+              customer.json().then( /*#__PURE__*/function () {
+                var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee(rs) {
+                  return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+                    while (1) {
+                      switch (_context.prev = _context.next) {
+                        case 0:
+                          console.log(rs);
 
-              console.log('found id');
-              _this.localQuiz = customer.data;
+                          if (!rs.data.id) {
+                            _context.next = 6;
+                            break;
+                          }
 
-              _this.initData();
+                          console.log("found id");
+                          _this.localQuiz = rs.data;
 
-              return _context.abrupt("return");
+                          _this.initData();
 
-            case 29:
-              _context.next = 36;
+                          return _context.abrupt("return");
+
+                        case 6:
+                        case "end":
+                          return _context.stop();
+                      }
+                    }
+                  }, _callee);
+                }));
+
+                return function (_x) {
+                  return _ref.apply(this, arguments);
+                };
+              }());
+              _context2.next = 31;
               break;
 
-            case 31:
-              _context.prev = 31;
-              _context.t0 = _context["catch"](13);
-              console.log('error');
-              console.log(_context.t0);
-              return _context.abrupt("return");
+            case 26:
+              _context2.prev = 26;
+              _context2.t0 = _context2["catch"](13);
+              console.log("error");
+              console.log(_context2.t0);
+              return _context2.abrupt("return");
 
-            case 36:
+            case 31:
               _this.localQuiz = JSON.parse(_this.localQuiz);
 
               _this.initData();
 
-            case 38:
+            case 33:
             case "end":
-              return _context.stop();
+              return _context2.stop();
           }
         }
-      }, _callee, null, [[13, 31]]);
+      }, _callee2, null, [[13, 26]]);
     }))();
   },
   methods: {
     addToCart: function addToCart() {
       var _this2 = this;
 
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2() {
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee3() {
         var result;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee3$(_context3) {
           while (1) {
-            switch (_context2.prev = _context2.next) {
+            switch (_context3.prev = _context3.next) {
               case 0:
                 _this2.isAdding = true;
-                _context2.next = 3;
+                _context3.next = 3;
                 return fetch("/cart/clear.js", {
                   method: "POST"
                 });
 
               case 3:
-                _context2.next = 5;
+                _context3.next = 5;
                 return fetch("/cart/add.json", {
                   method: "POST",
                   headers: {
@@ -19091,29 +19109,29 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 });
 
               case 5:
-                result = _context2.sent;
+                result = _context3.sent;
                 window.location.href = "/checkout?discount=TRYBEFOREBUY";
                 _this2.isAdding = false;
 
               case 8:
               case "end":
-                return _context2.stop();
+                return _context3.stop();
             }
           }
-        }, _callee2);
+        }, _callee3);
       }))();
     },
     initData: function initData() {
       var _this3 = this;
 
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee4() {
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee5() {
         var response;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee4$(_context4) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee5$(_context5) {
           while (1) {
-            switch (_context4.prev = _context4.next) {
+            switch (_context5.prev = _context5.next) {
               case 0:
-                console.log('initdata');
-                _context4.next = 3;
+                console.log("initdata");
+                _context5.next = 3;
                 return fetch("".concat(_this3.base_url, "/api/quiz/1/lead/").concat(_this3.localQuiz.id, "/results"), {
                   method: "GET",
                   headers: {
@@ -19123,34 +19141,34 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 });
 
               case 3:
-                response = _context4.sent;
+                response = _context5.sent;
                 response.json().then( /*#__PURE__*/function () {
-                  var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee3(rs) {
-                    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee3$(_context3) {
+                  var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee4(rs) {
+                    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee4$(_context4) {
                       while (1) {
-                        switch (_context3.prev = _context3.next) {
+                        switch (_context4.prev = _context4.next) {
                           case 0:
                             _this3.results = rs.data;
 
                           case 1:
                           case "end":
-                            return _context3.stop();
+                            return _context4.stop();
                         }
                       }
-                    }, _callee3);
+                    }, _callee4);
                   }));
 
-                  return function (_x) {
-                    return _ref.apply(this, arguments);
+                  return function (_x2) {
+                    return _ref2.apply(this, arguments);
                   };
                 }());
 
               case 5:
               case "end":
-                return _context4.stop();
+                return _context5.stop();
             }
           }
-        }, _callee4);
+        }, _callee5);
       }))();
     },
     onImgLoad: function onImgLoad() {

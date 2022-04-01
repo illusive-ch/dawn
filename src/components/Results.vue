@@ -750,7 +750,7 @@ export default {
     },
   },
   async mounted() {
-    debugger
+    debugger;
     let email = this.email;
     const urlParams = new URLSearchParams(window.location.search);
     const emailParam = urlParams.get("email");
@@ -761,45 +761,51 @@ export default {
     if (emailParam) {
       email = emailParam;
     }
-    console.log(email)
+    console.log(email);
 
     this.localQuiz = localStorage.getItem("quiz");
 
-    if(!this.localQuiz && !email){
-      console.log('logging in')
-      window.location.href = "/account/login?checkout_url=/pages/your-quiz-results";
+    if (!this.localQuiz && !email) {
+      console.log("logging in");
+      window.location.href =
+        "/account/login?checkout_url=/pages/your-quiz-results";
       return;
     }
 
-    if(email){
+    if (email) {
       try {
-        let url = `${this.base_url}/api/customer?` + new URLSearchParams({
-          email: email
-        })
-        console.log(url)
+        let url =
+          `${this.base_url}/api/customer?` +
+          new URLSearchParams({
+            email: email,
+          });
+        console.log(url);
         let customer = await fetch(url, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
             Authorization: "Bearer " + this.authToken,
           },
-        })
-        console.log(customer)
+        });
         if (customer.status === 404) {
-          console.log('customer not found')
-          window.location.href = "/pages/quiz"
-          return
+          console.log("customer not found");
+          window.location.href = "/pages/quiz";
+          return;
         }
-        if (customer.data.id) {
-          console.log('found id')
-          this.localQuiz = customer.data;
-          this.initData();
-          return
-        }
+        customer.json().then(async (rs) => {
+          console.log(rs);
+
+          if (rs.data.id) {
+            console.log("found id");
+            this.localQuiz = rs.data;
+            this.initData();
+            return;
+          }
+        });
       } catch (err) {
-        console.log('error')
-        console.log(err)
-        return
+        console.log("error");
+        console.log(err);
+        return;
       }
     }
 
@@ -828,7 +834,7 @@ export default {
       this.isAdding = false;
     },
     async initData() {
-      console.log('initdata')
+      console.log("initdata");
       const response = await fetch(
         `${this.base_url}/api/quiz/1/lead/${this.localQuiz.id}/results`,
         {
