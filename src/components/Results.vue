@@ -770,7 +770,9 @@ export default {
         "/account/login?checkout_url=/pages/your-quiz-results";
       return;
     }
-
+    if (Shopify.designMode) {
+      email = 'asdf@illusive.ch'
+    }
     if (email) {
       try {
         let url =
