@@ -456,9 +456,10 @@ export default {
         .then((rs) => rs.json())
         .then((result) => {
           this.loadingProcess = false;
+          fbq("track", "Lead");
           window.location.href =
               "/pages/your-quiz-results?email=" + this.emailValue;
-          fbq("track", "Lead");
+
         })
         .catch((e) => {
           this.loadingProcess = false;
