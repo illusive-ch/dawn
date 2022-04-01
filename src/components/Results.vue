@@ -825,6 +825,7 @@ export default {
       this.isAdding = false;
     },
     async initData() {
+      console.log('initdata')
       const response = await fetch(
         `${this.base_url}/api/quiz/1/lead/${this.localQuiz.id}/results`,
         {

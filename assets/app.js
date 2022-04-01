@@ -19110,7 +19110,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           while (1) {
             switch (_context5.prev = _context5.next) {
               case 0:
-                _context5.next = 2;
+                console.log('initdata');
+                _context5.next = 3;
                 return fetch("".concat(_this3.base_url, "/api/quiz/1/lead/").concat(_this3.localQuiz.id, "/results"), {
                   method: "GET",
                   headers: {
@@ -19119,7 +19120,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 });
 
-              case 2:
+              case 3:
                 response = _context5.sent;
                 response.json().then( /*#__PURE__*/function () {
                   var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee4(rs) {
@@ -19142,7 +19143,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   };
                 }());
 
-              case 4:
+              case 5:
               case "end":
                 return _context5.stop();
             }
