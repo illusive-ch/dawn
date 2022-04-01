@@ -455,7 +455,7 @@
             products - we’ve streamlined the cleansing, exfoliating, toning,
             hydrating, protecting and nourishing phases into a refined,
             powerful, and simple routine. Your skin is thoroughly cared for in
-            just 3 products, saving you time, money and effort.
+            just 4 products, saving you time, money and effort.
           </p>
         </div>
         <template
