@@ -89,6 +89,12 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "c3a4743f-f08c-435e-adb2-229ee0d0a1b9": {
+          "type": "sticky",
+          "settings": {
+            "stickytext": "Try Before You Buy"
+          }
         }
       },
       "block_order": [
@@ -103,7 +109,8 @@
         "included-tab",
         "effective-tab",
         "ingredients-tab",
-        "share"
+        "share",
+        "c3a4743f-f08c-435e-adb2-229ee0d0a1b9"
       ],
       "settings": {
         "enable_sticky_info": true,
