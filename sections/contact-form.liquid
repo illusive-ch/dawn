@@ -22,7 +22,7 @@
         <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
         <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
         <label>Choose One:
-          <select name="choose1">
+          <select id="ContactForm-choose" name="contact[choose1]">
               <option value="val1">Value 1</option>
               <option value="val2">Value 2</option>
               <option value="val3">Value 3</option>
